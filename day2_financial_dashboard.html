@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day2 Health — Financial Projections UK/PD</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #080c10;
+    color: #e8edf2;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    padding: 0 0 60px 0;
+  }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #00b5b5 0%, #007a7a 60%, #004f4f 100%);
+    padding: 48px 60px 44px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: -100px; left: 30%;
+    width: 240px; height: 240px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.04);
+  }
+  .header-inner { position: relative; z-index: 1; }
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.28);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+  }
+  .header h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .header h1 span { color: rgba(255,255,255,0.65); }
+  .header-sub {
+    margin-top: 10px;
+    color: rgba(255,255,255,0.75);
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  /* KPI ROW */
+  .kpi-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 32px 60px 0;
+  }
+  .kpi-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 22px 22px 18px;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .kpi-card:hover { border-color: rgba(0,181,181,0.4); transform: translateY(-2px); }
+  .kpi-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #86868b;
+    margin-bottom: 8px;
+  }
+  .kpi-year { font-size: 12px; color: #00b5b5; font-weight: 600; margin-bottom: 4px; }
+  .kpi-value { font-size: 28px; font-weight: 800; color: #f5f5f7; letter-spacing: -0.5px; }
+  .kpi-sub { font-size: 12px; color: #86868b; margin-top: 4px; }
+  .kpi-delta {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+  .delta-up { background: rgba(0,200,120,0.12); color: #00c878; }
+  .delta-down { background: rgba(255,80,80,0.1); color: #ff7070; }
+
+  /* GRID LAYOUT */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 24px 60px 0;
+  }
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px 60px 0;
+  }
+  .full-width { padding: 20px 60px 0; }
+
+  /* CHART CARDS */
+  .chart-card {
+    background: rgba(255,255,255,0.035);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 26px 26px 20px;
+    transition: border-color 0.2s;
+  }
+  .chart-card:hover { border-color: rgba(0,181,181,0.25); }
+  .chart-card.accent-border { border-top: 2px solid #00b5b5; }
+  .card-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #86868b;
+    margin-bottom: 4px;
+  }
+  .card-headline {
+    font-size: 20px;
+    font-weight: 700;
+    color: #f5f5f7;
+    margin-bottom: 18px;
+  }
+  .chart-wrap { position: relative; }
+
+  /* SUBSCRIBER TABLE */
+  .data-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .data-table th {
+    text-align: left;
+    padding: 10px 14px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #86868b;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .data-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    color: #c8d0d8;
+  }
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table tr:hover td { background: rgba(255,255,255,0.03); }
+  .val-teal { color: #00b5b5; font-weight: 700; }
+  .val-green { color: #00c878; font-weight: 600; }
+  .val-muted { color: #86868b; }
+
+  /* MARGIN BAR */
+  .margin-row { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+  .margin-year { width: 52px; font-size: 13px; font-weight: 700; color: #c8d0d8; }
+  .margin-bar-track { flex: 1; height: 28px; background: rgba(255,255,255,0.06); border-radius: 6px; overflow: hidden; }
+  .margin-bar-fill { height: 100%; border-radius: 6px; display: flex; align-items: center; padding-left: 10px; font-size: 12px; font-weight: 700; color: #fff; transition: width 1s ease; }
+  .margin-pct { width: 52px; text-align: right; font-size: 14px; font-weight: 700; color: #00b5b5; }
+
+  /* DONUT LEGEND */
+  .donut-legend { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
+  .legend-item { display: flex; align-items: center; gap: 10px; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .legend-label { font-size: 13px; color: #c8d0d8; }
+  .legend-val { margin-left: auto; font-size: 13px; font-weight: 700; color: #f5f5f7; }
+
+  .section-divider {
+    margin: 36px 60px 0;
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .section-label {
+    padding: 28px 60px 0;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #00b5b5;
+  }
+
+  /* FOOTER */
+  .footer {
+    margin: 40px 60px 0;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    font-size: 12px;
+    color: #86868b;
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-inner">
+    <div class="badge">Day2 Health · UK · Parkinson's Disease</div>
+    <h1>Financial Projections <span>2026–2029</span></h1>
+    <p class="header-sub">Direct-to-Consumer + NHS Prescription Revenue Model &nbsp;·&nbsp; TAM: ~273,000 UK PD patients &amp; carers</p>
+  </div>
+</div>
+
+<!-- KPI ROW -->
+<div class="kpi-row">
+  <div class="kpi-card">
+    <div class="kpi-label">Peak Annual Revenue</div>
+    <div class="kpi-year">Year 4 — 2029</div>
+    <div class="kpi-value">£2.96M</div>
+    <div class="kpi-sub">Total (DTC + NHS)</div>
+    <span class="kpi-delta delta-up">↑ 261% vs Y1</span>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Peak EBITDA</div>
+    <div class="kpi-year">Year 3 — 2028</div>
+    <div class="kpi-value">£2.04M</div>
+    <div class="kpi-sub">71.7% EBITDA margin</div>
+    <span class="kpi-delta delta-up">↑ 512% vs Y1</span>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Peak Subscribers</div>
+    <div class="kpi-year">Year 4 — 2029</div>
+    <div class="kpi-value">12,250</div>
+    <div class="kpi-sub">4.49% of UK TAM</div>
+    <span class="kpi-delta delta-up">↑ 349% vs Y1</span>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Y1 EBITDA</div>
+    <div class="kpi-year">Year 1 — 2026</div>
+    <div class="kpi-value">£334K</div>
+    <div class="kpi-sub">40.8% margin, DTC only</div>
+    <span class="kpi-delta delta-up">Profitable Y1</span>
+  </div>
+</div>
+
+<!-- SECTION: REVENUE -->
+<p class="section-label">Revenue</p>
+
+<div class="grid-2">
+  <!-- Total Revenue Bar -->
+  <div class="chart-card accent-border">
+    <div class="card-title">Annual Revenue</div>
+    <div class="card-headline">DTC vs NHS Growth</div>
+    <div class="chart-wrap" style="height:260px">
+      <canvas id="revenueBar"></canvas>
+    </div>
+  </div>
+
+  <!-- Revenue Composition Stacked -->
+  <div class="chart-card accent-border">
+    <div class="card-title">Revenue Mix</div>
+    <div class="card-headline">DTC vs NHS Share by Year</div>
+    <div class="chart-wrap" style="height:260px">
+      <canvas id="revenuePct"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION: SUBSCRIBERS -->
+<p class="section-label">Subscribers &amp; Market Penetration</p>
+
+<div class="grid-2">
+  <!-- Subscriber Growth -->
+  <div class="chart-card">
+    <div class="card-title">Total Subscribers</div>
+    <div class="card-headline">DTC + NHS Combined</div>
+    <div class="chart-wrap" style="height:240px">
+      <canvas id="subsLine"></canvas>
+    </div>
+  </div>
+
+  <!-- TAM Penetration -->
+  <div class="chart-card">
+    <div class="card-title">TAM Penetration</div>
+    <div class="card-headline">% of UK PD Population</div>
+    <div class="chart-wrap" style="height:240px">
+      <canvas id="tamBar"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION: COSTS & MARGIN -->
+<p class="section-label">Costs &amp; Profitability</p>
+
+<div class="grid-2">
+  <!-- Opex Breakdown -->
+  <div class="chart-card">
+    <div class="card-title">Operating Expenses</div>
+    <div class="card-headline">Overheads vs Personnel</div>
+    <div class="chart-wrap" style="height:240px">
+      <canvas id="opexStack"></canvas>
+    </div>
+  </div>
+
+  <!-- EBITDA vs Revenue -->
+  <div class="chart-card">
+    <div class="card-title">Revenue vs EBITDA</div>
+    <div class="card-headline">Profit Waterfall</div>
+    <div class="chart-wrap" style="height:240px">
+      <canvas id="ebitdaLine"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- EBITDA MARGIN BARS (full width) -->
+<div class="full-width">
+  <div class="chart-card" style="padding: 26px 32px 24px;">
+    <div class="card-title">EBITDA Margin</div>
+    <div class="card-headline">% by Year — strong unit economics from Y1</div>
+    <div style="margin-top: 8px;">
+      <div class="margin-row">
+        <div class="margin-year">2026</div>
+        <div class="margin-bar-track"><div class="margin-bar-fill" style="width:40.78%; background: linear-gradient(90deg, #007a7a, #00b5b5);">40.8%</div></div>
+        <div class="margin-pct">40.8%</div>
+      </div>
+      <div class="margin-row">
+        <div class="margin-year">2027</div>
+        <div class="margin-bar-track"><div class="margin-bar-fill" style="width:65.74%; background: linear-gradient(90deg, #007a7a, #00b5b5);">65.7%</div></div>
+        <div class="margin-pct">65.7%</div>
+      </div>
+      <div class="margin-row">
+        <div class="margin-year">2028</div>
+        <div class="margin-bar-track"><div class="margin-bar-fill" style="width:71.68%; background: linear-gradient(90deg, #00b5b5, #00e0e0);">71.7%</div></div>
+        <div class="margin-pct">71.7%</div>
+      </div>
+      <div class="margin-row">
+        <div class="margin-year">2029</div>
+        <div class="margin-bar-track"><div class="margin-bar-fill" style="width:61.42%; background: linear-gradient(90deg, #007a7a, #00b5b5);">61.4%</div></div>
+        <div class="margin-pct">61.4%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION: COST DETAIL -->
+<p class="section-label">Cost Detail</p>
+
+<div class="grid-3">
+  <!-- Overhead breakdown Y3 donut -->
+  <div class="chart-card">
+    <div class="card-title">Overhead Mix</div>
+    <div class="card-headline">Y3 2028</div>
+    <div class="chart-wrap" style="height:180px">
+      <canvas id="overheadDonut"></canvas>
+    </div>
+    <div class="donut-legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#00b5b5"></div><div class="legend-label">Marketing &amp; Sales</div><div class="legend-val">£100K</div></div>
+      <div class="legend-item"><div class="legend-dot" style="background:#007a7a"></div><div class="legend-label">Content</div><div class="legend-val">£100K</div></div>
+      <div class="legend-item"><div class="legend-dot" style="background:#00e0e0"></div><div class="legend-label">Office</div><div class="legend-val">£25K</div></div>
+      <div class="legend-item"><div class="legend-dot" style="background:#004f4f"></div><div class="legend-label">AI/Platform</div><div class="legend-val">£15K</div></div>
+      <div class="legend-item"><div class="legend-dot" style="background:#86868b"></div><div class="legend-label">Other</div><div class="legend-val">£17K</div></div>
+    </div>
+  </div>
+
+  <!-- Personnel breakdown Y3 donut -->
+  <div class="chart-card">
+    <div class="card-title">Personnel Mix</div>
+    <div class="card-headline">Y3 2028</div>
+    <div class="chart-wrap" style="height:180px">
+      <canvas id="personnelDonut"></canvas>
+    </div>
+    <div class="donut-legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#00b5b5"></div><div class="legend-label">CTO</div><div class="legend-val">£150K</div></div>
+      <div class="legend-item"><div class="legend-dot" style="background:#007a7a"></div><div class="legend-label">Marketing/NHS</div><div class="legend-val">£120K</div></div>
+      <div class="legend-item"><div class="legend-dot" style="background:#00e0e0"></div><div class="legend-label">Tech Team</div><div class="legend-val">£100K</div></div>
+      <div class="legend-item"><div class="legend-dot" style="background:#004f4f"></div><div class="legend-label">Support/Community</div><div class="legend-val">£80K</div></div>
+      <div class="legend-item"><div class="legend-dot" style="background:#86868b"></div><div class="legend-label">Founders</div><div class="legend-val">£100K</div></div>
+    </div>
+  </div>
+
+  <!-- Full data summary table -->
+  <div class="chart-card">
+    <div class="card-title">Summary</div>
+    <div class="card-headline">P&amp;L at a Glance</div>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>2026</th>
+          <th>2027</th>
+          <th>2028</th>
+          <th>2029</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="val-muted">Revenue</td>
+          <td class="val-teal">£819K</td>
+          <td class="val-teal">£1.62M</td>
+          <td class="val-teal">£2.85M</td>
+          <td class="val-teal">£2.96M</td>
+        </tr>
+        <tr>
+          <td class="val-muted">Opex</td>
+          <td>£485K</td>
+          <td>£555K</td>
+          <td>£807K</td>
+          <td>£1.14M</td>
+        </tr>
+        <tr>
+          <td class="val-muted">EBITDA</td>
+          <td class="val-green">£334K</td>
+          <td class="val-green">£1.07M</td>
+          <td class="val-green">£2.04M</td>
+          <td class="val-green">£1.82M</td>
+        </tr>
+        <tr>
+          <td class="val-muted">Margin</td>
+          <td>40.8%</td>
+          <td>65.7%</td>
+          <td>71.7%</td>
+          <td>61.4%</td>
+        </tr>
+        <tr>
+          <td class="val-muted">Subs</td>
+          <td>2,730</td>
+          <td>5,500</td>
+          <td>11,000</td>
+          <td>12,250</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="footer">
+  Day2 Health &nbsp;·&nbsp; UK / Parkinson's Disease market &nbsp;·&nbsp; Projections 2026–2029 &nbsp;·&nbsp; All figures £GBP excl. VAT &nbsp;·&nbsp; TAM basis: ~273,000 UK PD patients &amp; carers
+</div>
+
+<script>
+const years = ['2026', '2027', '2028', '2029'];
+const teal = '#00b5b5';
+const tealDark = '#007a7a';
+const tealLight = '#00d4d4';
+const grey = 'rgba(255,255,255,0.12)';
+
+const dtcRev = [819000, 1500000, 1050000, 75000];
+const nhsRev = [0, 120000, 1800000, 2880000];
+const totalRev = [819000, 1620000, 2850000, 2955000];
+const ebitda = [334000, 1065000, 2043000, 1815000];
+const totalOpex = [485000, 555000, 807000, 1140000];
+const overheads = [135000, 185000, 257000, 340000];
+const personnel = [350000, 370000, 550000, 800000];
+const subs = [2730, 5500, 11000, 12250];
+const tam = [1.00, 2.01, 4.03, 4.49];
+
+const gridColor = 'rgba(255,255,255,0.06)';
+const tickColor = '#86868b';
+const baseFont = { family: '-apple-system, BlinkMacSystemFont, SF Pro Display, Segoe UI, sans-serif', size: 12 };
+
+Chart.defaults.color = tickColor;
+Chart.defaults.font = baseFont;
+
+function fmt(v) {
+  if (v >= 1000000) return '£' + (v/1000000).toFixed(2) + 'M';
+  if (v >= 1000) return '£' + (v/1000).toFixed(0) + 'K';
+  return '£' + v;
+}
+
+// 1. Revenue bar (grouped)
+new Chart(document.getElementById('revenueBar'), {
+  type: 'bar',
+  data: {
+    labels: years,
+    datasets: [
+      { label: 'DTC Revenue', data: dtcRev, backgroundColor: teal, borderRadius: 5, borderSkipped: false },
+      { label: 'NHS Revenue', data: nhsRev, backgroundColor: tealDark, borderRadius: 5, borderSkipped: false }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'top', labels: { boxWidth: 10, padding: 16, color: '#c8d0d8' } }, tooltip: { callbacks: { label: c => ' ' + c.dataset.label + ': ' + fmt(c.raw) } } },
+    scales: {
+      x: { stacked: false, grid: { color: gridColor }, ticks: { color: tickColor } },
+      y: { stacked: false, grid: { color: gridColor }, ticks: { color: tickColor, callback: v => fmt(v) } }
+    }
+  }
+});
+
+// 2. Revenue % stacked
+const dtcPct = totalRev.map((t,i) => +(dtcRev[i]/t*100).toFixed(1));
+const nhsPct = totalRev.map((t,i) => +(nhsRev[i]/t*100).toFixed(1));
+new Chart(document.getElementById('revenuePct'), {
+  type: 'bar',
+  data: {
+    labels: years,
+    datasets: [
+      { label: 'DTC %', data: dtcPct, backgroundColor: teal, borderRadius: 4, borderSkipped: false },
+      { label: 'NHS %', data: nhsPct, backgroundColor: tealDark, borderRadius: 4, borderSkipped: false }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'top', labels: { boxWidth: 10, padding: 16, color: '#c8d0d8' } }, tooltip: { callbacks: { label: c => ' ' + c.dataset.label + ': ' + c.raw + '%' } } },
+    scales: {
+      x: { stacked: true, grid: { color: gridColor }, ticks: { color: tickColor } },
+      y: { stacked: true, max: 100, grid: { color: gridColor }, ticks: { color: tickColor, callback: v => v + '%' } }
+    }
+  }
+});
+
+// 3. Subscriber line
+new Chart(document.getElementById('subsLine'), {
+  type: 'line',
+  data: {
+    labels: years,
+    datasets: [
+      { label: 'Total Subscribers', data: subs, borderColor: teal, backgroundColor: 'rgba(0,181,181,0.12)', pointBackgroundColor: teal, pointRadius: 6, tension: 0.3, fill: true }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => ' ' + c.raw.toLocaleString() + ' subscribers' } } },
+    scales: {
+      x: { grid: { color: gridColor }, ticks: { color: tickColor } },
+      y: { grid: { color: gridColor }, ticks: { color: tickColor, callback: v => v.toLocaleString() } }
+    }
+  }
+});
+
+// 4. TAM bar
+new Chart(document.getElementById('tamBar'), {
+  type: 'bar',
+  data: {
+    labels: years,
+    datasets: [
+      { label: '% of TAM', data: tam, backgroundColor: ['rgba(0,181,181,0.5)','rgba(0,181,181,0.65)','rgba(0,181,181,0.85)','rgba(0,181,181,1)'], borderRadius: 6, borderSkipped: false }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => ' ' + c.raw + '% of UK TAM' } } },
+    scales: {
+      x: { grid: { color: gridColor }, ticks: { color: tickColor } },
+      y: { grid: { color: gridColor }, ticks: { color: tickColor, callback: v => v + '%' }, max: 6 }
+    }
+  }
+});
+
+// 5. Opex stacked
+new Chart(document.getElementById('opexStack'), {
+  type: 'bar',
+  data: {
+    labels: years,
+    datasets: [
+      { label: 'Overheads', data: overheads, backgroundColor: tealDark, borderRadius: 4, borderSkipped: false },
+      { label: 'Personnel', data: personnel, backgroundColor: 'rgba(0,181,181,0.5)', borderRadius: 4, borderSkipped: false }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'top', labels: { boxWidth: 10, padding: 16, color: '#c8d0d8' } }, tooltip: { callbacks: { label: c => ' ' + c.dataset.label + ': ' + fmt(c.raw) } } },
+    scales: {
+      x: { stacked: true, grid: { color: gridColor }, ticks: { color: tickColor } },
+      y: { stacked: true, grid: { color: gridColor }, ticks: { color: tickColor, callback: v => fmt(v) } }
+    }
+  }
+});
+
+// 6. Revenue vs EBITDA line
+new Chart(document.getElementById('ebitdaLine'), {
+  type: 'line',
+  data: {
+    labels: years,
+    datasets: [
+      { label: 'Revenue', data: totalRev, borderColor: teal, backgroundColor: 'rgba(0,181,181,0.08)', pointBackgroundColor: teal, pointRadius: 5, tension: 0.3, fill: true },
+      { label: 'EBITDA', data: ebitda, borderColor: '#00c878', backgroundColor: 'rgba(0,200,120,0.06)', pointBackgroundColor: '#00c878', pointRadius: 5, tension: 0.3, fill: true, borderDash: [4,3] }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { position: 'top', labels: { boxWidth: 10, padding: 16, color: '#c8d0d8' } }, tooltip: { callbacks: { label: c => ' ' + c.dataset.label + ': ' + fmt(c.raw) } } },
+    scales: {
+      x: { grid: { color: gridColor }, ticks: { color: tickColor } },
+      y: { grid: { color: gridColor }, ticks: { color: tickColor, callback: v => fmt(v) } }
+    }
+  }
+});
+
+// 7. Overhead donut Y3
+new Chart(document.getElementById('overheadDonut'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Marketing & Sales','Content','Office','AI/Platform','Other'],
+    datasets: [{ data: [100000,100000,25000,15000,17000], backgroundColor: ['#00b5b5','#007a7a','#00e0e0','#004f4f','#555'], borderWidth: 0, hoverOffset: 6 }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false, cutout: '66%',
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => ' ' + c.label + ': ' + fmt(c.raw) } } }
+  }
+});
+
+// 8. Personnel donut Y3
+new Chart(document.getElementById('personnelDonut'), {
+  type: 'doughnut',
+  data: {
+    labels: ['CTO','Marketing/NHS','Tech Team','Support/Community','Founders'],
+    datasets: [{ data: [150000,120000,100000,80000,100000], backgroundColor: ['#00b5b5','#007a7a','#00e0e0','#004f4f','#555'], borderWidth: 0, hoverOffset: 6 }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false, cutout: '66%',
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => ' ' + c.label + ': ' + fmt(c.raw) } } }
+  }
+});
+</script>
+</body>
+</html>
