@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Day2 Mission Control · 18 May 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=DM+Sans:opsz,wght@9..40,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --paper:        #f4ecdc;
+    --paper-tint:   #ece2cf;
+    --paper-deep:   #e2d6bf;
+    --ink:          #18130d;
+    --ink-soft:     #4a3f31;
+    --ink-faint:    #8a7e6c;
+    --ink-ghost:    #b8ac98;
+    --accent:       #0e7c7c;
+    --accent-soft:  #1aa39e;
+    --accent-deep:  #06535b;
+    --warm:         #a8522d;
+    --good:         #4d6b3a;
+    --bad:          #8a3a3a;
+    --rule:         rgba(24, 19, 13, 0.18);
+    --rule-soft:    rgba(24, 19, 13, 0.09);
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-feature-settings: 'ss01', 'cv11';
+    font-size: 15px; line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    min-height: 100vh;
+    background-image:
+      radial-gradient(circle at 18% 22%, rgba(14, 124, 124, 0.05) 0%, transparent 45%),
+      radial-gradient(circle at 82% 78%, rgba(168, 82, 45, 0.03) 0%, transparent 50%),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 0.094  0 0 0 0 0.075  0 0 0 0 0.05  0 0 0 0.07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+  }
+  .page { max-width: 1380px; margin: 0 auto; padding: 56px 64px 72px; }
+  .masthead { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 32px; padding-bottom: 18px; border-bottom: 1.5px solid var(--ink); position: relative; }
+  .masthead::after { content: ''; position: absolute; left: 0; right: 0; bottom: -6px; border-bottom: 0.5px solid var(--ink); }
+  .title { font-family: 'Fraunces', serif; line-height: 0.85; letter-spacing: -0.04em; }
+  .title-line-1 { display: inline-flex; align-items: center; gap: 12px; font-family: 'Fraunces', serif; font-size: 22px; font-weight: 600; letter-spacing: 0.32em; color: var(--accent); font-variation-settings: "opsz" 14; text-transform: uppercase; margin-bottom: 4px; }
+  .title-line-1::before { content: ''; display: inline-block; width: 28px; height: 8px; background: var(--accent); border-radius: 1px; }
+  .title-line-1::after { content: '— mission control'; font-family: 'Fraunces', serif; font-style: italic; font-weight: 350; text-transform: lowercase; letter-spacing: 0; color: var(--ink-faint); font-size: 15px; margin-left: 4px; }
+  .title-line-2 { display: block; font-size: 112px; font-weight: 350; font-style: italic; font-variation-settings: "opsz" 144; margin-top: -4px; color: var(--ink); letter-spacing: -0.035em; }
+  .title-line-2 em { font-style: italic; color: var(--ink); }
+  .dateline { text-align: right; font-family: 'Fraunces', serif; font-variation-settings: "opsz" 14; color: var(--ink-soft); }
+  .dateline-day { font-size: 13px; text-transform: uppercase; letter-spacing: 0.22em; color: var(--ink-faint); margin-bottom: 10px; }
+  .dateline-date { font-size: 22px; font-weight: 400; letter-spacing: -0.01em; color: var(--ink); }
+  .dateline-place { font-size: 13px; font-style: italic; color: var(--ink-soft); margin-top: 4px; }
+  .dateline-weather { margin-top: 14px; padding-top: 10px; border-top: 0.5px solid var(--rule-soft); font-family: 'DM Sans', sans-serif; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-faint); }
+  .dateline-weather strong { color: var(--ink-soft); font-weight: 500; }
+  .masthead-strap { grid-column: 1 / -1; margin-top: 14px; font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.18em; color: var(--ink-faint); text-transform: uppercase; display: flex; justify-content: space-between; }
+  .hero { margin: 48px 0 56px; display: grid; grid-template-columns: 1fr 380px; gap: 64px; align-items: start; }
+  .hero-main { padding-top: 4px; }
+  .hero-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; display: inline-flex; align-items: center; gap: 8px; }
+  .hero-eyebrow::before { content: ''; width: 18px; height: 1.5px; background: var(--accent); }
+  .hero-headline { font-family: 'Fraunces', serif; font-weight: 350; font-size: 64px; line-height: 0.98; letter-spacing: -0.025em; margin: 0 0 22px; color: var(--ink); font-variation-settings: "opsz" 144; }
+  .hero-headline em { font-style: italic; color: var(--accent); font-weight: 350; font-variation-settings: "opsz" 144; }
+  .hero-rule { height: 2px; background: var(--accent); width: 64px; margin: -14px 0 22px; }
+  .hero-deck { font-family: 'Fraunces', serif; font-size: 19px; line-height: 1.5; color: var(--ink-soft); font-weight: 350; font-variation-settings: "opsz" 14; margin: 0 0 24px; max-width: 56ch; }
+  .hero-deck em { font-style: italic; color: var(--ink); }
+  .hero-byline { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-faint); }
+  .hero-aside { border-left: 1px solid var(--ink); padding-left: 28px; padding-top: 4px; }
+  .aside-head { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 18px; }
+  .aside-item { display: grid; grid-template-columns: 64px 1fr; gap: 14px; padding: 12px 0; border-top: 0.5px solid var(--rule-soft); }
+  .aside-item:first-of-type { border-top: none; padding-top: 0; }
+  .aside-time { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--accent); letter-spacing: -0.02em; padding-top: 2px; }
+  .aside-event { font-family: 'Fraunces', serif; font-size: 17px; font-weight: 400; line-height: 1.25; color: var(--ink); }
+  .aside-where { display: block; font-family: 'DM Sans', sans-serif; font-size: 12px; color: var(--ink-faint); margin-top: 4px; font-style: italic; }
+  .heavy-rule { border: none; border-top: 2px solid var(--ink); margin: 0; position: relative; }
+  .heavy-rule::after { content: ''; display: block; border-top: 0.5px solid var(--ink); margin-top: 4px; }
+  .grid { margin-top: 40px; display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 0; }
+  .grid > section { padding: 0 28px; border-right: 0.5px solid var(--rule); }
+  .grid > section:first-child { padding-left: 0; }
+  .grid > section:last-child { padding-right: 0; border-right: none; }
+  .card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-bottom: 12px; margin-bottom: 18px; border-bottom: 1px solid var(--ink); }
+  .card-title { font-family: 'Fraunces', serif; font-style: italic; font-weight: 450; font-size: 22px; letter-spacing: -0.01em; color: var(--ink); }
+  .card-tally { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); }
+  .card-tally strong { color: var(--accent); font-weight: 500; }
+  .emails { list-style: none; padding: 0; margin: 0; }
+  .email { display: grid; grid-template-columns: 1fr auto; gap: 8px 14px; padding: 14px 0; border-top: 0.5px solid var(--rule-soft); }
+  .email:first-child { border-top: none; padding-top: 0; }
+  .email-from { font-family: 'Fraunces', serif; font-weight: 500; font-size: 15px; color: var(--ink); grid-column: 1; }
+  .email-time { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-faint); letter-spacing: 0.02em; grid-column: 2; padding-top: 2px; }
+  .email-subject { grid-column: 1 / -1; font-size: 13.5px; color: var(--ink-soft); line-height: 1.45; margin-top: -2px; }
+  .email-flag { font-family: 'JetBrains Mono', monospace; font-size: 9.5px; color: var(--accent); letter-spacing: 0.14em; text-transform: uppercase; margin-left: 8px; padding: 1px 6px; border: 0.5px solid var(--accent); border-radius: 2px; vertical-align: 2px; }
+  .messages-list { list-style: none; padding: 0; margin: 0; }
+  .message { padding: 13px 0; border-top: 0.5px solid var(--rule-soft); display: grid; grid-template-columns: 70px 1fr; gap: 10px; align-items: baseline; }
+  .message:first-child { border-top: none; padding-top: 0; }
+  .msg-channel { font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-faint); padding-top: 4px; }
+  .msg-channel.wa { color: var(--good); }
+  .msg-channel.im { color: var(--warm); }
+  .msg-body { grid-column: 2; }
+  .msg-from { font-family: 'Fraunces', serif; font-weight: 500; font-size: 14.5px; color: var(--ink); }
+  .msg-preview { display: block; font-size: 13px; color: var(--ink-soft); margin-top: 2px; line-height: 1.45; font-style: italic; }
+  .tasks-list { list-style: none; padding: 0; margin: 0; counter-reset: t; }
+  .task { counter-increment: t; padding: 12px 0 12px 28px; border-top: 0.5px solid var(--rule-soft); position: relative; font-family: 'Fraunces', serif; font-size: 15px; line-height: 1.4; color: var(--ink); }
+  .task:first-child { border-top: none; padding-top: 0; }
+  .task:first-child::before { top: -2px; }
+  .task::before { content: counter(t, decimal-leading-zero); position: absolute; left: 0; top: 14px; font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--ink-faint); letter-spacing: 0.1em; }
+  .task-due { display: block; font-family: 'JetBrains Mono', monospace; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--ink-faint); margin-top: 4px; font-style: normal; }
+  .task-due.overdue { color: var(--bad); }
+  .task-due.today { color: var(--accent); }
+  .task-source { font-family: 'Fraunces', serif; font-style: italic; font-size: 12px; color: var(--ink-faint); text-transform: none; letter-spacing: 0; }
+  .task-source-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-right: 6px; vertical-align: 1px; }
+  .strip { margin-top: 56px; padding-top: 24px; border-top: 2px solid var(--ink); position: relative; display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 0; }
+  .strip::before { content: ''; position: absolute; left: 0; right: 0; top: 6px; border-top: 0.5px solid var(--ink); }
+  .strip > section { padding: 0 28px; border-right: 0.5px solid var(--rule); }
+  .strip > section:first-child { padding-left: 0; }
+  .strip > section:last-child { padding-right: 0; border-right: none; }
+  .market-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 18px; }
+  .market-title { font-family: 'Fraunces', serif; font-style: italic; font-size: 22px; color: var(--ink); }
+  .market-time { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); }
+  .ticker { display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: center; }
+  .ticker-text { display: flex; flex-direction: column; gap: 4px; }
+  .ticker-symbol { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.16em; color: var(--ink-faint); }
+  .ticker-name { font-family: 'Fraunces', serif; font-style: italic; font-size: 12px; color: var(--ink-faint); margin-top: -2px; }
+  .ticker-price { font-family: 'Fraunces', serif; font-weight: 350; font-size: 44px; line-height: 1; color: var(--ink); margin: 6px 0 4px; letter-spacing: -0.02em; font-variation-settings: "opsz" 144; }
+  .ticker-change { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.04em; }
+  .ticker-change.up { color: var(--good); }
+  .ticker-change.down { color: var(--bad); }
+  .ticker-change.up::before { content: '▲ '; font-size: 9px; vertical-align: 1px; }
+  .ticker-change.down::before { content: '▼ '; font-size: 9px; vertical-align: 1px; }
+  .sparkline { width: 100%; height: 60px; display: block; }
+  .sparkline path.line { fill: none; stroke: var(--accent); stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+  .sparkline path.area { fill: rgba(14, 124, 124, 0.12); stroke: none; }
+  .sparkline circle { fill: var(--accent); }
+  .body-stat { display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px; }
+  .body-num { font-family: 'Fraunces', serif; font-weight: 350; font-size: 56px; line-height: 1; color: var(--ink); letter-spacing: -0.02em; font-variation-settings: "opsz" 144; }
+  .body-unit { font-family: 'Fraunces', serif; font-style: italic; font-size: 18px; color: var(--ink-soft); }
+  .body-label { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 14px; }
+  .body-trend { font-family: 'Fraunces', serif; font-size: 14px; color: var(--ink-soft); line-height: 1.5; font-style: italic; border-left: 2px solid var(--accent); padding-left: 14px; margin-bottom: 18px; font-variation-settings: "opsz" 14; }
+  .body-link { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: var(--accent); text-decoration: none; border-bottom: 0.5px solid var(--accent); padding-bottom: 2px; transition: color 160ms ease, border-color 160ms ease; }
+  .body-link:hover { color: var(--accent-deep); border-bottom-color: var(--accent-deep); }
+  .weather-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 8px; }
+  .weather-cell { text-align: center; }
+  .weather-cell-time { font-family: 'JetBrains Mono', monospace; font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 6px; }
+  .weather-cell-icon { font-size: 18px; line-height: 1; margin-bottom: 4px; }
+  .weather-cell-temp { font-family: 'Fraunces', serif; font-size: 18px; color: var(--ink); font-weight: 400; }
+  .colophon { margin-top: 64px; padding-top: 18px; border-top: 0.5px solid var(--rule); display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--ink-faint); }
+  .colophon-quote { font-family: 'Fraunces', serif; font-style: italic; font-size: 12px; text-transform: none; letter-spacing: 0; color: var(--ink-soft); max-width: 50%; text-align: right; }
+  @media (max-width: 1100px) {
+    .page { padding: 40px 32px; }
+    .hero { grid-template-columns: 1fr; gap: 32px; }
+    .hero-aside { border-left: none; border-top: 1px solid var(--ink); padding-left: 0; padding-top: 24px; }
+    .grid, .strip { grid-template-columns: 1fr 1fr; }
+    .grid > section, .strip > section { border-right: none; padding: 24px 0; border-bottom: 0.5px solid var(--rule); }
+    .title-line-2 { font-size: 80px; }
+    .hero-headline { font-size: 48px; }
+  }
+  @media (max-width: 720px) {
+    .page { padding: 28px 22px; }
+    .masthead { grid-template-columns: 1fr; }
+    .dateline { text-align: left; }
+    .grid, .strip { grid-template-columns: 1fr; }
+    .title-line-2 { font-size: 64px; }
+    .hero-headline { font-size: 38px; }
+  }
+  .page > * { opacity: 0; animation: rise 520ms cubic-bezier(.2,.7,.3,1) forwards; }
+  .page > *:nth-child(1) { animation-delay: 0ms; }
+  .page > *:nth-child(2) { animation-delay: 90ms; }
+  .page > *:nth-child(3) { animation-delay: 170ms; }
+  .page > *:nth-child(4) { animation-delay: 240ms; }
+  .page > *:nth-child(5) { animation-delay: 310ms; }
+  .page > *:nth-child(6) { animation-delay: 380ms; }
+  @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header class="masthead">
+    <h1 class="title">
+      <span class="title-line-1">Day2</span>
+      <span class="title-line-2"><em>Mission Control</em></span>
+    </h1>
+    <div class="dateline">
+      <div class="dateline-day">Monday</div>
+      <div class="dateline-date">18 May 2026</div>
+      <div class="dateline-place">Northleach · Cotswolds</div>
+      <div class="dateline-weather">&lt;strong&gt;7–12°C&lt;/strong&gt; · rain · sunrise 05:09</div>
+    </div>
+    <div class="masthead-strap">
+      <span>STATION 01 &middot; OPERATOR MATT ROSS &middot; PREPARED BY JEEVES</span>
+      <span>BRIEFING 256</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-main">
+      <div class="hero-eyebrow">URGENT</div>
+      <h2 class="hero-headline"><em>Thames Water payment due</em> in under an hour.</h2>
+      <div class="hero-rule"></div>
+      <p class="hero-deck">The 11:00 deadline is imminent and requires immediate attention. This cannot be delayed without potential consequences.</p>
+      <div class="hero-byline">08:51 · compiled from inbox, calendar &amp; tasks</div>
+    </div>
+    <aside class="hero-aside">
+      <div class="aside-head">First three movements</div>
+      
+            <div class="aside-item">
+              <div class="aside-time">11:00</div>
+              <div>
+                <div class="aside-event">Thames Water Payment Due</div>
+                
+              </div>
+            </div>
+
+            <div class="aside-item">
+              <div class="aside-time">11:45</div>
+              <div>
+                <div class="aside-event">chickens</div>
+                
+              </div>
+            </div>
+    </aside>
+  </section>
+
+  <hr class="heavy-rule" />
+
+  <div class="grid">
+    <section>
+      <div class="card-head">
+        <span class="card-title">Correspondence</span>
+        <span class="card-tally">0 new &middot; <strong>0 want a reply</strong></span>
+      </div>
+      <ul class="emails">
+        <p style="font-family:Fraunces,serif;font-style:italic;color:var(--ink-faint);font-size:13.5px;margin:0;">Inbox is quiet.</p>
+      </ul>
+    </section>
+
+    <section>
+      <div class="card-head">
+        <span class="card-title">Messages</span>
+        <span class="card-tally"><strong>5 unread</strong> &middot; 5 chats</span>
+      </div>
+      <ul class="messages-list">
+        
+        <li class="message">
+          <div class="msg-channel wa">WhatsApp</div>
+          <div class="msg-body">
+            <span class="msg-from">87793460072514</span>
+            <span class="msg-preview">Let me know…</span>
+          </div>
+        </li>
+
+        <li class="message">
+          <div class="msg-channel wa">WhatsApp</div>
+          <div class="msg-body">
+            <span class="msg-from">25924573610127</span>
+            <span class="msg-preview">Hey mate, I’m in a meeting. Chat after 20-30mins</span>
+          </div>
+        </li>
+
+        <li class="message">
+          <div class="msg-channel wa">WhatsApp</div>
+          <div class="msg-body">
+            <span class="msg-from">The Young Ones</span>
+            <span class="msg-preview">I’ll be working at that time - crack on (and just in case not aware it’s Martin as PWP - I’m ‘just’ the wife!)</span>
+          </div>
+        </li>
+
+        <li class="message">
+          <div class="msg-channel wa">WhatsApp</div>
+          <div class="msg-body">
+            <span class="msg-from">Ross boys</span>
+            <span class="msg-preview">Literally</span>
+          </div>
+        </li>
+
+        <li class="message">
+          <div class="msg-channel wa">WhatsApp</div>
+          <div class="msg-body">
+            <span class="msg-from">150409754763471</span>
+            <span class="msg-preview">Ah lovely. let me know what you think</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="card-head">
+        <span class="card-title">On your plate</span>
+        <span class="card-tally"><span class="task-source-dot"></span><span class="task-source">from Apple Notes · &quot;To do&quot;</span></span>
+      </div>
+      <ol class="tasks-list">
+        
+        <li class="task">
+          Brian. Book meeting Prep for Caroline
+          
+        </li>
+
+        <li class="task">
+          Get testimonial quote from CEO of Parkinson&#x27;s UK (on-on-one in two weeks).
+          
+        </li>
+
+        <li class="task">
+          Documents for lawyer documents for accountant
+          
+        </li>
+
+        <li class="task">
+          Redesign redesign with a more human feel that&#x27;s gonna affect the video and the deck as well
+          
+        </li>
+
+        <li class="task">
+          Lawyers BB send the finalised docs
+          
+        </li>
+
+        <li class="task">
+          SEIS!
+          
+        </li>
+      </ol>
+    </section>
+  </div>
+
+  <div class="strip">
+    <section>
+      <div class="market-head">
+        <span class="market-title">Markets</span>
+        <span class="market-time">Close 15 May · NASDAQ</span>
+      </div>
+      <div class="ticker">
+        <div class="ticker-text">
+          <span class="ticker-symbol">GOOG</span>
+          <span class="ticker-name">Alphabet, Class C</span>
+          <span class="ticker-price">$393.32</span>
+          <span class="ticker-change up">+$91.86 · +30.47%</span>
+        </div>
+        <svg class="sparkline" viewBox="0 0 200 60" preserveAspectRatio="none">
+          <path class="area" d="M 0.0,55.0 L 6.9,51.9 L 13.8,46.6 L 20.7,45.8 L 27.6,46.1 L 34.5,44.4 L 41.4,38.8 L 48.3,36.8 L 55.2,37.7 L 62.1,34.4 L 69.0,36.4 L 75.9,38.8 L 82.8,35.2 L 89.7,35.2 L 96.6,33.0 L 103.4,29.9 L 110.3,30.4 L 117.2,30.5 L 124.1,13.4 L 131.0,12.8 L 137.9,14.6 L 144.8,12.3 L 151.7,6.9 L 158.6,6.8 L 165.5,6.0 L 172.4,11.1 L 179.3,12.5 L 186.2,5.0 L 193.1,5.9 L 200.0,7.8 L 200.0,60 L 0,60 Z" /><path class="line" d="M 0.0,55.0 L 6.9,51.9 L 13.8,46.6 L 20.7,45.8 L 27.6,46.1 L 34.5,44.4 L 41.4,38.8 L 48.3,36.8 L 55.2,37.7 L 62.1,34.4 L 69.0,36.4 L 75.9,38.8 L 82.8,35.2 L 89.7,35.2 L 96.6,33.0 L 103.4,29.9 L 110.3,30.4 L 117.2,30.5 L 124.1,13.4 L 131.0,12.8 L 137.9,14.6 L 144.8,12.3 L 151.7,6.9 L 158.6,6.8 L 165.5,6.0 L 172.4,11.1 L 179.3,12.5 L 186.2,5.0 L 193.1,5.9 L 200.0,7.8" /><circle cx="200.0" cy="7.8" r="2.5" />
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <div class="card-head">
+        <span class="card-title">Body</span>
+        <span class="card-tally">7-day average</span>
+      </div>
+      <div class="body-stat">
+        <div class="body-num">0.99<span class="body-unit"> m/s</span></div>
+      </div>
+      <div class="body-label">walking speed</div>
+      <p class="body-trend">Sleep ran 0h 5m overnight.</p>
+      <a class="body-link" href="https://matt-health-dummy.netlify.app/" target="_blank" rel="noopener">Open full health view &rarr;</a>
+    </section>
+
+    <section>
+      <div class="card-head">
+        <span class="card-title">Weather</span>
+        <span class="card-tally">Northleach &middot; today</span>
+      </div>
+      <div class="weather-strip">
+        
+        <div class="weather-cell">
+          <div class="weather-cell-time">07:00</div>
+          <div class="weather-cell-icon">☔</div>
+          <div class="weather-cell-temp">7&deg;</div>
+        </div>
+
+        <div class="weather-cell">
+          <div class="weather-cell-time">12:00</div>
+          <div class="weather-cell-icon">☔</div>
+          <div class="weather-cell-temp">10&deg;</div>
+        </div>
+
+        <div class="weather-cell">
+          <div class="weather-cell-time">15:00</div>
+          <div class="weather-cell-icon">☔</div>
+          <div class="weather-cell-temp">10&deg;</div>
+        </div>
+
+        <div class="weather-cell">
+          <div class="weather-cell-time">19:00</div>
+          <div class="weather-cell-icon">☔</div>
+          <div class="weather-cell-temp">10&deg;</div>
+        </div>
+      </div>
+      <p class="body-trend" style="margin-top:18px">Wet day ahead. Boots and a proper coat.</p>
+    </section>
+  </div>
+
+  <footer class="colophon">
+    <span>Compiled 08:50 &middot; matt-briefing.netlify.app &middot; Day2 / Jeeves</span>
+    <span class="colophon-quote">“The early morning has gold in its mouth.” — Franklin</span>
+  </footer>
+
+</main>
+</body>
+</html>

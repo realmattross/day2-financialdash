@@ -1,0 +1,163 @@
+{
+  "date_day": "Monday",
+  "date_long": "18 May 2026",
+  "place": "Northleach · Cotswolds",
+  "compiled_at": "08:50",
+  "briefing_no": 256,
+  "tasks_source_label": "from Apple Notes · \"To do\"",
+  "epigraph": "“The early morning has gold in its mouth.” — Franklin",
+  "agenda": [
+    {
+      "time": "11:00",
+      "event": "Thames Water Payment Due",
+      "where": ""
+    },
+    {
+      "time": "11:45",
+      "event": "chickens",
+      "where": ""
+    }
+  ],
+  "emails": [],
+  "email_tally": "0 new · 0 want a reply",
+  "messages": [
+    {
+      "channel": "wa",
+      "from": "87793460072514",
+      "preview": "Let me know…"
+    },
+    {
+      "channel": "wa",
+      "from": "25924573610127",
+      "preview": "Hey mate, I’m in a meeting. Chat after 20-30mins"
+    },
+    {
+      "channel": "wa",
+      "from": "The Young Ones",
+      "preview": "I’ll be working at that time - crack on (and just in case not aware it’s Martin as PWP - I’m ‘just’ the wife!)"
+    },
+    {
+      "channel": "wa",
+      "from": "Ross boys",
+      "preview": "Literally"
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "Ah lovely. let me know what you think"
+    }
+  ],
+  "messages_tally": "5 unread · 5 chats",
+  "tasks": [
+    {
+      "text": "Brian. Book meeting Prep for Caroline",
+      "due": null,
+      "urgency": null
+    },
+    {
+      "text": "Get testimonial quote from CEO of Parkinson's UK (on-on-one in two weeks).",
+      "due": null,
+      "urgency": null
+    },
+    {
+      "text": "Documents for lawyer documents for accountant",
+      "due": null,
+      "urgency": null
+    },
+    {
+      "text": "Redesign redesign with a more human feel that's gonna affect the video and the deck as well",
+      "due": null,
+      "urgency": null
+    },
+    {
+      "text": "Lawyers BB send the finalised docs",
+      "due": null,
+      "urgency": null
+    },
+    {
+      "text": "SEIS!",
+      "due": null,
+      "urgency": null
+    }
+  ],
+  "market": {
+    "symbol": "GOOG",
+    "name": "Alphabet, Class C",
+    "price": "$393.32",
+    "change": "+$91.86 · +30.47%",
+    "direction": "up",
+    "as_of": "Close 15 May · NASDAQ",
+    "history": [
+      297.6600036621094,
+      303.92999267578125,
+      314.739990234375,
+      316.3699951171875,
+      315.7200012207031,
+      319.2099914550781,
+      330.5799865722656,
+      334.4700012207031,
+      332.7699890136719,
+      339.3999938964844,
+      335.3999938964844,
+      330.4700012207031,
+      337.7300109863281,
+      337.75,
+      342.32000732421875,
+      348.5199890136719,
+      347.5,
+      347.30999755859375,
+      381.94000244140625,
+      383.2200012207031,
+      379.6400146484375,
+      384.2699890136719,
+      395.1400146484375,
+      395.29998779296875,
+      397.04998779296875,
+      386.7699890136719,
+      383.82000732421875,
+      399.0400085449219,
+      397.1700134277344,
+      393.32000732421875
+    ]
+  },
+  "weather": {
+    "hourly": [
+      {
+        "time": "07:00",
+        "temp": 7,
+        "icon": "☔"
+      },
+      {
+        "time": "12:00",
+        "temp": 10,
+        "icon": "☔"
+      },
+      {
+        "time": "15:00",
+        "temp": 10,
+        "icon": "☔"
+      },
+      {
+        "time": "19:00",
+        "temp": 10,
+        "icon": "☔"
+      }
+    ],
+    "summary": "<strong>7–12°C</strong> · rain · sunrise 05:09",
+    "narrative": "Wet day ahead. Boots and a proper coat."
+  },
+  "weather_summary": "<strong>7–12°C</strong> · rain · sunrise 05:09",
+  "body": {
+    "value": "0.99",
+    "unit": "m/s",
+    "label": "walking speed",
+    "trend": "Sleep ran 0h 5m overnight.",
+    "link": "https://matt-health-dummy.netlify.app/"
+  },
+  "lead": {
+    "eyebrow": "URGENT",
+    "headline": "<em>Thames Water payment due</em> in under an hour.",
+    "deck": "The 11:00 deadline is imminent and requires immediate attention. This cannot be delayed without potential consequences.",
+    "byline": "08:51 · compiled from inbox, calendar & tasks"
+  }
+}
