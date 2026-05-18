@@ -2,14 +2,14 @@
   "date_day": "Monday",
   "date_long": "18 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "10:54",
-  "briefing_no": 262,
+  "compiled_at": "12:12",
+  "briefing_no": 263,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "11:45",
-      "event": "chickens",
+      "time": "16:00",
+      "event": "Tom/Matt",
       "where": ""
     }
   ],
@@ -138,10 +138,10 @@
         "icon": "⛅"
       }
     ],
-    "summary": "<strong>7–11°C</strong> · light drizzle · sunrise 05:09",
-    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
+    "summary": "<strong>7–11°C</strong> · rain · sunrise 05:09",
+    "narrative": "Wet day ahead. Boots and a proper coat."
   },
-  "weather_summary": "<strong>7–11°C</strong> · light drizzle · sunrise 05:09",
+  "weather_summary": "<strong>7–11°C</strong> · rain · sunrise 05:09",
   "body": {
     "value": "0.99",
     "unit": "m/s",
@@ -173,6 +173,11 @@
     {
       "kind": "news",
       "label": "BBC",
+      "text": "Bodies of missing Italian divers found in Maldives"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
       "text": "'All I thought about was running for my life': Footballer recalls train stabbing attack"
     },
     {
@@ -183,12 +188,7 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'This may be the last time you hear my voice': Political executions surge in Iran since start of war"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "HS2 failings blamed on high-speed focus and political pressure"
+      "text": "Parents could face bigger fines for child's crimes under youth justice shake-up"
     }
   ],
   "_news": [
@@ -200,6 +200,11 @@
     {
       "kind": "news",
       "label": "BBC",
+      "text": "Bodies of missing Italian divers found in Maldives"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
       "text": "'All I thought about was running for my life': Footballer recalls train stabbing attack"
     },
     {
@@ -210,12 +215,7 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'This may be the last time you hear my voice': Political executions surge in Iran since start of war"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "HS2 failings blamed on high-speed focus and political pressure"
+      "text": "Parents could face bigger fines for child's crimes under youth justice shake-up"
     }
   ],
   "_fixtures": [
@@ -226,9 +226,9 @@
     }
   ],
   "lead": {
-    "eyebrow": "Legal matters",
-    "headline": "Your <em>lawyer needs finalized documents</em> before moving forward.",
-    "deck": "Multiple tasks point to pending legal paperwork that's blocking progress—both the lawyer's docs and accountant materials remain outstanding. Getting these submitted clears the path for whatever comes next.",
-    "byline": "10:54 · compiled from inbox, calendar & tasks"
+    "eyebrow": "Priority signal",
+    "headline": "First call at <em>16</em>. Tom/Matt.",
+    "deck": "—",
+    "byline": "12:12 · compiled from inbox, calendar & tasks"
   }
 }
