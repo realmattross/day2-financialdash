@@ -49,7 +49,7 @@
     border-bottom: 0.5px solid var(--accent);
     overflow: hidden;
     position: relative;
-    height: 38px;
+    height: 76px;
     display: flex;
     align-items: center;
   }
@@ -59,21 +59,21 @@
     left: 0; top: 0; bottom: 0;
     display: flex;
     align-items: center;
-    padding: 0 16px;
+    padding: 0 22px;
     background: var(--accent);
     color: var(--paper);
     font-family: 'JetBrains Mono', monospace;
-    font-size: 10.5px;
-    letter-spacing: 0.22em;
+    font-size: 13px;
+    letter-spacing: 0.24em;
     font-weight: 500;
     z-index: 2;
-    box-shadow: 6px 0 12px -6px rgba(0,0,0,0.25);
+    box-shadow: 8px 0 16px -6px rgba(0,0,0,0.3);
   }
   .ticker-bar::after {
     content: '';
     position: absolute;
     right: 0; top: 0; bottom: 0;
-    width: 80px;
+    width: 96px;
     background: linear-gradient(to right, transparent, var(--ink));
     z-index: 2;
     pointer-events: none;
@@ -83,7 +83,7 @@
     gap: 0;
     width: max-content;
     animation: ticker-scroll 90s linear infinite;
-    padding-left: 76px;  /* clear the LIVE pill */
+    padding-left: 96px;  /* clear the larger LIVE pill */
     will-change: transform;
   }
   .ticker-bar:hover .ticker-track { animation-play-state: paused; }
@@ -94,19 +94,19 @@
   .ticker-item {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    padding: 0 22px;
+    gap: 14px;
+    padding: 0 30px;
     border-right: 0.5px solid rgba(255,255,255,0.12);
     white-space: nowrap;
     font-family: 'Fraunces', serif;
     font-variation-settings: "opsz" 14;
-    font-size: 14px;
+    font-size: 19px;
     color: var(--paper);
   }
   .ticker-label {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 9.5px;
-    letter-spacing: 0.2em;
+    font-size: 11.5px;
+    letter-spacing: 0.22em;
     color: var(--accent-soft);
     text-transform: uppercase;
     font-weight: 500;
@@ -264,17 +264,17 @@
     </div>
     <div class="masthead-strap">
       <span>STATION 01 &middot; OPERATOR MATT ROSS &middot; PREPARED BY JEEVES</span>
-      <span>BRIEFING 258</span>
+      <span>BRIEFING 259</span>
     </div>
   </header>
 
   <section class="hero">
     <div class="hero-main">
-      <div class="hero-eyebrow">LEGAL &amp; OPERATIONS</div>
-      <h2 class="hero-headline">Lawyers must <em>finalize documents</em> before momentum stalls.</h2>
+      <div class="hero-eyebrow">LEGAL AND FINANCIAL</div>
+      <h2 class="hero-headline"><em>Lawyer and accountant documents</em> require immediate attention before moving forward.</h2>
       <div class="hero-rule"></div>
-      <p class="hero-deck">With design redesigns, CEO testimonials, and meeting prep all in flight, you're waiting on legal to close out foundational paperwork. Getting those docs signed clears the path for everything else to move forward.</p>
-      <div class="hero-byline">10:34 · compiled from inbox, calendar &amp; tasks</div>
+      <p class="hero-deck">Multiple tasks depend on finalizing these filings, and delays compound across your redesign, video, and deck work. Getting these cleared today unblocks everything downstream.</p>
+      <div class="hero-byline">10:38 · compiled from inbox, calendar &amp; tasks</div>
     </div>
     <aside class="hero-aside">
       <div class="aside-head">First three movements</div>
@@ -459,7 +459,7 @@
   </div>
 
   <footer class="colophon">
-    <span>Compiled 10:34 &middot; matt-briefing.netlify.app &middot; Day2 / Jeeves</span>
+    <span>Compiled 10:38 &middot; matt-briefing.netlify.app &middot; Day2 / Jeeves</span>
     <span class="colophon-quote">“The early morning has gold in its mouth.” — Franklin</span>
   </footer>
 
