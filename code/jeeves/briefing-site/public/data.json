@@ -2,8 +2,8 @@
   "date_day": "Monday",
   "date_long": "18 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "10:45",
-  "briefing_no": 260,
+  "compiled_at": "10:50",
+  "briefing_no": 261,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
@@ -155,7 +155,7 @@
     "album": "Off the Wall",
     "is_playing": true,
     "duration_ms": 364441,
-    "progress_ms": 43174,
+    "progress_ms": 342241,
     "cover_url": "https://i.scdn.co/image/ab67616d0000b2732b74bf21c7e4f56758610949",
     "spotify_url": "https://open.spotify.com/track/46eu3SBuFCXWsPT39Yg3tJ"
   },
@@ -226,9 +226,9 @@
     }
   ],
   "lead": {
-    "eyebrow": "LEGAL & FINANCE",
-    "headline": "Your <em>lawyer and accountant need documents</em>—and redesign decisions can't wait.",
-    "deck": "Three critical task clusters are stalled without action: legal docs from your team, accountant paperwork, and a redesign direction that cascades into video and deck work. These are gating items that will delay everything downstream.",
-    "byline": "10:45 · compiled from inbox, calendar & tasks"
+    "eyebrow": "LEGAL & COMPLIANCE",
+    "headline": "Lawyers must <em>finalize and send documents</em> before momentum stalls.",
+    "deck": "Critical paperwork sits unsigned while timeline assumptions slip. Getting signed docs from your legal team moves everything downstream—from accountant handoff to CEO testimonial coordination—back into motion.",
+    "byline": "10:50 · compiled from inbox, calendar & tasks"
   }
 }
