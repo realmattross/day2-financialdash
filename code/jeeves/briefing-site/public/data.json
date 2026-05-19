@@ -2,8 +2,8 @@
   "date_day": "Tuesday",
   "date_long": "19 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 270,
+  "compiled_at": "12:30",
+  "briefing_no": 271,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
@@ -23,28 +23,28 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "Hampnett village group",
-      "preview": "Green weed bucket was on the right as you go through the church gate . I saw it there Sunday afternoon."
+      "from": "87793460072514",
+      "preview": "Incoming…"
     },
     {
       "channel": "wa",
-      "from": "87793460072514",
-      "preview": "Are you free now for a quick chat?"
+      "from": "Hampnett village group",
+      "preview": "Thanks Julia. I’ve collected it this morning. 😀"
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "Yep x"
+    },
+    {
+      "channel": "wa",
+      "from": "120363380214119205",
+      "preview": "ℹ️ We make the trip to West London tonight to face Chelsea at Stamford Bridge.\n\nKick-off is set for 8.15pm, with gates opening at 6.45pm.\n\nF"
     },
     {
       "channel": "wa",
       "from": "177992168951853",
       "preview": "https://www.bbc.co.uk/sport/football/articles/cr7pm71rvkvo"
-    },
-    {
-      "channel": "wa",
-      "from": "25924573610127",
-      "preview": "Hey mate, I’m in a meeting. Chat after 20-30mins"
-    },
-    {
-      "channel": "wa",
-      "from": "The Young Ones",
-      "preview": "I’ll be working at that time - crack on (and just in case not aware it’s Martin as PWP - I’m ‘just’ the wife!)"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -65,7 +65,7 @@
       "urgency": null
     },
     {
-      "text": "Redesign redesign with a more human feel that's gonna affect the video and the deck as well",
+      "text": "redesign with a more human feel that's gonna affect the video and the deck as well",
       "due": null,
       "urgency": null
     },
@@ -134,17 +134,17 @@
       },
       {
         "time": "15:00",
-        "temp": 14,
+        "temp": 15,
         "icon": "☔"
       },
       {
         "time": "19:00",
-        "temp": 12,
+        "temp": 14,
         "icon": "⛅"
       }
     ],
     "summary": "<strong>9–15°C</strong> · rain · sunrise 05:08",
-    "narrative": "Wet day ahead. Boots and a proper coat."
+    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
   "weather_summary": "<strong>9–15°C</strong> · rain · sunrise 05:08",
   "body": {
@@ -154,21 +154,12 @@
     "trend": "Sleep ran 0h 5m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
-  "spotify": {
-    "name": "Just The Way You Are - David Guetta Remix",
-    "artist": "Milky, David Guetta",
-    "album": "Just The Way You Are (David Guetta Remix)",
-    "is_playing": false,
-    "duration_ms": 181609,
-    "progress_ms": 4650,
-    "cover_url": "https://i.scdn.co/image/ab67616d0000b2737529b84e39ea69061def83d4",
-    "spotify_url": "https://open.spotify.com/track/5980rUQH7tLVv78lk4EIDU"
-  },
+  "spotify": null,
   "ticker": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Married at First Sight UK brides tell BBC they were raped by on-screen husbands"
+      "text": "Married at First Sight UK rape allegations serious, says government"
     },
     {
       "kind": "fixture",
@@ -178,29 +169,39 @@
     {
       "kind": "news",
       "label": "BBC",
+      "text": "Channel 4 boss asked if she will apologise to MAFS UK women"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Victim or enabler? Epstein girlfriend who could face questions despite plea deal"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
       "text": "New High Street crime unit to target gangs fronting shops after BBC investigation"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Wrongly jailed Malkinson tells BBC: 'I've been cheated, very badly cheated'"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Trump says he called off new Iran attack at request of Gulf states"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Faisal Islam: Burnham seeks to calm markets by committing to fiscal rules"
+      "text": "Ebola may be spreading faster than first thought, WHO doctor warns"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Married at First Sight UK brides tell BBC they were raped by on-screen husbands"
+      "text": "Married at First Sight UK rape allegations serious, says government"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Channel 4 boss asked if she will apologise to MAFS UK women"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Victim or enabler? Epstein girlfriend who could face questions despite plea deal"
     },
     {
       "kind": "news",
@@ -210,17 +211,7 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Wrongly jailed Malkinson tells BBC: 'I've been cheated, very badly cheated'"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Trump says he called off new Iran attack at request of Gulf states"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Faisal Islam: Burnham seeks to calm markets by committing to fiscal rules"
+      "text": "Ebola may be spreading faster than first thought, WHO doctor warns"
     }
   ],
   "_fixtures": [
@@ -231,9 +222,9 @@
     }
   ],
   "lead": {
-    "eyebrow": "LEGAL & OPERATIONAL",
-    "headline": "<em>Finalised legal documents</em> remain pending from your lawyers.",
-    "deck": "This is blocking your ability to move forward on financial and operational matters that appear across multiple tasks. Getting clarity on status from your legal team should be your first call this morning.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "eyebrow": "Legal & Financial",
+    "headline": "Critical <em>documents</em> from lawyers remain unsigned and unfinalized.",
+    "deck": "Multiple tasks reference outstanding legal paperwork and accountant documents that need immediate attention before your founder check-in this afternoon. Without these signed, you're exposed on both legal and financial fronts.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
