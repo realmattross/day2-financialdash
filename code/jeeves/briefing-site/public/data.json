@@ -1,21 +1,31 @@
 {
-  "date_day": "Tuesday",
-  "date_long": "19 May 2026",
+  "date_day": "Wednesday",
+  "date_long": "20 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 271,
+  "compiled_at": "06:25",
+  "briefing_no": 272,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "13:00",
-      "event": "ED",
+      "time": "07:45",
+      "event": "Bills",
       "where": ""
     },
     {
-      "time": "14:30",
-      "event": "Weekly Founder Check-in - BGV Programme",
+      "time": "09:00",
+      "event": "Day2Health Technical Run Through",
       "where": ""
+    },
+    {
+      "time": "09:30",
+      "event": "LIVE: Building your GTM from scratch with Dama, BGV",
+      "where": "Online"
+    },
+    {
+      "time": "11:00",
+      "event": "LIVE: Early-stage sales skills with Tom Ricca-McCarthy, BGV Venture Partner",
+      "where": "Online"
     }
   ],
   "emails": [],
@@ -23,28 +33,28 @@
   "messages": [
     {
       "channel": "wa",
+      "from": "Day2  Core Team",
+      "preview": "Worth a go"
+    },
+    {
+      "channel": "wa",
+      "from": "84623824556136",
+      "preview": "Whats your plan on friday. I will be at work but will hopefully come back early. Are u in central London?"
+    },
+    {
+      "channel": "wa",
       "from": "87793460072514",
-      "preview": "Incoming…"
-    },
-    {
-      "channel": "wa",
-      "from": "Hampnett village group",
-      "preview": "Thanks Julia. I’ve collected it this morning. 😀"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Yep x"
+      "preview": "Hell yeah 👍"
     },
     {
       "channel": "wa",
       "from": "120363380214119205",
-      "preview": "ℹ️ We make the trip to West London tonight to face Chelsea at Stamford Bridge.\n\nKick-off is set for 8.15pm, with gates opening at 6.45pm.\n\nF"
+      "preview": "⚠️ There are currently severe delays on the entire District Line. Supporters are advised to allow extra time for their journey or plan an al"
     },
     {
       "channel": "wa",
-      "from": "177992168951853",
-      "preview": "https://www.bbc.co.uk/sport/football/articles/cr7pm71rvkvo"
+      "from": "150409754763471",
+      "preview": "Powering through! You? X"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -83,12 +93,11 @@
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$393.11",
-    "change": "+$86.81 · +28.34%",
+    "price": "$384.90",
+    "change": "+$79.17 · +25.90%",
     "direction": "up",
-    "as_of": "Close 18 May · NASDAQ",
+    "as_of": "Close 19 May · NASDAQ",
     "history": [
-      303.92999267578125,
       314.739990234375,
       316.3699951171875,
       315.7200012207031,
@@ -117,7 +126,8 @@
       399.0400085449219,
       397.1700134277344,
       393.32000732421875,
-      393.1099853515625
+      393.1099853515625,
+      384.8999938964844
     ]
   },
   "weather": {
@@ -125,17 +135,17 @@
       {
         "time": "07:00",
         "temp": 11,
-        "icon": "☔"
+        "icon": "⛅"
       },
       {
         "time": "12:00",
-        "temp": 13,
-        "icon": "☔"
+        "temp": 15,
+        "icon": "☀"
       },
       {
         "time": "15:00",
-        "temp": 15,
-        "icon": "☔"
+        "temp": 17,
+        "icon": "☀"
       },
       {
         "time": "19:00",
@@ -143,10 +153,10 @@
         "icon": "⛅"
       }
     ],
-    "summary": "<strong>9–15°C</strong> · rain · sunrise 05:08",
+    "summary": "<strong>10–17°C</strong> · light drizzle · sunrise 05:06",
     "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>9–15°C</strong> · rain · sunrise 05:08",
+  "weather_summary": "<strong>10–17°C</strong> · light drizzle · sunrise 05:06",
   "body": {
     "value": "0.99",
     "unit": "m/s",
@@ -154,12 +164,21 @@
     "trend": "Sleep ran 0h 5m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
-  "spotify": null,
+  "spotify": {
+    "name": "Super Graphic Ultra Modern Girl",
+    "artist": "Chappell Roan",
+    "album": "The Rise and Fall of a Midwest Princess",
+    "is_playing": false,
+    "duration_ms": 183888,
+    "progress_ms": 7093,
+    "cover_url": "https://i.scdn.co/image/ab67616d0000b273a21d22ecf823e1c90aa22d1f",
+    "spotify_url": "https://open.spotify.com/track/4OLiPTQPgksvrf7eJTtYA3"
+  },
   "ticker": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Married at First Sight UK rape allegations serious, says government"
+      "text": "UK loosens Russian oil sanctions as fuel prices rise"
     },
     {
       "kind": "fixture",
@@ -169,49 +188,49 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Channel 4 boss asked if she will apologise to MAFS UK women"
+      "text": "Twenty-two years in the making - how Arsenal celebrated title win"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Victim or enabler? Epstein girlfriend who could face questions despite plea deal"
+      "text": "Was Married at First Sight UK an 'accident waiting to happen'?"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "New High Street crime unit to target gangs fronting shops after BBC investigation"
+      "text": "Trump-backed challenger defeats Republican rebel Massie in primary"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Ebola may be spreading faster than first thought, WHO doctor warns"
+      "text": "Boss of Sarah Ferguson-linked firm used royal links to threaten worker with jail"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Married at First Sight UK rape allegations serious, says government"
+      "text": "UK loosens Russian oil sanctions as fuel prices rise"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Channel 4 boss asked if she will apologise to MAFS UK women"
+      "text": "Twenty-two years in the making - how Arsenal celebrated title win"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Victim or enabler? Epstein girlfriend who could face questions despite plea deal"
+      "text": "Was Married at First Sight UK an 'accident waiting to happen'?"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "New High Street crime unit to target gangs fronting shops after BBC investigation"
+      "text": "Trump-backed challenger defeats Republican rebel Massie in primary"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Ebola may be spreading faster than first thought, WHO doctor warns"
+      "text": "Boss of Sarah Ferguson-linked firm used royal links to threaten worker with jail"
     }
   ],
   "_fixtures": [
@@ -222,9 +241,9 @@
     }
   ],
   "lead": {
-    "eyebrow": "Legal & Financial",
-    "headline": "Critical <em>documents</em> from lawyers remain unsigned and unfinalized.",
-    "deck": "Multiple tasks reference outstanding legal paperwork and accountant documents that need immediate attention before your founder check-in this afternoon. Without these signed, you're exposed on both legal and financial fronts.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "eyebrow": "TIMING",
+    "headline": "Day2Health's <em>technical run-through arrives</em> as legal documents remain unsigned.",
+    "deck": "You're launching into a live GTM session at 9:30 while critical paperwork from lawyers sits unsigned—a misalignment that could complicate what should be your clearest week of preparation. The next two hours determine whether you're ready to present from a position of strength.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }
