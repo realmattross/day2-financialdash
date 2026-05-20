@@ -2,19 +2,14 @@
   "date_day": "Wednesday",
   "date_long": "20 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 272,
+  "compiled_at": "12:30",
+  "briefing_no": 273,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
       "time": "07:45",
       "event": "Bills",
-      "where": ""
-    },
-    {
-      "time": "09:00",
-      "event": "Day2Health Technical Run Through",
       "where": ""
     },
     {
@@ -33,6 +28,21 @@
   "messages": [
     {
       "channel": "wa",
+      "from": "150409754763471",
+      "preview": "Just had a great meeting with the CEO of the Cheltenham festivals, she's really lovely, has invited us to a drinks thing. Hope you're not fe"
+    },
+    {
+      "channel": "wa",
+      "from": "Lords Day2",
+      "preview": "Understood… we can’t hide our true selves forever!"
+    },
+    {
+      "channel": "wa",
+      "from": "87793460072514",
+      "preview": "Sorry dude! 😔"
+    },
+    {
+      "channel": "wa",
       "from": "Day2  Core Team",
       "preview": "Worth a go"
     },
@@ -40,21 +50,6 @@
       "channel": "wa",
       "from": "84623824556136",
       "preview": "Whats your plan on friday. I will be at work but will hopefully come back early. Are u in central London?"
-    },
-    {
-      "channel": "wa",
-      "from": "87793460072514",
-      "preview": "Hell yeah 👍"
-    },
-    {
-      "channel": "wa",
-      "from": "120363380214119205",
-      "preview": "⚠️ There are currently severe delays on the entire District Line. Supporters are advised to allow extra time for their journey or plan an al"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Powering through! You? X"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -70,22 +65,22 @@
       "urgency": null
     },
     {
-      "text": "Documents for lawyer documents for accountant",
-      "due": null,
-      "urgency": null
-    },
-    {
       "text": "redesign with a more human feel that's gonna affect the video and the deck as well",
       "due": null,
       "urgency": null
     },
     {
-      "text": "Lawyers BB send the finalised docs",
+      "text": "SEIS!",
       "due": null,
       "urgency": null
     },
     {
-      "text": "SEIS!",
+      "text": "Chase Craig on appliances",
+      "due": null,
+      "urgency": null
+    },
+    {
+      "text": "Teresa resignation",
       "due": null,
       "urgency": null
     }
@@ -140,12 +135,12 @@
       {
         "time": "12:00",
         "temp": 15,
-        "icon": "☀"
+        "icon": "⛅"
       },
       {
         "time": "15:00",
-        "temp": 17,
-        "icon": "☀"
+        "temp": 15,
+        "icon": "⛅"
       },
       {
         "time": "19:00",
@@ -153,10 +148,10 @@
         "icon": "⛅"
       }
     ],
-    "summary": "<strong>10–17°C</strong> · light drizzle · sunrise 05:06",
+    "summary": "<strong>10–15°C</strong> · light drizzle · sunrise 05:06",
     "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>10–17°C</strong> · light drizzle · sunrise 05:06",
+  "weather_summary": "<strong>10–15°C</strong> · light drizzle · sunrise 05:06",
   "body": {
     "value": "0.99",
     "unit": "m/s",
@@ -164,21 +159,12 @@
     "trend": "Sleep ran 0h 5m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
-  "spotify": {
-    "name": "Super Graphic Ultra Modern Girl",
-    "artist": "Chappell Roan",
-    "album": "The Rise and Fall of a Midwest Princess",
-    "is_playing": false,
-    "duration_ms": 183888,
-    "progress_ms": 7093,
-    "cover_url": "https://i.scdn.co/image/ab67616d0000b273a21d22ecf823e1c90aa22d1f",
-    "spotify_url": "https://open.spotify.com/track/4OLiPTQPgksvrf7eJTtYA3"
-  },
+  "spotify": null,
   "ticker": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "UK loosens Russian oil sanctions as fuel prices rise"
+      "text": "Supermarkets hit back over pressure to cap price of milk, bread and eggs"
     },
     {
       "kind": "fixture",
@@ -188,49 +174,49 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Twenty-two years in the making - how Arsenal celebrated title win"
+      "text": "Inflation falls to 2.8% but is expected to rise from here"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Was Married at First Sight UK an 'accident waiting to happen'?"
+      "text": "Arsenal fans and players celebrate title at Emirates at 5am"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Trump-backed challenger defeats Republican rebel Massie in primary"
+      "text": "Kylie Minogue reveals she had second cancer diagnosis in 2021"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Boss of Sarah Ferguson-linked firm used royal links to threaten worker with jail"
+      "text": "MPs ask Channel 4 for answers over 'horrifying' Married At First Sight allegations"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "UK loosens Russian oil sanctions as fuel prices rise"
+      "text": "Supermarkets hit back over pressure to cap price of milk, bread and eggs"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Twenty-two years in the making - how Arsenal celebrated title win"
+      "text": "Inflation falls to 2.8% but is expected to rise from here"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Was Married at First Sight UK an 'accident waiting to happen'?"
+      "text": "Arsenal fans and players celebrate title at Emirates at 5am"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Trump-backed challenger defeats Republican rebel Massie in primary"
+      "text": "Kylie Minogue reveals she had second cancer diagnosis in 2021"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Boss of Sarah Ferguson-linked firm used royal links to threaten worker with jail"
+      "text": "MPs ask Channel 4 for answers over 'horrifying' Married At First Sight allegations"
     }
   ],
   "_fixtures": [
@@ -241,9 +227,9 @@
     }
   ],
   "lead": {
-    "eyebrow": "TIMING",
-    "headline": "Day2Health's <em>technical run-through arrives</em> as legal documents remain unsigned.",
-    "deck": "You're launching into a live GTM session at 9:30 while critical paperwork from lawyers sits unsigned—a misalignment that could complicate what should be your clearest week of preparation. The next two hours determine whether you're ready to present from a position of strength.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "eyebrow": "THIS MORNING",
+    "headline": "Two <em>live GTM sessions</em> demand your attention before noon.",
+    "deck": "You're back-to-back with Building your GTM from scratch at 9:30am and Early-stage sales skills at 11:00am—both online with BGV partners. These are the foundational skills sessions you need to lock in before the day fragments.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
