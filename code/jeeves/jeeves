@@ -1,0 +1,697 @@
+#!/bin/zsh
+# Jeeves launcher.
+#
+# Quick-start after a restart:
+#   jeeves boot [N]     everything: popup + telegram + whatsapp bridge +
+#                       orb on screen N (default 1) + voice in this terminal.
+#                       Idempotent — safe to run if some services are already up.
+#   jeeves shutdown     close everything cleanly (orb, bridge, popup, telegram).
+#
+# Surfaces (foreground):
+#   jeeves              interactive menu
+#   jeeves voice        voice agent (mic + speakers)
+#   jeeves web          browser popup at localhost:8765
+#   jeeves tg           Telegram polling
+#   jeeves all          web + tg in background, voice in foreground
+#
+# Background services (launchd):
+#   jeeves status       show whether web + telegram are running
+#   jeeves start        load both LaunchAgents (same as setup-autostart.sh)
+#   jeeves stop         unload both LaunchAgents
+#   jeeves restart      stop and reload
+#   jeeves logs [name]  tail recent log output (web | tg | both)
+#
+# Meeting recorder:
+#   jeeves rec [title]    start recording the mic
+#   jeeves rec-stop       stop, transcribe, summarise (slow — 20-60s)
+#   jeeves rec-status     is anything recording right now?
+#
+# WhatsApp bridge:
+#   jeeves wa-start       run the Go bridge in background (sends + live sync).
+#                         First start may need a QR scan in the terminal.
+#   jeeves wa-stop        kill the bridge.
+#   jeeves wa-status      is the bridge alive?
+#
+# JARVIS-style activity orb:
+#   jeeves orb [N]        float a borderless, transparent, always-on-top
+#                         overlay above all apps that shows Jeeves listening
+#                         / thinking / replying. N = screen index, 0 = primary
+#                         (default), 1 = first external monitor, etc.
+#                         Cmd+Q in the orb to close.
+#   jeeves orb-stop       kill the orb from anywhere
+#   jeeves orb-demo [N]   open the orb in Chrome fullscreen with the live
+#                         transcript overlay — for showing Jeeves to people.
+#                         N = screen index (0 = primary, 1 = first external,
+#                         default 0). Cmd+Q to exit kiosk mode.
+#   jeeves med-sheet-backfill
+#                         one-shot push of historical diary.jsonl med
+#                         entries into the Jeeves Med Log Google Sheet.
+#   jeeves med-sheet-url  print the live URL of the med-log sheet.
+#   jeeves parcels-debug  diagnose the parcel scanner — shows what each
+#                         inbox source returned and what the LLM parsed.
+#   jeeves parcels-smoketest
+#                         end-to-end test: sends a fake delivery email,
+#                         waits for it to land, refreshes cache, reports
+#                         whether Jeeves picked it up.
+#   jeeves phone-test N   place a test outbound call to E.164 number N to
+#                         verify Twilio + ngrok wiring before pointing at a
+#                         real restaurant. See SETUP_PHONE.md.
+#
+# ngrok tunnel (powers outbound phone calls):
+#   jeeves ngrok-start    bring up the ngrok tunnel via launchd.
+#   jeeves ngrok-stop     kill the tunnel.
+#   jeeves ngrok-status   is the public URL reachable?
+#
+# TV mode:
+#   jeeves tv             if an external display is attached, launch Supa
+#                         Legacy IPTV on it and fullscreen there. If only
+#                         the built-in screen is attached, do nothing
+#                         (we don't hijack your only display for telly).
+#                         Add --no-fullscreen to keep it as a window.
+#   jeeves displays       print which displays are currently attached
+#                         (useful sanity check before `jeeves tv`).
+
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "$0:A")" && pwd)"
+LAUNCH_AGENTS="$HOME/Library/LaunchAgents"
+LOG_DIR="$HOME/.jeeves-logs"
+MUTE_FILE="$HOME/.jeeves-mute"
+
+cd "$SCRIPT_DIR"
+
+# ---------------------------------------------------------------------
+# Native macOS notification on mute toggle so it's visible from any app
+# (the voice terminal also logs the change). No-op on non-macOS.
+# ---------------------------------------------------------------------
+_notify() {
+  local title="$1"
+  local message="$2"
+  if command -v osascript >/dev/null 2>&1; then
+    osascript -e "display notification \"$message\" with title \"$title\"" 2>/dev/null || true
+  fi
+}
+
+# ---------------------------------------------------------------------
+# Helpers for the launchd subcommands
+# ---------------------------------------------------------------------
+_agent_status() {
+  local label="$1"
+  if launchctl list | awk '{print $3}' | grep -q "^${label}$"; then
+    local pid
+    pid=$(launchctl list | awk -v l="$label" '$3==l {print $1}')
+    if [[ "$pid" == "-" || -z "$pid" ]]; then
+      echo "  · $label    loaded but not running (last exit code in launchctl list)"
+    else
+      echo "  ✓ $label    running (PID $pid)"
+    fi
+  else
+    echo "  · $label    not loaded"
+  fi
+}
+
+_load_agent() {
+  local plist="$1"
+  local src="$SCRIPT_DIR/launchd/$plist"
+  local dst="$LAUNCH_AGENTS/$plist"
+  if [[ ! -f "$dst" ]]; then
+    mkdir -p "$LAUNCH_AGENTS"
+    cp "$src" "$dst"
+    echo "  · Installed: $dst"
+  fi
+  launchctl unload "$dst" 2>/dev/null || true
+  launchctl load "$dst"
+  echo "  ✓ Loaded: ${plist%.plist}"
+}
+
+_unload_agent() {
+  local plist="$1"
+  local dst="$LAUNCH_AGENTS/$plist"
+  if [[ -f "$dst" ]]; then
+    launchctl unload "$dst" 2>/dev/null || true
+    echo "  ✓ Unloaded: ${plist%.plist}"
+  fi
+}
+
+# ---------------------------------------------------------------------
+# Subcommand router
+# ---------------------------------------------------------------------
+choice="${1:-}"
+
+case "$choice" in
+  status)
+    mkdir -p "$LOG_DIR"
+    echo
+    echo "  Jeeves background services"
+    echo "  ──────────────────────────"
+    _agent_status "com.mattross.jeeves-web"
+    _agent_status "com.mattross.jeeves-telegram"
+    _agent_status "com.mattross.jeeves-whatsapp"
+    _agent_status "com.mattross.jeeves-briefing"
+    _agent_status "com.mattross.jeeves-ngrok"
+    echo
+    if [[ -e "$MUTE_FILE" ]]; then
+      echo "  Voice mic:  🔇 MUTED  (run 'jeeves unmute' to listen)"
+    else
+      echo "  Voice mic:  🔊 listening"
+    fi
+    echo "  Logs:       $LOG_DIR"
+    exit 0
+    ;;
+  mute|m)
+    touch "$MUTE_FILE"
+    _notify "Jeeves" "Muted"
+    echo "🔇 Jeeves muted."
+    exit 0
+    ;;
+  unmute|u)
+    rm -f "$MUTE_FILE"
+    _notify "Jeeves" "Listening"
+    echo "🔊 Jeeves listening."
+    exit 0
+    ;;
+  toggle)
+    if [[ -e "$MUTE_FILE" ]]; then
+      rm -f "$MUTE_FILE"
+      _notify "Jeeves" "Listening"
+      echo "🔊 Jeeves listening."
+    else
+      touch "$MUTE_FILE"
+      _notify "Jeeves" "Muted"
+      echo "🔇 Jeeves muted."
+    fi
+    exit 0
+    ;;
+  start|up)
+    mkdir -p "$LOG_DIR"
+    _load_agent "com.mattross.jeeves-telegram.plist"
+    _load_agent "com.mattross.jeeves-web.plist"
+    _load_agent "com.mattross.jeeves-whatsapp.plist"
+    _load_agent "com.mattross.jeeves-briefing.plist"
+    _load_agent "com.mattross.jeeves-ngrok.plist"
+    exit 0
+    ;;
+  stop|down)
+    _unload_agent "com.mattross.jeeves-telegram.plist"
+    _unload_agent "com.mattross.jeeves-web.plist"
+    _unload_agent "com.mattross.jeeves-whatsapp.plist"
+    _unload_agent "com.mattross.jeeves-briefing.plist"
+    _unload_agent "com.mattross.jeeves-ngrok.plist"
+    exit 0
+    ;;
+  restart|reload)
+    _unload_agent "com.mattross.jeeves-telegram.plist"
+    _unload_agent "com.mattross.jeeves-web.plist"
+    _unload_agent "com.mattross.jeeves-whatsapp.plist"
+    _unload_agent "com.mattross.jeeves-briefing.plist"
+    _unload_agent "com.mattross.jeeves-ngrok.plist"
+    sleep 1
+    _load_agent "com.mattross.jeeves-telegram.plist"
+    _load_agent "com.mattross.jeeves-web.plist"
+    _load_agent "com.mattross.jeeves-whatsapp.plist"
+    _load_agent "com.mattross.jeeves-briefing.plist"
+    _load_agent "com.mattross.jeeves-ngrok.plist"
+    exit 0
+    ;;
+  logs)
+    target="${2:-both}"
+    case "$target" in
+      web)  exec tail -f "$LOG_DIR/web.out" "$LOG_DIR/web.err" ;;
+      tg|telegram)  exec tail -f "$LOG_DIR/telegram.out" "$LOG_DIR/telegram.err" ;;
+      both|"")  exec tail -f "$LOG_DIR/"*.out "$LOG_DIR/"*.err 2>/dev/null ;;
+      *)  echo "Unknown logs target: $target. Use: web | tg | both" ; exit 1 ;;
+    esac
+    ;;
+  rec|record)
+    source venv/bin/activate
+    shift
+    exec python -m jarvis_core.meeting start "$@"
+    ;;
+  rec-stop|record-stop|stop-rec)
+    source venv/bin/activate
+    echo "Stopping, transcribing, summarising — this takes 20-60 seconds…"
+    exec python -m jarvis_core.meeting stop
+    ;;
+  rec-status|record-status)
+    source venv/bin/activate
+    exec python -m jarvis_core.meeting status
+    ;;
+  orb)
+    # Open the JARVIS overlay in a native borderless, transparent,
+    # always-on-top window. PyQt6 hosts the HTML page from /orb so the
+    # window floats above other apps instead of getting buried like a
+    # Chrome app window does.
+    URL="http://localhost:8765/orb"
+    if ! curl -s -o /dev/null -w "%{http_code}" "$URL" | grep -q "200"; then
+      echo "  · Popup server isn't running. Start it first:"
+      echo "      jeeves start    (background, keeps running)"
+      echo "      jeeves web      (foreground)"
+      exit 1
+    fi
+    source venv/bin/activate
+    screen_arg="${2:-0}"
+    # Run detached so closing this terminal doesn't kill the orb.
+    nohup python jeeves_orb.py "$screen_arg" > "$LOG_DIR/orb.out" 2>&1 &
+    orb_pid=$!
+    echo "  · Orb up on screen $screen_arg (PID $orb_pid). Cmd+Q in the orb to close, or:"
+    echo "      jeeves orb-stop"
+    exit 0
+    ;;
+  orb-stop|orb-kill)
+    pkill -f "python jeeves_orb.py" && echo "  ✓ Orb closed." || echo "  · No orb running."
+    exit 0
+    ;;
+  orb-demo|demo)
+    # Demo mode — opens the orb page in Chrome kiosk mode (fullscreen,
+    # no chrome UI). The live transcript layer renders correctly here
+    # whereas it doesn't in the PyQt overlay window, so this is the
+    # right surface for showing Jeeves to people.
+    #
+    # Optional screen index: `jeeves demo 1` lands kiosk on the second
+    # monitor. 0 = primary (default). Higher = further screens.
+    URL="http://localhost:8765/orb"
+    SCREEN_IDX="${2:-0}"
+    if ! curl -s -o /dev/null -w "%{http_code}" "$URL" | grep -q "200"; then
+      echo "  · Popup server isn't running. Start it first:"
+      echo "      jeeves start    (background, keeps running)"
+      echo "      jeeves web      (foreground)"
+      exit 1
+    fi
+    if ! [[ -d "/Applications/Google Chrome.app" ]]; then
+      echo "  · Google Chrome.app not found in /Applications. Install Chrome,"
+      echo "    or open $URL manually in your browser and press F to fullscreen."
+      exit 1
+    fi
+    # Resolve the target display's geometry via Quartz (built into the
+    # macOS system Python — no extra deps). Chrome's --kiosk on macOS
+    # ignores --window-position, so we open a normal Chrome window sized
+    # to fill the target screen, then send the native macOS fullscreen
+    # shortcut to put it into a clean fullscreen space on that display.
+    GEOM=$(/usr/bin/python3 - "$SCREEN_IDX" <<'PY'
+import sys
+try:
+    from Quartz import CGGetActiveDisplayList, CGDisplayBounds, CGMainDisplayID
+except Exception:
+    print("DISPLAYS: (Quartz unavailable)", file=sys.stderr)
+    print("0,0,1280,800")
+    sys.exit(0)
+err, ids, _ = CGGetActiveDisplayList(16, None, None)
+ids = list(ids)
+main = CGMainDisplayID()
+ids.sort(key=lambda d: 0 if d == main else 1)
+print(f"DISPLAYS: found {len(ids)} active", file=sys.stderr)
+for i, d in enumerate(ids):
+    b = CGDisplayBounds(d)
+    tag = " [main]" if d == main else ""
+    print(f"  [{i}] origin=({int(b.origin.x)},{int(b.origin.y)}) "
+          f"size=({int(b.size.width)}x{int(b.size.height)}){tag}",
+          file=sys.stderr)
+idx = int(sys.argv[1]) if len(sys.argv) > 1 else 0
+if idx < 0 or idx >= len(ids):
+    print(f"DISPLAYS: index {idx} out of range, falling back to 0", file=sys.stderr)
+    idx = 0
+b = CGDisplayBounds(ids[idx])
+print(f"{int(b.origin.x)},{int(b.origin.y)},{int(b.size.width)},{int(b.size.height)}")
+PY
+)
+    IFS=',' read -r X Y W H <<< "$GEOM"
+    # IMPORTANT: do NOT use --user-data-dir here. Past versions did to
+    # force a fresh window, but that spawns a SECOND Chrome process,
+    # and AppleScript (the channel jeeves uses to control
+    # world-monitor.com) only talks to ONE Chrome process at a time —
+    # whichever it picks up. The result was that running `jeeves demo`
+    # made voice commands like "bring up streams" silently fail because
+    # the WM tab wasn't in the Chrome AppleScript was talking to.
+    #
+    # Instead: open a new window in Matt's MAIN Chrome via `open -na`,
+    # then position + fullscreen it with AppleScript afterward. Same
+    # visual result (a fresh, full-screen orb window), but everything
+    # stays in one Chrome process so voice control keeps working.
+    open -na "Google Chrome" --args --new-window "$URL" \
+      > "$LOG_DIR/orb-demo.out" 2>&1
+    echo "  · Demo orb opening on screen $SCREEN_IDX at ${X},${Y} size ${W}x${H}."
+
+    # Position + fullscreen via AppleScript. Runs detached so this
+    # command returns immediately while Chrome settles.
+    ( sleep 0.8
+      # 1) Move + size the just-opened front window onto the target
+      #    display. AppleScript bounds are {left, top, right, bottom}.
+      osascript \
+        -e 'tell application "Google Chrome" to activate' \
+        -e "tell application \"Google Chrome\" to set bounds of front window to {$X, $Y, $((X + W)), $((Y + H))}" \
+        > /dev/null 2>&1 || true
+      sleep 0.4
+      # 2) Toggle macOS native fullscreen on that window. Fullscreens
+      #    on whichever display the window currently lives on (which
+      #    is the one we just moved it to).
+      osascript \
+        -e 'tell application "Google Chrome" to activate' \
+        -e 'tell application "System Events" to key code 3 using {command down, control down}' \
+        > /dev/null 2>&1 || true
+    ) &
+    echo "    Cmd+Ctrl+F toggles fullscreen. Cmd+W closes the window."
+    exit 0
+    ;;
+  med-sheet-backfill)
+    # One-shot: push every historical med entry from diary.jsonl into
+    # the Jeeves Med Log Google Sheet. Safe to re-run but creates
+    # duplicate rows — intended as a one-time bootstrap.
+    source venv/bin/activate
+    export SSL_CERT_FILE=$(python -c "import certifi; print(certifi.where())" 2>/dev/null)
+    exec python scripts/med_sheet_backfill.py
+    ;;
+  med-sheet-url|med-log-url)
+    # Print the live URL of the med-log Google Sheet.
+    source venv/bin/activate
+    export SSL_CERT_FILE=$(python -c "import certifi; print(certifi.where())" 2>/dev/null)
+    exec python -c "from jarvis_core import med_sheet; print(med_sheet.get_sheet_url())"
+    ;;
+  parcels-smoketest|parcels-smoke)
+    # End-to-end smoke test: send a synthetic delivery email from work
+    # Gmail to personal Gmail, wait for it to land, force-refresh the
+    # parcels cache, and report whether Jeeves picked it up.
+    source venv/bin/activate
+    export SSL_CERT_FILE=$(python -c "import certifi; print(certifi.where())" 2>/dev/null)
+    exec python scripts/parcels_smoketest.py
+    ;;
+  parcels-debug|parcels-test)
+    # Diagnose the parcel scanner. Reports what each inbox source
+    # returned and what the LLM extracted. Use when "any parcels?"
+    # comes back empty to figure out which step broke.
+    source venv/bin/activate
+    export SSL_CERT_FILE=$(python -c "import certifi; print(certifi.where())" 2>/dev/null)
+    exec python scripts/parcels_debug.py
+    ;;
+  phone-test)
+    # Place a test outbound call to verify Twilio + ngrok wiring.
+    # Usage: jeeves phone-test +44XXXXXXXXXX
+    # Calls the given number with a fake-booking objective so you can
+    # talk to Jeeves on the phone and check audio quality before pointing
+    # it at a real restaurant.
+    target="${2:-}"
+    if [[ -z "$target" ]]; then
+      echo "Usage: jeeves phone-test <e164-number>"
+      echo "Example: jeeves phone-test +447700900123"
+      echo "(Trial Twilio accounts can only call verified numbers — verify yours"
+      echo " first at Console → Phone Numbers → Verified Caller IDs.)"
+      exit 1
+    fi
+    source venv/bin/activate
+    export SSL_CERT_FILE=$(python -c "import certifi; print(certifi.where())" 2>/dev/null)
+    echo "  · Placing test call to $target …"
+    exec python -m jarvis_core.phone_runner \
+      --number "$target" \
+      --objective "This is a Jeeves test call. Have a brief polite conversation, then say [END_CALL] within 30 seconds." \
+      --establishment "test call" \
+      --max-minutes 2
+    ;;
+  wa-start)
+    # Bridge is now a launchd agent — load it, launchd handles the rest.
+    # If launchd was already managing it, this is a no-op (already loaded).
+    mkdir -p "$LOG_DIR"
+    _load_agent "com.mattross.jeeves-whatsapp.plist"
+    echo "  · Bridge starting via launchd. First start may need a QR scan:"
+    echo "      tail -f $LOG_DIR/wa-bridge.out"
+    sleep 3
+    if curl -s -m 1 http://localhost:8080/ > /dev/null 2>&1; then
+      echo "  ✓ Bridge up on :8080."
+    else
+      echo "  · Bridge launching... give it 5-10s, then check 'jeeves wa-status'."
+    fi
+    exit 0
+    ;;
+  wa-stop)
+    # Unload the launchd agent. This stops it AND prevents auto-restart.
+    _unload_agent "com.mattross.jeeves-whatsapp.plist"
+    # Belt-and-braces: kill any orphaned go-run processes from the old
+    # foreground-spawn approach if they're still around from before.
+    pkill -f "go run main.go" 2>/dev/null
+    pkill -f "whatsapp-bridge/main" 2>/dev/null
+    echo "  ✓ Bridge stopped."
+    exit 0
+    ;;
+  brief-now|briefing-now)
+    # Manually trigger the daily briefing — for testing or a fresh recap.
+    # Behaves identically to the 7am-weekday launchd run: composes,
+    # renders, pushes to Telegram. Slow (15-30s).
+    source venv/bin/activate
+    export SSL_CERT_FILE=$(python -c "import certifi; print(certifi.where())" 2>/dev/null)
+    exec python scripts/daily_briefing.py
+    ;;
+  health|dashboard)
+    # Open the Apple Health dashboard in the default browser. The page
+    # is served live by jeeves_web.py so it always has the freshest
+    # snapshot from iCloud. If the popup server isn't up, start it.
+    URL="http://localhost:8765/health/dashboard"
+    if ! curl -s -m 1 -o /dev/null -w "%{http_code}" "http://localhost:8765/health" | grep -q "200"; then
+      echo "  · Popup server isn't running. Starting it now…"
+      _load_agent "com.mattross.jeeves-web.plist"
+      sleep 1
+    fi
+    echo "  · Opening $URL"
+    open "$URL"
+    exit 0
+    ;;
+  health-export|dashboard-export)
+    # One-shot static render of the dashboard to ~/Code/jeeves/dashboards/.
+    # Static = edits won't persist (no backend), but it's a clean snapshot
+    # you can email or attach. Each run overwrites the file.
+    source venv/bin/activate
+    OUT="$HOME/Code/jeeves/dashboards/health-$(date +%Y-%m-%d).html"
+    python -c "
+from pathlib import Path
+from jarvis_core.health_dashboard import export_static
+p = export_static(Path(r'''$OUT'''))
+print(f'  ✓ Wrote {p}')
+"
+    exit 0
+    ;;
+  wa-status)
+    if curl -s -m 1 http://localhost:8080/ > /dev/null 2>&1; then
+      echo "  ✓ Bridge running on :8080."
+    else
+      echo "  · Bridge not reachable on :8080. Run 'jeeves wa-start' to bring it up."
+    fi
+    exit 0
+    ;;
+  ngrok-start)
+    # Bring the ngrok tunnel up via launchd. Forwards :8766 (phone bridge)
+    # through the reserved domain in TWILIO_PUBLIC_URL so Twilio can reach
+    # us. Idempotent — re-running is a no-op if it's already loaded.
+    mkdir -p "$LOG_DIR"
+    _load_agent "com.mattross.jeeves-ngrok.plist"
+    sleep 2
+    PUBLIC_URL=$(grep -E '^TWILIO_PUBLIC_URL=' .env | head -n1 | cut -d'=' -f2- | tr -d '"' | tr -d "'")
+    if [[ -n "$PUBLIC_URL" ]]; then
+      if curl -s -m 3 -o /dev/null -w "%{http_code}" "${PUBLIC_URL%/}/twiml" 2>/dev/null | grep -qE "^(200|405)$"; then
+        echo "  ✓ Tunnel reachable at $PUBLIC_URL"
+      else
+        echo "  · Tunnel loading… give it 5-10s, then 'jeeves ngrok-status'."
+        echo "    If still down, check: tail -f $LOG_DIR/ngrok.err"
+      fi
+    fi
+    exit 0
+    ;;
+  ngrok-stop)
+    _unload_agent "com.mattross.jeeves-ngrok.plist"
+    # Belt-and-braces: kill any ngrok started outside launchd.
+    pkill -f "ngrok http 8766" 2>/dev/null || true
+    echo "  ✓ ngrok tunnel stopped."
+    exit 0
+    ;;
+  tv)
+    # If an external display is attached, fire up Supa Legacy IPTV on it.
+    # On a solo MacBook we deliberately do nothing — taking over the only
+    # screen for telly is a trap.
+    fullscreen_flag="True"
+    if [[ "$2" == "--no-fullscreen" || "$2" == "--windowed" ]]; then
+      fullscreen_flag="False"
+    fi
+    /usr/bin/env python3 - <<PY
+import json, sys
+sys.path.insert(0, "$SCRIPT_DIR")
+from jarvis_core import iptv
+result = iptv.open_on_secondary(fullscreen=$fullscreen_flag)
+print(json.dumps(result, indent=2, default=str))
+status = result.get("status")
+if status == "skipped":
+    print("  . No external display attached - leaving your built-in screen alone.")
+elif status == "ok":
+    d = result["target_display"]
+    print(f"  + Supa Legacy IPTV opened on display {d['index']} ({d['width']}x{d['height']}).")
+elif status == "partial":
+    print("  . App launched but window-move failed - drag it to the external display manually.")
+else:
+    print(f"  x Couldn't start TV mode: {result.get('detail', result.get('reason'))}")
+PY
+    exit 0
+    ;;
+  displays|screens)
+    # Quick diagnostic - prints the displays Quartz can see, in the same
+    # ordering Jeeves uses internally (primary first, then external(s)).
+    /usr/bin/env python3 - <<PY
+import sys
+sys.path.insert(0, "$SCRIPT_DIR")
+from jarvis_core import displays
+print(displays.describe())
+PY
+    exit 0
+    ;;
+  ngrok-status)
+    PUBLIC_URL=$(grep -E '^TWILIO_PUBLIC_URL=' .env | head -n1 | cut -d'=' -f2- | tr -d '"' | tr -d "'")
+    if [[ -z "$PUBLIC_URL" ]]; then
+      echo "  · TWILIO_PUBLIC_URL not set in .env."
+      exit 1
+    fi
+    code=$(curl -s -m 3 -o /dev/null -w "%{http_code}" "${PUBLIC_URL%/}/twiml" 2>/dev/null || echo "000")
+    case "$code" in
+      200|405)  echo "  ✓ Tunnel up — $PUBLIC_URL (HTTP $code)" ;;
+      404)      echo "  · Tunnel offline (HTTP 404). 'jeeves ngrok-start' to bring it up." ;;
+      000)      echo "  · No response from $PUBLIC_URL. 'jeeves ngrok-start'." ;;
+      *)        echo "  · Tunnel returned HTTP $code at $PUBLIC_URL." ;;
+    esac
+    exit 0
+    ;;
+  boot)
+    # Bring everything up after a restart, then hand the terminal to voice.
+    # Each step is idempotent so running boot when things are already up
+    # is safe — services skip themselves and we just end up at voice.
+    #
+    # The orb is NOT included by default — it's borderless and fullscreen,
+    # which is fine on a second screen but a trap on a single MacBook
+    # display. Pass --orb [N] to include it. Default screen is 1 (external).
+    #
+    #   jeeves boot              # popup + telegram + bridge + voice
+    #   jeeves boot --orb        # ...plus orb on screen 1 (external monitor)
+    #   jeeves boot --orb 0      # ...plus orb on the MacBook screen (use only
+    #                            #     if you really want it on your only screen)
+    include_orb="no"
+    orb_screen="1"
+    if [[ "$2" == "--orb" ]]; then
+      include_orb="yes"
+      [[ -n "$3" ]] && orb_screen="$3"
+    fi
+
+    mkdir -p "$LOG_DIR"
+
+    echo "  · Boot 1/3 — background services (popup + telegram + ngrok)…"
+    _load_agent "com.mattross.jeeves-telegram.plist"
+    _load_agent "com.mattross.jeeves-web.plist"
+    _load_agent "com.mattross.jeeves-ngrok.plist"
+
+    echo "  · Boot 2/3 — WhatsApp bridge…"
+    if curl -s -m 1 http://localhost:8080/ > /dev/null 2>&1; then
+      echo "    bridge already running on :8080."
+    else
+      BRIDGE_DIR="/Users/mattross/code/whatsapp-mcp/whatsapp-bridge"
+      if [[ -d "$BRIDGE_DIR" ]] && command -v go > /dev/null; then
+        cd "$BRIDGE_DIR"
+        nohup go run main.go > "$LOG_DIR/wa-bridge.out" 2>&1 &
+        echo "    bridge spawned (PID $!) — give it 5-10s."
+        cd "$SCRIPT_DIR"
+      else
+        echo "    skipped — bridge folder or 'go' missing."
+      fi
+    fi
+
+    if [[ "$include_orb" == "yes" ]]; then
+      echo "  · Boot extra — orb on screen $orb_screen…"
+      if pgrep -f "python jeeves_orb.py" > /dev/null; then
+        echo "    orb already running."
+      else
+        source venv/bin/activate
+        nohup python jeeves_orb.py "$orb_screen" > "$LOG_DIR/orb.out" 2>&1 &
+        echo "    orb spawned (PID $!)."
+      fi
+    else
+      echo "  · Skipping orb (pass --orb to include it)."
+    fi
+
+    echo "  · Boot 3/3 — voice agent (foreground, auto-restart on exit)."
+    echo "  · Ctrl-C TWICE to quit voice; everything else keeps running."
+    sleep 1
+    exec "$SCRIPT_DIR/scripts/voice-loop.sh"
+    ;;
+  shutdown)
+    echo "  · Shutting Jeeves down…"
+    # Kill the orb if it's up
+    pkill -f "python jeeves_orb.py" 2>/dev/null && echo "  ✓ Orb closed."
+    # Kill the WhatsApp bridge
+    pkill -f "go run main.go" 2>/dev/null
+    pkill -f "whatsapp-bridge/main" 2>/dev/null
+    echo "  ✓ WhatsApp bridge stopped."
+    # Unload the launchd agents
+    _unload_agent "com.mattross.jeeves-telegram.plist"
+    _unload_agent "com.mattross.jeeves-web.plist"
+    _unload_agent "com.mattross.jeeves-ngrok.plist"
+    # Voice has to be Ctrl-C'd by the user — it's a foreground process
+    if pgrep -f "python jeeves.py" > /dev/null; then
+      echo "  · Voice agent is still running in another terminal — Ctrl-C it there."
+    fi
+    echo "  · Done."
+    exit 0
+    ;;
+esac
+
+# ---------------------------------------------------------------------
+# Anything past here is a foreground surface, so activate the venv first
+# ---------------------------------------------------------------------
+source venv/bin/activate
+export SSL_CERT_FILE=$(python -c "import certifi; print(certifi.where())" 2>/dev/null)
+
+if [[ -z "$choice" ]]; then
+  echo
+  echo "  Jeeves"
+  echo "  ──────"
+  echo "  Surfaces (foreground):"
+  echo "    1) Voice         mic + speakers"
+  echo "    2) Web popup     localhost:8765"
+  echo "    3) Telegram      polling"
+  echo "    4) All three     web + tg in background, voice up front"
+  echo
+  echo "  Background services (launchd):"
+  echo "    s) Status of background services + mute state"
+  echo "    u) Start (up) — install and load"
+  echo "    d) Stop (down) — unload"
+  echo "    l) Tail logs"
+  echo
+  echo "  Voice mic:"
+  echo "    m) Mute (drop input audio)"
+  echo "    n) Unmute (resume listening)"
+  echo "    g) Toggle mute"
+  echo
+  printf "  > "
+  read choice
+fi
+
+case "$choice" in
+  1|v|voice)             exec "$SCRIPT_DIR/scripts/voice-loop.sh" ;;
+  2|w|web|popup)         exec python jeeves_web.py ;;
+  3|t|tg|telegram)       exec python jeeves_telegram.py ;;
+  4|all)
+    mkdir -p "$LOG_DIR"
+    nohup python jeeves_web.py      > "$LOG_DIR/web.out"      2>&1 &
+    web_pid=$!
+    nohup python jeeves_telegram.py > "$LOG_DIR/telegram.out" 2>&1 &
+    tg_pid=$!
+    echo
+    echo "  Web popup:  PID $web_pid"
+    echo "  Telegram:   PID $tg_pid"
+    echo "  Voice in this terminal (Ctrl-C to stop voice; web/tg keep running):"
+    echo
+    exec "$SCRIPT_DIR/scripts/voice-loop.sh"
+    ;;
+  s|status)              exec "$0" status ;;
+  u|up|start)            exec "$0" start ;;
+  d|down|stop)           exec "$0" stop ;;
+  l|logs)                exec "$0" logs ;;
+  m|mute)                exec "$0" mute ;;
+  n|unmute)              exec "$0" unmute ;;
+  g|toggle)              exec "$0" toggle ;;
+  ""|q|quit|n|no)        echo "Bye." ; exit 0 ;;
+  *)
+    echo "Unknown option: $choice"
+    echo "Usage: $0 [voice|web|tg|all|status|start|stop|restart|logs|mute|unmute|toggle]"
+    exit 1
+    ;;
+esac
