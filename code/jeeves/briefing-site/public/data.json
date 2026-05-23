@@ -1,26 +1,41 @@
 {
-  "date_day": "Friday",
-  "date_long": "22 May 2026",
+  "date_day": "Saturday",
+  "date_long": "23 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 277,
+  "compiled_at": "06:25",
+  "briefing_no": 278,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "13:00",
-      "event": "Cohort check-in",
-      "where": "The Gallery, Techspace"
+      "time": "09:45",
+      "event": "Speech Day Service — Chapel",
+      "where": "Cheltenham College Chapel, Bath Road, Cheltenham, GL53 7LD"
     },
     {
-      "time": "13:30",
-      "event": "Founder confidential with Rob Hughes, CEO and co-founder at Tandem",
-      "where": "The Gallery, Techspace Goswell Road"
+      "time": "11:00",
+      "event": "Prize-giving & Speeches — Sports Hall",
+      "where": "Cheltenham College Sports Hall, Bath Road, Cheltenham, GL53 7LD"
     },
     {
-      "time": "15:00",
-      "event": "GTM, sales and marketing expert clinics",
-      "where": "The Gallery, Techspace Goswell Road"
+      "time": "11:32",
+      "event": "Train to Cheltenham Spa",
+      "where": "London Paddington"
+    },
+    {
+      "time": "12:30",
+      "event": "Speech Day — Drinks & Picnic",
+      "where": "Cheltenham College, Bath Road, Cheltenham, GL53 7LD"
+    },
+    {
+      "time": "14:00",
+      "event": "Art & DT Displays — Thirlestaine Long Gallery",
+      "where": "Thirlestaine House & DT Department, Cheltenham College, GL53 7LD"
+    },
+    {
+      "time": "18:00",
+      "event": "Speech Day ends",
+      "where": "Cheltenham College, Bath Road, Cheltenham, GL53 7LD"
     }
   ],
   "emails": [],
@@ -28,28 +43,28 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "The Young Ones",
-      "preview": "👍"
+      "from": "84623824556136",
+      "preview": "Mate can I nab a fan from your room pls for laurel"
     },
     {
       "channel": "wa",
-      "from": "Hampnett village group",
-      "preview": "Yes, our black cat in particular seems to have them every day at tbe moment despite medication"
+      "from": "Southwood 4F Floreat2526 (sports password)",
+      "preview": "…. 🤔 seems strange…?!"
     },
     {
       "channel": "wa",
-      "from": "87793460072514",
-      "preview": "Tom was excellent yesterday I thought"
-    },
-    {
-      "channel": "wa",
-      "from": "Ross boys",
-      "preview": "Vote for the Parkinson’s garden which my friend worked on"
+      "from": "241368723148923",
+      "preview": "Okay. I’m going to get drunk and disgrace myself!"
     },
     {
       "channel": "wa",
       "from": "Day2 Tech",
-      "preview": "Very cool!"
+      "preview": "I imagine it will be ignored until Tuesday… if at all!"
+    },
+    {
+      "channel": "wa",
+      "from": "Ross boys",
+      "preview": "Important recognition"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -88,12 +103,11 @@
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$383.47",
-    "change": "+$84.68 · +28.34%",
+    "price": "$379.38",
+    "change": "+$80.59 · +26.97%",
     "direction": "up",
-    "as_of": "Close 21 May · NASDAQ",
+    "as_of": "Close 22 May · NASDAQ",
     "history": [
-      315.7200012207031,
       319.2099914550781,
       330.5799865722656,
       334.4700012207031,
@@ -122,7 +136,8 @@
       393.1099853515625,
       384.8999938964844,
       384.8999938964844,
-      383.4700012207031
+      383.4700012207031,
+      379.3800048828125
     ]
   },
   "weather": {
@@ -130,28 +145,28 @@
       {
         "time": "07:00",
         "temp": 14,
-        "icon": "⛅"
+        "icon": "☀"
       },
       {
         "time": "12:00",
-        "temp": 23,
-        "icon": "⛅"
+        "temp": 20,
+        "icon": "☀"
       },
       {
         "time": "15:00",
-        "temp": 25,
-        "icon": "☀"
+        "temp": 22,
+        "icon": "⛅"
       },
       {
         "time": "19:00",
-        "temp": 22,
+        "temp": 21,
         "icon": "☀"
       }
     ],
-    "summary": "<strong>11–25°C</strong> · overcast · sunrise 05:04",
-    "narrative": "Quiet weather. Top of 25°C around lunchtime."
+    "summary": "<strong>14–23°C</strong> · overcast · sunrise 05:03",
+    "narrative": "Quiet weather. Top of 22°C around lunchtime."
   },
-  "weather_summary": "<strong>11–25°C</strong> · overcast · sunrise 05:04",
+  "weather_summary": "<strong>14–23°C</strong> · overcast · sunrise 05:03",
   "body": {
     "value": "0.99",
     "unit": "m/s",
@@ -164,7 +179,7 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Parents of Southport survivors say anonymity has erased their girls from the story"
+      "text": "At least 82 dead in Chinese coal mine explosion, state media reports"
     },
     {
       "kind": "fixture",
@@ -174,49 +189,49 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Andrew investigation could look into sexual misconduct allegations"
+      "text": "Putin vows retaliation after accusing Ukraine of hitting student dormitory"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Stop blaming young people for being unemployed, says Amazon's UK boss"
+      "text": "Hot weather to intensify in UK over bank holiday weekend"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Guardiola says 'nothing is eternal' as Man City confirm exit after 10 years"
+      "text": "Attorney general to review teen boys' rape sentences"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Riskiest skin cancer cases hit UK record high"
+      "text": "Rubio tries to reassure Nato allies over US troop deployments"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Parents of Southport survivors say anonymity has erased their girls from the story"
+      "text": "At least 82 dead in Chinese coal mine explosion, state media reports"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Andrew investigation could look into sexual misconduct allegations"
+      "text": "Putin vows retaliation after accusing Ukraine of hitting student dormitory"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Stop blaming young people for being unemployed, says Amazon's UK boss"
+      "text": "Hot weather to intensify in UK over bank holiday weekend"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Guardiola says 'nothing is eternal' as Man City confirm exit after 10 years"
+      "text": "Attorney general to review teen boys' rape sentences"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Riskiest skin cancer cases hit UK record high"
+      "text": "Rubio tries to reassure Nato allies over US troop deployments"
     }
   ],
   "_fixtures": [
@@ -227,9 +242,9 @@
     }
   ],
   "lead": {
-    "eyebrow": "Priority signal",
-    "headline": "First call at <em>13</em>. Cohort check-in.",
-    "deck": "—",
-    "byline": "12:31 · compiled from inbox, calendar & tasks"
+    "eyebrow": "SCHEDULE CONFLICT",
+    "headline": "You're <em>double-booked</em> this morning at Cheltenham College.",
+    "deck": "Your train to Cheltenham Spa departs at 11:32 from London Paddington, but prize-giving and speeches don't wrap until 11:00 at the Sports Hall—leaving you a 32-minute window to travel across town, collect luggage, and reach the station. You need to either adjust your departure or confirm whether you're attending the full ceremony.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }
