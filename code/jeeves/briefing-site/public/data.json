@@ -1,53 +1,37 @@
 {
-  "date_day": "Saturday",
-  "date_long": "23 May 2026",
+  "date_day": "Sunday",
+  "date_long": "24 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:36",
-  "briefing_no": 279,
+  "compiled_at": "06:31",
+  "briefing_no": 280,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
-  "agenda": [
-    {
-      "time": "14:00",
-      "event": "Art & DT Displays — Thirlestaine Long Gallery",
-      "where": "Thirlestaine House & DT Department, Cheltenham College, GL53 7LD"
-    },
-    {
-      "time": "18:00",
-      "event": "Speech Day ends",
-      "where": "Cheltenham College, Bath Road, Cheltenham, GL53 7LD"
-    }
-  ],
+  "agenda": [],
   "emails": [],
   "email_tally": "0 new · 0 want a reply",
   "messages": [
     {
       "channel": "wa",
-      "from": "Southwood 4F Floreat2526 (sports password)",
-      "preview": "Arthur didn’t take a white shirt, so 🤷‍♀️ I can’t get worked up about things like this! 🤣"
+      "from": "84623824556136",
+      "preview": "Let me show T and come back to u"
     },
     {
       "channel": "wa",
-      "from": "84623824556136",
-      "preview": "I dreamt u blocked two of our toilets and needed to go to my grandpa’s one in stoke"
+      "from": "Hampnett village group",
+      "preview": "I don’t think they do - humans get other tics which can be quite nasty!"
     },
     {
       "channel": "wa",
       "from": "150409754763471",
-      "preview": "See you then x"
+      "preview": "In usual car park but no hurry xx"
     },
     {
       "channel": "wa",
-      "from": "241368723148923",
-      "preview": "Okay. I’m going to get drunk and disgrace myself!"
-    },
-    {
-      "channel": "wa",
-      "from": "Day2 Tech",
-      "preview": "I imagine it will be ignored until Tuesday… if at all!"
+      "from": "Southwood 4F Floreat2526 (sports password)",
+      "preview": "Arthur didn’t take a white shirt, so 🤷‍♀️ I can’t get worked up about things like this! 🤣"
     }
   ],
-  "messages_tally": "5 unread · 5 chats",
+  "messages_tally": "4 unread · 4 chats",
   "tasks": [
     {
       "text": "Brian. Book meeting Prep for Caroline",
@@ -124,29 +108,29 @@
     "hourly": [
       {
         "time": "07:00",
-        "temp": 14,
+        "temp": 15,
         "icon": "☀"
       },
       {
         "time": "12:00",
-        "temp": 20,
+        "temp": 23,
         "icon": "☀"
       },
       {
         "time": "15:00",
-        "temp": 22,
-        "icon": "⛅"
+        "temp": 25,
+        "icon": "☀"
       },
       {
         "time": "19:00",
-        "temp": 21,
+        "temp": 25,
         "icon": "☀"
       }
     ],
-    "summary": "<strong>14–23°C</strong> · overcast · sunrise 05:03",
-    "narrative": "Quiet weather. Top of 22°C around lunchtime."
+    "summary": "<strong>13–25°C</strong> · overcast · sunrise 05:01",
+    "narrative": "Quiet weather. Top of 25°C around lunchtime."
   },
-  "weather_summary": "<strong>14–23°C</strong> · overcast · sunrise 05:03",
+  "weather_summary": "<strong>13–25°C</strong> · overcast · sunrise 05:01",
   "body": {
     "value": "0.99",
     "unit": "m/s",
@@ -159,7 +143,7 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "At least 82 dead in Chinese coal mine explosion, state media reports"
+      "text": "Girl raped by boys spared jail tells BBC judge's decision was like 'rock in my face'"
     },
     {
       "kind": "fixture",
@@ -169,49 +153,49 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Putin vows retaliation after accusing Ukraine of hitting student dormitory"
+      "text": "Suspect killed after opening fire on Secret Service near White House"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Hot weather to intensify in UK over bank holiday weekend"
+      "text": "Trump says Iran deal 'largely negotiated' including reopening Strait of Hormuz"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Attorney general to review teen boys' rape sentences"
+      "text": "Heatwave likely to be confirmed as record-breaking temperatures forecast"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Rubio tries to reassure Nato allies over US troop deployments"
+      "text": "Rosenberg: Luhansk strike sparks Russian accusations and vow to retaliate"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "At least 82 dead in Chinese coal mine explosion, state media reports"
+      "text": "Girl raped by boys spared jail tells BBC judge's decision was like 'rock in my face'"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Putin vows retaliation after accusing Ukraine of hitting student dormitory"
+      "text": "Suspect killed after opening fire on Secret Service near White House"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Hot weather to intensify in UK over bank holiday weekend"
+      "text": "Trump says Iran deal 'largely negotiated' including reopening Strait of Hormuz"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Attorney general to review teen boys' rape sentences"
+      "text": "Heatwave likely to be confirmed as record-breaking temperatures forecast"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Rubio tries to reassure Nato allies over US troop deployments"
+      "text": "Rosenberg: Luhansk strike sparks Russian accusations and vow to retaliate"
     }
   ],
   "_fixtures": [
@@ -222,9 +206,9 @@
     }
   ],
   "lead": {
-    "eyebrow": "Priority signal",
-    "headline": "First call at <em>14</em>. Art & DT Displays — Thirlestaine Long Gallery.",
-    "deck": "—",
-    "byline": "12:48 · compiled from inbox, calendar & tasks"
+    "eyebrow": "CREATIVE DIRECTION",
+    "headline": "A <em>human redesign</em> is reshaping your video and deck.",
+    "deck": "This foundational shift affects multiple deliverables at once, so alignment on the new direction needs to happen now before work fragments across channels. Getting this locked in early prevents costly rework downstream.",
+    "byline": "06:32 · compiled from inbox, calendar & tasks"
   }
 }
