@@ -1,9 +1,9 @@
 {
-  "date_day": "Sunday",
-  "date_long": "24 May 2026",
+  "date_day": "Wednesday",
+  "date_long": "27 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:31",
-  "briefing_no": 280,
+  "compiled_at": "12:30",
+  "briefing_no": 284,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [],
@@ -12,26 +12,31 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "84623824556136",
-      "preview": "Let me show T and come back to u"
+      "from": "87793460072514",
+      "preview": "Amazing! You’ll see I emailed Viv yesterday so hopefully hear back from them. Also hoping to hear back from Lewis at FUtureFit (maybe Fred c"
     },
     {
       "channel": "wa",
-      "from": "Hampnett village group",
-      "preview": "I don’t think they do - humans get other tics which can be quite nasty!"
+      "from": "Party Chat",
+      "preview": "Hahha it’s Princess Jasmine ! xx"
+    },
+    {
+      "channel": "wa",
+      "from": "Day2 Tech",
+      "preview": "Thanks!"
     },
     {
       "channel": "wa",
       "from": "150409754763471",
-      "preview": "In usual car park but no hurry xx"
+      "preview": "No problem !"
     },
     {
       "channel": "wa",
-      "from": "Southwood 4F Floreat2526 (sports password)",
-      "preview": "Arthur didn’t take a white shirt, so 🤷‍♀️ I can’t get worked up about things like this! 🤣"
+      "from": "150409754763471",
+      "preview": "Got stuff for bbq"
     }
   ],
-  "messages_tally": "4 unread · 4 chats",
+  "messages_tally": "5 unread · 5 chats",
   "tasks": [
     {
       "text": "Brian. Book meeting Prep for Caroline",
@@ -67,12 +72,11 @@
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$379.38",
-    "change": "+$80.59 · +26.97%",
+    "price": "$384.84",
+    "change": "+$104.10 · +37.08%",
     "direction": "up",
-    "as_of": "Close 22 May · NASDAQ",
+    "as_of": "Close 26 May · NASDAQ",
     "history": [
-      319.2099914550781,
       330.5799865722656,
       334.4700012207031,
       332.7699890136719,
@@ -101,7 +105,8 @@
       384.8999938964844,
       384.8999938964844,
       383.4700012207031,
-      379.3800048828125
+      379.3800048828125,
+      384.8399963378906
     ]
   },
   "weather": {
@@ -118,7 +123,7 @@
       },
       {
         "time": "15:00",
-        "temp": 25,
+        "temp": 27,
         "icon": "☀"
       },
       {
@@ -127,15 +132,15 @@
         "icon": "☀"
       }
     ],
-    "summary": "<strong>13–25°C</strong> · overcast · sunrise 05:01",
-    "narrative": "Quiet weather. Top of 25°C around lunchtime."
+    "summary": "<strong>14–28°C</strong> · mostly clear · sunrise 04:58",
+    "narrative": "Quiet weather. Top of 27°C around lunchtime."
   },
-  "weather_summary": "<strong>13–25°C</strong> · overcast · sunrise 05:01",
+  "weather_summary": "<strong>14–28°C</strong> · mostly clear · sunrise 04:58",
   "body": {
-    "value": "0.99",
+    "value": "1.06",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Sleep ran 0h 5m overnight.",
+    "trend": "Up 4.3% on the prior week. Sleep ran 3h 24m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -143,72 +148,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Girl raped by boys spared jail tells BBC judge's decision was like 'rock in my face'"
-    },
-    {
-      "kind": "fixture",
-      "label": "EPL",
-      "text": "FPL Deadline - Gameweek 38 · Sun 14:30"
+      "text": "Energy bills to rise for millions as impact of Iran war hits"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Suspect killed after opening fire on Secret Service near White House"
+      "text": "Labour has 'no coherent plan' for country, says Blair"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Trump says Iran deal 'largely negotiated' including reopening Strait of Hormuz"
+      "text": "Six people die in water-related incidents during heatwave"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Heatwave likely to be confirmed as record-breaking temperatures forecast"
+      "text": "Sturgeon defends 'no comment' police interview after SNP funds probe arrest"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Rosenberg: Luhansk strike sparks Russian accusations and vow to retaliate"
+      "text": "Nasa unveils next steps to build permanent Moon base"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Girl raped by boys spared jail tells BBC judge's decision was like 'rock in my face'"
+      "text": "Energy bills to rise for millions as impact of Iran war hits"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Suspect killed after opening fire on Secret Service near White House"
+      "text": "Labour has 'no coherent plan' for country, says Blair"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Trump says Iran deal 'largely negotiated' including reopening Strait of Hormuz"
+      "text": "Six people die in water-related incidents during heatwave"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Heatwave likely to be confirmed as record-breaking temperatures forecast"
+      "text": "Sturgeon defends 'no comment' police interview after SNP funds probe arrest"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Rosenberg: Luhansk strike sparks Russian accusations and vow to retaliate"
+      "text": "Nasa unveils next steps to build permanent Moon base"
     }
   ],
-  "_fixtures": [
-    {
-      "kind": "fixture",
-      "label": "EPL",
-      "text": "FPL Deadline - Gameweek 38 · Sun 14:30"
-    }
-  ],
+  "_fixtures": [],
   "lead": {
     "eyebrow": "CREATIVE DIRECTION",
-    "headline": "A <em>human redesign</em> is reshaping your video and deck.",
-    "deck": "This foundational shift affects multiple deliverables at once, so alignment on the new direction needs to happen now before work fragments across channels. Getting this locked in early prevents costly rework downstream.",
-    "byline": "06:32 · compiled from inbox, calendar & tasks"
+    "headline": "A <em>human-centered redesign</em> is reshaping your entire visual strategy.",
+    "deck": "The shift toward a warmer aesthetic now ripples across your video production and presentation deck, requiring coordinated updates across multiple workstreams. This foundational change needs to be locked in before downstream work proceeds.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
