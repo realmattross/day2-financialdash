@@ -1,39 +1,45 @@
 {
-  "date_day": "Wednesday",
-  "date_long": "27 May 2026",
+  "date_day": "Thursday",
+  "date_long": "28 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 284,
+  "compiled_at": "06:25",
+  "briefing_no": 285,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
-  "agenda": [],
+  "agenda": [
+    {
+      "time": "00:00",
+      "event": "PUK",
+      "where": ""
+    }
+  ],
   "emails": [],
   "email_tally": "0 new · 0 want a reply",
   "messages": [
     {
       "channel": "wa",
-      "from": "87793460072514",
-      "preview": "Amazing! You’ll see I emailed Viv yesterday so hopefully hear back from them. Also hoping to hear back from Lewis at FUtureFit (maybe Fred c"
+      "from": "Hampnett village group",
+      "preview": "Should be reconnected by Thursday 8am."
     },
     {
       "channel": "wa",
       "from": "Party Chat",
-      "preview": "Hahha it’s Princess Jasmine ! xx"
+      "preview": "Yep, she somehow doesn’t look any different haha x"
     },
     {
       "channel": "wa",
-      "from": "Day2 Tech",
-      "preview": "Thanks!"
+      "from": "Sneakerheads",
+      "preview": "Yeeeesss!!!!"
+    },
+    {
+      "channel": "wa",
+      "from": "87793460072514",
+      "preview": "*raise"
     },
     {
       "channel": "wa",
       "from": "150409754763471",
-      "preview": "No problem !"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Got stuff for bbq"
+      "preview": "pls can you tell Esme Ferg moved drumming to 6 which is better as can eat after xx"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -49,12 +55,7 @@
       "urgency": null
     },
     {
-      "text": "redesign with a more human feel that's gonna affect the video and the deck as well",
-      "due": null,
-      "urgency": null
-    },
-    {
-      "text": "SEIS!",
+      "text": "SEIS",
       "due": null,
       "urgency": null
     },
@@ -67,17 +68,21 @@
       "text": "Teresa resignation",
       "due": null,
       "urgency": null
+    },
+    {
+      "text": "Tower House",
+      "due": null,
+      "urgency": null
     }
   ],
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$384.84",
-    "change": "+$104.10 · +37.08%",
+    "price": "$384.83",
+    "change": "+$111.07 · +40.57%",
     "direction": "up",
-    "as_of": "Close 26 May · NASDAQ",
+    "as_of": "Close 27 May · NASDAQ",
     "history": [
-      330.5799865722656,
       334.4700012207031,
       332.7699890136719,
       339.3999938964844,
@@ -106,36 +111,37 @@
       384.8999938964844,
       383.4700012207031,
       379.3800048828125,
-      384.8399963378906
+      384.8399963378906,
+      384.8299865722656
     ]
   },
   "weather": {
     "hourly": [
       {
         "time": "07:00",
-        "temp": 15,
+        "temp": 14,
         "icon": "☀"
       },
       {
         "time": "12:00",
-        "temp": 23,
-        "icon": "☀"
+        "temp": 26,
+        "icon": "⛅"
       },
       {
         "time": "15:00",
         "temp": 27,
-        "icon": "☀"
+        "icon": "⛅"
       },
       {
         "time": "19:00",
         "temp": 25,
-        "icon": "☀"
+        "icon": "⛅"
       }
     ],
-    "summary": "<strong>14–28°C</strong> · mostly clear · sunrise 04:58",
-    "narrative": "Quiet weather. Top of 27°C around lunchtime."
+    "summary": "<strong>12–28°C</strong> · light drizzle · sunrise 04:57",
+    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>14–28°C</strong> · mostly clear · sunrise 04:58",
+  "weather_summary": "<strong>12–28°C</strong> · light drizzle · sunrise 04:57",
   "body": {
     "value": "1.06",
     "unit": "m/s",
@@ -148,61 +154,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Energy bills to rise for millions as impact of Iran war hits"
+      "text": "One in six young people will not be in work or training in five years without action, report warns"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Labour has 'no coherent plan' for country, says Blair"
+      "text": "I just want freedom from fear, says girl raped by teenage boys as sentences to be reviewed"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Six people die in water-related incidents during heatwave"
+      "text": "Girl tells BBC she is 'scared to go out' after teenage rapists spared jail time"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Sturgeon defends 'no comment' police interview after SNP funds probe arrest"
+      "text": "US strikes Iran targets for second time in three days"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Nasa unveils next steps to build permanent Moon base"
+      "text": "An unhealthy focus on sex - Married at First Sight UK insiders on show's 'toxic' culture"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Energy bills to rise for millions as impact of Iran war hits"
+      "text": "One in six young people will not be in work or training in five years without action, report warns"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Labour has 'no coherent plan' for country, says Blair"
+      "text": "I just want freedom from fear, says girl raped by teenage boys as sentences to be reviewed"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Six people die in water-related incidents during heatwave"
+      "text": "Girl tells BBC she is 'scared to go out' after teenage rapists spared jail time"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Sturgeon defends 'no comment' police interview after SNP funds probe arrest"
+      "text": "US strikes Iran targets for second time in three days"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Nasa unveils next steps to build permanent Moon base"
+      "text": "An unhealthy focus on sex - Married at First Sight UK insiders on show's 'toxic' culture"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "CREATIVE DIRECTION",
-    "headline": "A <em>human-centered redesign</em> is reshaping your entire visual strategy.",
-    "deck": "The shift toward a warmer aesthetic now ripples across your video production and presentation deck, requiring coordinated updates across multiple workstreams. This foundational change needs to be locked in before downstream work proceeds.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "eyebrow": "PERSONNEL",
+    "headline": "<em>Teresa's resignation</em> requires immediate attention and transition planning.",
+    "deck": "With no due date flagged and multiple concurrent priorities, this departure needs to be addressed before institutional knowledge walks out the door. Clear next steps on coverage and handover should be established today.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }
