@@ -1,16 +1,31 @@
 {
-  "date_day": "Thursday",
-  "date_long": "28 May 2026",
+  "date_day": "Friday",
+  "date_long": "29 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:48",
-  "briefing_no": 286,
+  "compiled_at": "06:25",
+  "briefing_no": 290,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "14:38",
-      "event": "Releaf parcel delivery",
+      "time": "08:20",
+      "event": "[Dean Close] Mead House Roll Call - Term Start",
       "where": ""
+    },
+    {
+      "time": "13:00",
+      "event": "[Cheltenham] Cheltonian 2026 Order Deadline",
+      "where": ""
+    },
+    {
+      "time": "15:00",
+      "event": "[Cheltenham] Silver DofE Meet and Kit Check",
+      "where": "CCF"
+    },
+    {
+      "time": "18:30",
+      "event": "[HoH] U6 Leavers' Dinner",
+      "where": "Southwood's Function Room and garden"
     }
   ],
   "emails": [],
@@ -18,28 +33,28 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "Hampnett village group",
-      "preview": "Sorry I did not realise that some of you were still without power. We're at home all day if anyone needs anything XX"
-    },
-    {
-      "channel": "wa",
-      "from": "Party Chat",
-      "preview": "Yep, she somehow doesn’t look any different haha x"
-    },
-    {
-      "channel": "wa",
-      "from": "Sneakerheads",
-      "preview": "Yeeeesss!!!!"
-    },
-    {
-      "channel": "wa",
-      "from": "87793460072514",
-      "preview": "*raise"
+      "from": "84623824556136",
+      "preview": "I have all but one of the quotes now. I will have that tomorrow. So let me know what geeves wants in terms of file size and format. Whenever"
     },
     {
       "channel": "wa",
       "from": "150409754763471",
-      "preview": "pls can you tell Esme Ferg moved drumming to 6 which is better as can eat after xx"
+      "preview": "Not a problem just wanted to catch up ."
+    },
+    {
+      "channel": "wa",
+      "from": "Living in Twickenham ; )",
+      "preview": "Love a rowing boat ☺️"
+    },
+    {
+      "channel": "wa",
+      "from": "87793460072514",
+      "preview": "Can you ask Fran to link us to the R&D contact in Nam?"
+    },
+    {
+      "channel": "wa",
+      "from": "Hampnett village group",
+      "preview": "Thanks all. Returned to owner. Lovely dog."
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -75,15 +90,196 @@
       "urgency": null
     }
   ],
+  "school_week": [
+    {
+      "date": "2026-05-29",
+      "date_display": "Fri 29 May",
+      "time": "",
+      "all_day": true,
+      "school": "Cheltenham",
+      "title": "Southwood Sports Day",
+      "is_hoh": true,
+      "location": "Cheltenham College"
+    },
+    {
+      "date": "2026-05-29",
+      "date_display": "Fri 29 May",
+      "time": "08:20",
+      "all_day": false,
+      "school": "Dean Close",
+      "title": "Mead House Roll Call - Term Start",
+      "is_hoh": false,
+      "location": ""
+    },
+    {
+      "date": "2026-05-29",
+      "date_display": "Fri 29 May",
+      "time": "13:00",
+      "all_day": false,
+      "school": "Cheltenham",
+      "title": "Cheltonian 2026 Order Deadline",
+      "is_hoh": false,
+      "location": ""
+    },
+    {
+      "date": "2026-05-29",
+      "date_display": "Fri 29 May",
+      "time": "15:00",
+      "all_day": false,
+      "school": "Cheltenham",
+      "title": "Silver DofE Meet and Kit Check",
+      "is_hoh": false,
+      "location": "CCF"
+    },
+    {
+      "date": "2026-05-29",
+      "date_display": "Fri 29 May",
+      "time": "18:30",
+      "all_day": false,
+      "school": "Cheltenham",
+      "title": "U6 Leavers' Dinner",
+      "is_hoh": true,
+      "location": "Southwood's Function Room and garden"
+    },
+    {
+      "date": "2026-05-30",
+      "date_display": "Sat 30 May",
+      "time": "08:00",
+      "all_day": false,
+      "school": "Cheltenham",
+      "title": "Southwood House Opens on Speech Day",
+      "is_hoh": true,
+      "location": "Southwood, Cheltenham College"
+    },
+    {
+      "date": "2026-05-31",
+      "date_display": "Sun 31 May",
+      "time": "",
+      "all_day": true,
+      "school": "Cheltenham",
+      "title": "Silver DofE Camp Departure",
+      "is_hoh": false,
+      "location": ""
+    },
+    {
+      "date": "2026-06-01",
+      "date_display": "Mon 1 Jun",
+      "time": "",
+      "all_day": true,
+      "school": "Cheltenham",
+      "title": "Prize Giving and Speech Day",
+      "is_hoh": false,
+      "location": "Cheltenham College"
+    },
+    {
+      "date": "2026-06-03",
+      "date_display": "Wed 3 Jun",
+      "time": "",
+      "all_day": true,
+      "school": "Dean Close",
+      "title": "Mead House Photo",
+      "is_hoh": false,
+      "location": ""
+    },
+    {
+      "date": "2026-06-03",
+      "date_display": "Wed 3 Jun",
+      "time": "",
+      "all_day": true,
+      "school": "Dean Close",
+      "title": "4th Form End of Year Exams",
+      "is_hoh": false,
+      "location": ""
+    },
+    {
+      "date": "2026-06-03",
+      "date_display": "Wed 3 Jun",
+      "time": "08:50",
+      "all_day": false,
+      "school": "Dean Close",
+      "title": "Fourth Form French Summer Exam",
+      "is_hoh": false,
+      "location": ""
+    },
+    {
+      "date": "2026-06-03",
+      "date_display": "Wed 3 Jun",
+      "time": "11:55",
+      "all_day": false,
+      "school": "Dean Close",
+      "title": "Fourth Form Spanish Summer Exam",
+      "is_hoh": false,
+      "location": ""
+    },
+    {
+      "date": "2026-06-03",
+      "date_display": "Wed 3 Jun",
+      "time": "13:15",
+      "all_day": false,
+      "school": "Dean Close",
+      "title": "Fourth Form Physics Summer Exam",
+      "is_hoh": false,
+      "location": ""
+    },
+    {
+      "date": "2026-06-03",
+      "date_display": "Wed 3 Jun",
+      "time": "16:15",
+      "all_day": false,
+      "school": "Dean Close",
+      "title": "U6 Student Finance Talk",
+      "is_hoh": false,
+      "location": ""
+    },
+    {
+      "date": "2026-06-04",
+      "date_display": "Thu 4 Jun",
+      "time": "",
+      "all_day": true,
+      "school": "Dean Close",
+      "title": "Sherratt Cup Instrumental Competition Final",
+      "is_hoh": false,
+      "location": ""
+    },
+    {
+      "date": "2026-06-04",
+      "date_display": "Thu 4 Jun",
+      "time": "08:50",
+      "all_day": false,
+      "school": "Dean Close",
+      "title": "Fourth Form English Summer Exam",
+      "is_hoh": false,
+      "location": ""
+    },
+    {
+      "date": "2026-06-04",
+      "date_display": "Thu 4 Jun",
+      "time": "11:55",
+      "all_day": false,
+      "school": "Dean Close",
+      "title": "Fourth Form History Summer Exam",
+      "is_hoh": false,
+      "location": ""
+    },
+    {
+      "date": "2026-06-04",
+      "date_display": "Thu 4 Jun",
+      "time": "13:15",
+      "all_day": false,
+      "school": "Dean Close",
+      "title": "Fourth Form Physics Summer Exam",
+      "is_hoh": false,
+      "location": ""
+    }
+  ],
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$384.83",
-    "change": "+$111.07 · +40.57%",
+    "price": "$386.12",
+    "change": "+$112.36 · +41.04%",
     "direction": "up",
-    "as_of": "Close 27 May · NASDAQ",
+    "as_of": "Close 28 May · NASDAQ",
     "history": [
-      334.4700012207031,
       332.7699890136719,
       339.3999938964844,
       335.3999938964844,
@@ -112,36 +308,37 @@
       383.4700012207031,
       379.3800048828125,
       384.8399963378906,
-      384.8299865722656
+      384.8299865722656,
+      386.1199951171875
     ]
   },
   "weather": {
     "hourly": [
       {
         "time": "07:00",
-        "temp": 14,
-        "icon": "☀"
-      },
-      {
-        "time": "12:00",
-        "temp": 26,
+        "temp": 15,
         "icon": "⛅"
       },
       {
+        "time": "12:00",
+        "temp": 19,
+        "icon": "☔"
+      },
+      {
         "time": "15:00",
-        "temp": 27,
+        "temp": 20,
         "icon": "⛅"
       },
       {
         "time": "19:00",
-        "temp": 25,
-        "icon": "⛅"
+        "temp": 21,
+        "icon": "☀"
       }
     ],
-    "summary": "<strong>12–28°C</strong> · light drizzle · sunrise 04:57",
+    "summary": "<strong>13–21°C</strong> · light drizzle · sunrise 04:56",
     "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>12–28°C</strong> · light drizzle · sunrise 04:57",
+  "weather_summary": "<strong>13–21°C</strong> · light drizzle · sunrise 04:56",
   "body": {
     "value": "1.06",
     "unit": "m/s",
@@ -149,66 +346,75 @@
     "trend": "Up 4.3% on the prior week. Sleep ran 3h 24m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
-  "spotify": null,
+  "spotify": {
+    "name": "BEAT UP CHANEL$",
+    "artist": "Slayyyter",
+    "album": "WOR$T GIRL IN AMERICA",
+    "is_playing": false,
+    "duration_ms": 198937,
+    "progress_ms": 3908,
+    "cover_url": "https://i.scdn.co/image/ab67616d0000b2734c6a0c9499470002aa8ba96f",
+    "spotify_url": "https://open.spotify.com/track/0rLtUuQgwIlw6vv2eqHKdt"
+  },
   "ticker": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "One in six young people will not be in work or training in five years without action, report warns"
+      "text": "US and Iran 'very close' to deal but 'not there yet', Vance says"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "I just want freedom from fear, says girl raped by teenage boys as sentences to be reviewed"
+      "text": "SAS troops accused of war crimes not referred to police over morale fears, inquiry hears"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Girl tells BBC she is 'scared to go out' after teenage rapists spared jail time"
+      "text": "Moment Blue Origin rocket explodes during test in Florida"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US strikes Iran targets for second time in three days"
+      "text": "Epstein survivors lack faith in UK police investigating Andrew, says lawyer"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "An unhealthy focus on sex - Married at First Sight UK insiders on show's 'toxic' culture"
+      "text": "AI facial recognition to check age of asylum seekers from next year"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "One in six young people will not be in work or training in five years without action, report warns"
+      "text": "US and Iran 'very close' to deal but 'not there yet', Vance says"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "I just want freedom from fear, says girl raped by teenage boys as sentences to be reviewed"
+      "text": "SAS troops accused of war crimes not referred to police over morale fears, inquiry hears"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Girl tells BBC she is 'scared to go out' after teenage rapists spared jail time"
+      "text": "Moment Blue Origin rocket explodes during test in Florida"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US strikes Iran targets for second time in three days"
+      "text": "Epstein survivors lack faith in UK police investigating Andrew, says lawyer"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "An unhealthy focus on sex - Married at First Sight UK insiders on show's 'toxic' culture"
+      "text": "AI facial recognition to check age of asylum seekers from next year"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "Priority signal",
-    "headline": "First call at <em>14</em>. Releaf parcel delivery.",
-    "deck": "—",
-    "byline": "12:50 · compiled from inbox, calendar & tasks"
+    "eyebrow": "URGENT PERSONNEL MATTER",
+    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
+    "deck": "This unaddressed task sits among your morning priorities and likely has downstream implications for team continuity and operations. Delaying this conversation could compound staffing challenges.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }

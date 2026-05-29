@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Day2 Mission Control · 28 May 2026</title>
+<title>Day2 Mission Control · 29 May 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet" />
@@ -203,6 +203,23 @@
   .task-due.today { color: var(--accent); }
   .task-source { font-family: 'Poppins', sans-serif; font-style: italic; font-size: 12px; color: var(--ink-faint); text-transform: none; letter-spacing: 0; }
   .task-source-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-right: 6px; vertical-align: 1px; }
+  /* School week card — visually matches emails/messages/tasks but groups
+     events by day. Each day gets a faint header line; rows underneath
+     mix a time, a school-coloured pill, and the event title. */
+  .school-list { list-style: none; padding: 0; margin: 0; }
+  .school-day { padding: 12px 0; border-top: 0.5px solid var(--rule-soft); }
+  .school-day:first-child { border-top: none; padding-top: 0; }
+  .school-day-head { font-family: 'Poppins', sans-serif; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 8px; }
+  .school-row { display: grid; grid-template-columns: 56px auto 1fr auto; gap: 10px; align-items: baseline; padding: 5px 0; font-family: 'Poppins', sans-serif; font-size: 14px; color: var(--ink); line-height: 1.35; }
+  .school-time { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; color: var(--ink-faint); letter-spacing: 0.04em; }
+  .school-pill { font-family: 'Poppins', sans-serif; font-size: 9.5px; font-weight: 600; letter-spacing: 0.10em; text-transform: uppercase; padding: 2px 7px; border-radius: 999px; white-space: nowrap; }
+  .school-pill.school-cheltenham { background: rgba(189,33,48,0.12); color: #911a26; }
+  .school-pill.school-dean_close { background: rgba(0,99,69,0.12);   color: #00513a; }
+  .school-pill.school-fees       { background: rgba(212,140,30,0.16); color: #8a5a14; }
+  .school-pill.school-fixture    { background: rgba(44,120,115,0.14); color: #1f6660; }
+  .school-title { color: var(--ink); }
+  .school-flag.hoh { font-family: 'Poppins', sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: 0.10em; padding: 2px 7px; border-radius: 999px; background: #d4ae3a; color: #fff; }
+  .school-loc { font-family: 'Poppins', sans-serif; font-size: 11.5px; color: var(--ink-faint); font-style: italic; }
   /* .strip is now the TOP block (markets/body/weather/music). Sits
      directly after the hero's heavy-rule divider — no extra rule of
      its own. */
@@ -364,7 +381,7 @@
 </style>
 </head>
 <body>
-<div class="ticker-bar"><div class="ticker-track"><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">One in six young people will not be in work or training in five years without action, report warns</span></span><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">I just want freedom from fear, says girl raped by teenage boys as sentences to be reviewed</span></span><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">Girl tells BBC she is &#x27;scared to go out&#x27; after teenage rapists spared jail time</span></span><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">US strikes Iran targets for second time in three days</span></span><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">An unhealthy focus on sex - Married at First Sight UK insiders on show&#x27;s &#x27;toxic&#x27; culture</span></span><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">One in six young people will not be in work or training in five years without action, report warns</span></span><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">I just want freedom from fear, says girl raped by teenage boys as sentences to be reviewed</span></span><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">Girl tells BBC she is &#x27;scared to go out&#x27; after teenage rapists spared jail time</span></span><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">US strikes Iran targets for second time in three days</span></span><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">An unhealthy focus on sex - Married at First Sight UK insiders on show&#x27;s &#x27;toxic&#x27; culture</span></span></div></div>
+<div class="ticker-bar"><div class="ticker-track"><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">US and Iran &#x27;very close&#x27; to deal but &#x27;not there yet&#x27;, Vance says</span></span><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">SAS troops accused of war crimes not referred to police over morale fears, inquiry hears</span></span><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">Moment Blue Origin rocket explodes during test in Florida</span></span><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">Epstein survivors lack faith in UK police investigating Andrew, says lawyer</span></span><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">AI facial recognition to check age of asylum seekers from next year</span></span><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">US and Iran &#x27;very close&#x27; to deal but &#x27;not there yet&#x27;, Vance says</span></span><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">SAS troops accused of war crimes not referred to police over morale fears, inquiry hears</span></span><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">Moment Blue Origin rocket explodes during test in Florida</span></span><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">Epstein survivors lack faith in UK police investigating Andrew, says lawyer</span></span><span class="ticker-item"><span class="ticker-label tk-news">BBC</span><span class="ticker-text">AI facial recognition to check age of asylum seekers from next year</span></span></div></div>
 <main class="page">
 
   <header class="masthead">
@@ -373,33 +390,49 @@
       <span class="title-line-2"><em>Mission Control</em></span>
     </h1>
     <div class="dateline">
-      <div class="dateline-day">Thursday</div>
-      <div class="dateline-date">28 May 2026</div>
+      <div class="dateline-day">Friday</div>
+      <div class="dateline-date">29 May 2026</div>
       <div class="dateline-place">Northleach · Cotswolds</div>
-      <div class="dateline-weather"><strong>12–28°C</strong> · light drizzle · sunrise 04:57</div>
+      <div class="dateline-weather"><strong>13–21°C</strong> · light drizzle · sunrise 04:56</div>
     </div>
     <div class="masthead-strap">
       <span>STATION 01 &middot; OPERATOR MATT ROSS &middot; PREPARED BY JEEVES</span>
-      <span>BRIEFING 286</span>
+      <span>BRIEFING 290</span>
     </div>
   </header>
 
   <section class="hero">
     <div class="hero-main">
-      <div class="hero-eyebrow">Priority signal</div>
-      <h2 class="hero-headline">First call at <em>14</em>. Releaf parcel delivery.</h2>
+      <div class="hero-eyebrow">URGENT PERSONNEL MATTER</div>
+      <h2 class="hero-headline"><em>Teresa's resignation</em> requires immediate attention and succession planning.</h2>
       <div class="hero-rule"></div>
-      <p class="hero-deck">—</p>
-      <div class="hero-byline">12:50 · compiled from inbox, calendar &amp; tasks</div>
+      <p class="hero-deck">This unaddressed task sits among your morning priorities and likely has downstream implications for team continuity and operations. Delaying this conversation could compound staffing challenges.</p>
+      <div class="hero-byline">06:25 · compiled from inbox, calendar &amp; tasks</div>
     </div>
     <aside class="hero-aside">
       <div class="aside-head">First three movements</div>
       
             <div class="aside-item">
-              <div class="aside-time">14:38</div>
+              <div class="aside-time">08:20</div>
               <div>
-                <div class="aside-event">Releaf parcel delivery</div>
+                <div class="aside-event">[Dean Close] Mead House Roll Call - Term Start</div>
                 
+              </div>
+            </div>
+
+            <div class="aside-item">
+              <div class="aside-time">13:00</div>
+              <div>
+                <div class="aside-event">[Cheltenham] Cheltonian 2026 Order Deadline</div>
+                
+              </div>
+            </div>
+
+            <div class="aside-item">
+              <div class="aside-time">15:00</div>
+              <div>
+                <div class="aside-event">[Cheltenham] Silver DofE Meet and Kit Check</div>
+                <span class="aside-where">CCF</span>
               </div>
             </div>
     </aside>
@@ -411,17 +444,17 @@
     <section>
       <div class="market-head">
         <span class="market-title">Markets</span>
-        <span class="market-time">Close 27 May · NASDAQ</span>
+        <span class="market-time">Close 28 May · NASDAQ</span>
       </div>
       <div class="ticker">
         <div class="ticker-text">
           <span class="ticker-symbol">GOOG</span>
           <span class="ticker-name">Alphabet, Class C</span>
-          <span class="ticker-price">$384.83</span>
-          <span class="ticker-change up">+$111.07 · +40.57%</span>
+          <span class="ticker-price">$386.12</span>
+          <span class="ticker-change up">+$112.36 · +41.04%</span>
         </div>
         <svg class="sparkline" viewBox="0 0 200 60" preserveAspectRatio="none">
-          <path class="area" d="M 0.0,52.1 L 6.9,53.3 L 13.8,48.5 L 20.7,51.4 L 27.6,55.0 L 34.5,49.7 L 41.4,49.7 L 48.3,46.4 L 55.2,41.8 L 62.1,42.6 L 69.0,42.7 L 75.9,17.5 L 82.8,16.5 L 89.7,19.1 L 96.6,15.8 L 103.4,7.8 L 110.3,7.7 L 117.2,6.5 L 124.1,13.9 L 131.0,16.1 L 137.9,5.0 L 144.8,6.4 L 151.7,9.2 L 158.6,9.3 L 165.5,15.3 L 172.4,15.3 L 179.3,16.4 L 186.2,19.3 L 193.1,15.4 L 200.0,15.4 L 200.0,60 L 0,60 Z" /><path class="line" d="M 0.0,52.1 L 6.9,53.3 L 13.8,48.5 L 20.7,51.4 L 27.6,55.0 L 34.5,49.7 L 41.4,49.7 L 48.3,46.4 L 55.2,41.8 L 62.1,42.6 L 69.0,42.7 L 75.9,17.5 L 82.8,16.5 L 89.7,19.1 L 96.6,15.8 L 103.4,7.8 L 110.3,7.7 L 117.2,6.5 L 124.1,13.9 L 131.0,16.1 L 137.9,5.0 L 144.8,6.4 L 151.7,9.2 L 158.6,9.3 L 165.5,15.3 L 172.4,15.3 L 179.3,16.4 L 186.2,19.3 L 193.1,15.4 L 200.0,15.4" /><circle cx="200.0" cy="15.4" r="2.5" />
+          <path class="area" d="M 0.0,53.3 L 6.9,48.5 L 13.8,51.4 L 20.7,55.0 L 27.6,49.7 L 34.5,49.7 L 41.4,46.4 L 48.3,41.8 L 55.2,42.6 L 62.1,42.7 L 69.0,17.5 L 75.9,16.5 L 82.8,19.1 L 89.7,15.8 L 96.6,7.8 L 103.4,7.7 L 110.3,6.5 L 117.2,13.9 L 124.1,16.1 L 131.0,5.0 L 137.9,6.4 L 144.8,9.2 L 151.7,9.3 L 158.6,15.3 L 165.5,15.3 L 172.4,16.4 L 179.3,19.3 L 186.2,15.4 L 193.1,15.4 L 200.0,14.4 L 200.0,60 L 0,60 Z" /><path class="line" d="M 0.0,53.3 L 6.9,48.5 L 13.8,51.4 L 20.7,55.0 L 27.6,49.7 L 34.5,49.7 L 41.4,46.4 L 48.3,41.8 L 55.2,42.6 L 62.1,42.7 L 69.0,17.5 L 75.9,16.5 L 82.8,19.1 L 89.7,15.8 L 96.6,7.8 L 103.4,7.7 L 110.3,6.5 L 117.2,13.9 L 124.1,16.1 L 131.0,5.0 L 137.9,6.4 L 144.8,9.2 L 151.7,9.3 L 158.6,15.3 L 165.5,15.3 L 172.4,16.4 L 179.3,19.3 L 186.2,15.4 L 193.1,15.4 L 200.0,14.4" /><circle cx="200.0" cy="14.4" r="2.5" />
         </svg>
       </div>
     </section>
@@ -448,26 +481,26 @@
         
         <div class="weather-cell">
           <div class="weather-cell-time">07:00</div>
-          <div class="weather-cell-icon">☀</div>
-          <div class="weather-cell-temp">14&deg;</div>
+          <div class="weather-cell-icon">⛅</div>
+          <div class="weather-cell-temp">15&deg;</div>
         </div>
 
         <div class="weather-cell">
           <div class="weather-cell-time">12:00</div>
-          <div class="weather-cell-icon">⛅</div>
-          <div class="weather-cell-temp">26&deg;</div>
+          <div class="weather-cell-icon">☔</div>
+          <div class="weather-cell-temp">19&deg;</div>
         </div>
 
         <div class="weather-cell">
           <div class="weather-cell-time">15:00</div>
           <div class="weather-cell-icon">⛅</div>
-          <div class="weather-cell-temp">27&deg;</div>
+          <div class="weather-cell-temp">20&deg;</div>
         </div>
 
         <div class="weather-cell">
           <div class="weather-cell-time">19:00</div>
-          <div class="weather-cell-icon">⛅</div>
-          <div class="weather-cell-temp">25&deg;</div>
+          <div class="weather-cell-icon">☀</div>
+          <div class="weather-cell-temp">21&deg;</div>
         </div>
       </div>
       <p class="body-trend" style="margin-top:18px">Drizzle through the morning, easing by afternoon. Take a coat for the school run.</p>
@@ -476,9 +509,19 @@
     <section>
       <div class="card-head">
         <span class="card-title">Now playing</span>
-        <span class="card-tally">silent</span>
+        <span class="card-tally">paused</span>
       </div>
-      <p class="music-empty">Nothing on Spotify right now.</p>
+      
+      <div class="music">
+        <a class="music-cover paused" href="https://open.spotify.com/track/0rLtUuQgwIlw6vv2eqHKdt" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616d0000b2734c6a0c9499470002aa8ba96f" alt="" onerror="this.style.display='none'" /><span class="music-state-dot"></span></a>
+        <div class="music-info">
+          <div class="music-title">BEAT UP CHANEL$</div>
+          <div class="music-artist">Slayyyter</div>
+          <div class="music-album">WOR$T GIRL IN AMERICA</div>
+        </div>
+        <a class="music-link" href="https://open.spotify.com/track/0rLtUuQgwIlw6vv2eqHKdt" target="_blank" rel="noopener">Open in Spotify &rarr;</a>
+      </div>
+    
     </section>
   </div>
 
@@ -503,32 +546,8 @@
         <li class="message">
           <div class="msg-channel wa">WhatsApp</div>
           <div class="msg-body">
-            <span class="msg-from">Hampnett village group</span>
-            <span class="msg-preview">Sorry I did not realise that some of you were still without power. We&#x27;re at home all day if anyone needs anything XX</span>
-          </div>
-        </li>
-
-        <li class="message">
-          <div class="msg-channel wa">WhatsApp</div>
-          <div class="msg-body">
-            <span class="msg-from">Party Chat</span>
-            <span class="msg-preview">Yep, she somehow doesn’t look any different haha x</span>
-          </div>
-        </li>
-
-        <li class="message">
-          <div class="msg-channel wa">WhatsApp</div>
-          <div class="msg-body">
-            <span class="msg-from">Sneakerheads</span>
-            <span class="msg-preview">Yeeeesss!!!!</span>
-          </div>
-        </li>
-
-        <li class="message">
-          <div class="msg-channel wa">WhatsApp</div>
-          <div class="msg-body">
-            <span class="msg-from">87793460072514</span>
-            <span class="msg-preview">*raise</span>
+            <span class="msg-from">84623824556136</span>
+            <span class="msg-preview">I have all but one of the quotes now. I will have that tomorrow. So let me know what geeves wants in terms of file size and format. Whenever</span>
           </div>
         </li>
 
@@ -536,7 +555,31 @@
           <div class="msg-channel wa">WhatsApp</div>
           <div class="msg-body">
             <span class="msg-from">150409754763471</span>
-            <span class="msg-preview">pls can you tell Esme Ferg moved drumming to 6 which is better as can eat after xx</span>
+            <span class="msg-preview">Not a problem just wanted to catch up .</span>
+          </div>
+        </li>
+
+        <li class="message">
+          <div class="msg-channel wa">WhatsApp</div>
+          <div class="msg-body">
+            <span class="msg-from">Living in Twickenham ; )</span>
+            <span class="msg-preview">Love a rowing boat ☺️</span>
+          </div>
+        </li>
+
+        <li class="message">
+          <div class="msg-channel wa">WhatsApp</div>
+          <div class="msg-body">
+            <span class="msg-from">87793460072514</span>
+            <span class="msg-preview">Can you ask Fran to link us to the R&amp;D contact in Nam?</span>
+          </div>
+        </li>
+
+        <li class="message">
+          <div class="msg-channel wa">WhatsApp</div>
+          <div class="msg-body">
+            <span class="msg-from">Hampnett village group</span>
+            <span class="msg-preview">Thanks all. Returned to owner. Lovely dog.</span>
           </div>
         </li>
       </ul>
@@ -580,10 +623,49 @@
         </li>
       </ol>
     </section>
+
+    <section>
+      <div class="card-head">
+        <span class="card-title">School this week</span>
+        <span class="card-tally">18 this week</span>
+      </div>
+      <ul class="school-list">
+        <li class="school-day"><div class="school-day-head">Fri 29 May</div>
+<div class="school-row">  <span class="school-time">All day</span>  <span class="school-pill school-cheltenham">Cheltenham</span>  <span class="school-title">Southwood Sports Day</span>   <span class="school-flag hoh">HoH</span>   <span class="school-loc">Cheltenham College</span></div>
+<div class="school-row">  <span class="school-time">08:20</span>  <span class="school-pill school-dean_close">Dean Close</span>  <span class="school-title">Mead House Roll Call - Term Start</span>    </div>
+<div class="school-row">  <span class="school-time">13:00</span>  <span class="school-pill school-cheltenham">Cheltenham</span>  <span class="school-title">Cheltonian 2026 Order Deadline</span>    </div>
+<div class="school-row">  <span class="school-time">15:00</span>  <span class="school-pill school-cheltenham">Cheltenham</span>  <span class="school-title">Silver DofE Meet and Kit Check</span>     <span class="school-loc">CCF</span></div>
+<div class="school-row">  <span class="school-time">18:30</span>  <span class="school-pill school-cheltenham">Cheltenham</span>  <span class="school-title">U6 Leavers&#x27; Dinner</span>   <span class="school-flag hoh">HoH</span>   <span class="school-loc">Southwood&#x27;s Function Room and garden</span></div>
+</li>
+<li class="school-day"><div class="school-day-head">Sat 30 May</div>
+<div class="school-row">  <span class="school-time">08:00</span>  <span class="school-pill school-cheltenham">Cheltenham</span>  <span class="school-title">Southwood House Opens on Speech Day</span>   <span class="school-flag hoh">HoH</span>   <span class="school-loc">Southwood, Cheltenham College</span></div>
+</li>
+<li class="school-day"><div class="school-day-head">Sun 31 May</div>
+<div class="school-row">  <span class="school-time">All day</span>  <span class="school-pill school-cheltenham">Cheltenham</span>  <span class="school-title">Silver DofE Camp Departure</span>    </div>
+</li>
+<li class="school-day"><div class="school-day-head">Mon 1 Jun</div>
+<div class="school-row">  <span class="school-time">All day</span>  <span class="school-pill school-cheltenham">Cheltenham</span>  <span class="school-title">Prize Giving and Speech Day</span>     <span class="school-loc">Cheltenham College</span></div>
+</li>
+<li class="school-day"><div class="school-day-head">Wed 3 Jun</div>
+<div class="school-row">  <span class="school-time">All day</span>  <span class="school-pill school-dean_close">Dean Close</span>  <span class="school-title">Mead House Photo</span>    </div>
+<div class="school-row">  <span class="school-time">All day</span>  <span class="school-pill school-dean_close">Dean Close</span>  <span class="school-title">4th Form End of Year Exams</span>    </div>
+<div class="school-row">  <span class="school-time">08:50</span>  <span class="school-pill school-dean_close">Dean Close</span>  <span class="school-title">Fourth Form French Summer Exam</span>    </div>
+<div class="school-row">  <span class="school-time">11:55</span>  <span class="school-pill school-dean_close">Dean Close</span>  <span class="school-title">Fourth Form Spanish Summer Exam</span>    </div>
+<div class="school-row">  <span class="school-time">13:15</span>  <span class="school-pill school-dean_close">Dean Close</span>  <span class="school-title">Fourth Form Physics Summer Exam</span>    </div>
+<div class="school-row">  <span class="school-time">16:15</span>  <span class="school-pill school-dean_close">Dean Close</span>  <span class="school-title">U6 Student Finance Talk</span>    </div>
+</li>
+<li class="school-day"><div class="school-day-head">Thu 4 Jun</div>
+<div class="school-row">  <span class="school-time">All day</span>  <span class="school-pill school-dean_close">Dean Close</span>  <span class="school-title">Sherratt Cup Instrumental Competition Final</span>    </div>
+<div class="school-row">  <span class="school-time">08:50</span>  <span class="school-pill school-dean_close">Dean Close</span>  <span class="school-title">Fourth Form English Summer Exam</span>    </div>
+<div class="school-row">  <span class="school-time">11:55</span>  <span class="school-pill school-dean_close">Dean Close</span>  <span class="school-title">Fourth Form History Summer Exam</span>    </div>
+<div class="school-row">  <span class="school-time">13:15</span>  <span class="school-pill school-dean_close">Dean Close</span>  <span class="school-title">Fourth Form Physics Summer Exam</span>    </div>
+</li>
+      </ul>
+    </section>
   </div>
 
   <footer class="colophon">
-    <span>Compiled 12:48 &middot; matt-briefing.netlify.app &middot; Day2 / Jeeves</span>
+    <span>Compiled 06:25 &middot; matt-briefing.netlify.app &middot; Day2 / Jeeves</span>
     <span class="colophon-quote">“The early morning has gold in its mouth.” — Franklin</span>
   </footer>
 
