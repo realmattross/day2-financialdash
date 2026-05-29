@@ -2,30 +2,30 @@
   "date_day": "Friday",
   "date_long": "29 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 290,
+  "compiled_at": "12:30",
+  "briefing_no": 291,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
-    {
-      "time": "08:20",
-      "event": "[Dean Close] Mead House Roll Call - Term Start",
-      "where": ""
-    },
     {
       "time": "13:00",
       "event": "[Cheltenham] Cheltonian 2026 Order Deadline",
       "where": ""
     },
     {
-      "time": "15:00",
-      "event": "[Cheltenham] Silver DofE Meet and Kit Check",
-      "where": "CCF"
+      "time": "16:00",
+      "event": "Ed meeting",
+      "where": ""
     },
     {
-      "time": "18:30",
-      "event": "[HoH] U6 Leavers' Dinner",
-      "where": "Southwood's Function Room and garden"
+      "time": "16:00",
+      "event": "Ed Meeting",
+      "where": ""
+    },
+    {
+      "time": "17:45",
+      "event": "Delivery",
+      "where": ""
     }
   ],
   "emails": [],
@@ -33,8 +33,18 @@
   "messages": [
     {
       "channel": "wa",
+      "from": "Day2 Fred",
+      "preview": "So meeting at Matt’s?"
+    },
+    {
+      "channel": "wa",
       "from": "84623824556136",
-      "preview": "I have all but one of the quotes now. I will have that tomorrow. So let me know what geeves wants in terms of file size and format. Whenever"
+      "preview": "Tom hanks. Not tomorrow hanks. Ffs"
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "Lools"
     },
     {
       "channel": "wa",
@@ -45,16 +55,6 @@
       "channel": "wa",
       "from": "Living in Twickenham ; )",
       "preview": "Love a rowing boat ☺️"
-    },
-    {
-      "channel": "wa",
-      "from": "87793460072514",
-      "preview": "Can you ask Fran to link us to the R&D contact in Nam?"
-    },
-    {
-      "channel": "wa",
-      "from": "Hampnett village group",
-      "preview": "Thanks all. Returned to owner. Lovely dog."
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -94,52 +94,12 @@
     {
       "date": "2026-05-29",
       "date_display": "Fri 29 May",
-      "time": "",
-      "all_day": true,
-      "school": "Cheltenham",
-      "title": "Southwood Sports Day",
-      "is_hoh": true,
-      "location": "Cheltenham College"
-    },
-    {
-      "date": "2026-05-29",
-      "date_display": "Fri 29 May",
-      "time": "08:20",
-      "all_day": false,
-      "school": "Dean Close",
-      "title": "Mead House Roll Call - Term Start",
-      "is_hoh": false,
-      "location": ""
-    },
-    {
-      "date": "2026-05-29",
-      "date_display": "Fri 29 May",
       "time": "13:00",
       "all_day": false,
       "school": "Cheltenham",
       "title": "Cheltonian 2026 Order Deadline",
       "is_hoh": false,
       "location": ""
-    },
-    {
-      "date": "2026-05-29",
-      "date_display": "Fri 29 May",
-      "time": "15:00",
-      "all_day": false,
-      "school": "Cheltenham",
-      "title": "Silver DofE Meet and Kit Check",
-      "is_hoh": false,
-      "location": "CCF"
-    },
-    {
-      "date": "2026-05-29",
-      "date_display": "Fri 29 May",
-      "time": "18:30",
-      "all_day": false,
-      "school": "Cheltenham",
-      "title": "U6 Leavers' Dinner",
-      "is_hoh": true,
-      "location": "Southwood's Function Room and garden"
     },
     {
       "date": "2026-05-30",
@@ -270,6 +230,26 @@
       "title": "Fourth Form Physics Summer Exam",
       "is_hoh": false,
       "location": ""
+    },
+    {
+      "date": "2026-06-05",
+      "date_display": "Fri 5 Jun",
+      "time": "08:50",
+      "all_day": false,
+      "school": "Dean Close",
+      "title": "Fourth Form Food Preparation Summer Exam",
+      "is_hoh": false,
+      "location": ""
+    },
+    {
+      "date": "2026-06-05",
+      "date_display": "Fri 5 Jun",
+      "time": "11:55",
+      "all_day": false,
+      "school": "Dean Close",
+      "title": "Fourth Form Classical Civilisation Latin Summer Exam",
+      "is_hoh": false,
+      "location": ""
     }
   ],
   "market": {
@@ -316,12 +296,12 @@
     "hourly": [
       {
         "time": "07:00",
-        "temp": 15,
+        "temp": 14,
         "icon": "⛅"
       },
       {
         "time": "12:00",
-        "temp": 19,
+        "temp": 17,
         "icon": "☔"
       },
       {
@@ -331,7 +311,7 @@
       },
       {
         "time": "19:00",
-        "temp": 21,
+        "temp": 20,
         "icon": "☀"
       }
     ],
@@ -346,16 +326,7 @@
     "trend": "Up 4.3% on the prior week. Sleep ran 3h 24m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
-  "spotify": {
-    "name": "BEAT UP CHANEL$",
-    "artist": "Slayyyter",
-    "album": "WOR$T GIRL IN AMERICA",
-    "is_playing": false,
-    "duration_ms": 198937,
-    "progress_ms": 3908,
-    "cover_url": "https://i.scdn.co/image/ab67616d0000b2734c6a0c9499470002aa8ba96f",
-    "spotify_url": "https://open.spotify.com/track/0rLtUuQgwIlw6vv2eqHKdt"
-  },
+  "spotify": null,
   "ticker": [
     {
       "kind": "news",
@@ -365,22 +336,22 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "SAS troops accused of war crimes not referred to police over morale fears, inquiry hears"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
       "text": "Moment Blue Origin rocket explodes during test in Florida"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Epstein survivors lack faith in UK police investigating Andrew, says lawyer"
+      "text": "SAS troops accused of war crimes not referred to police over morale fears, inquiry hears"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "AI facial recognition to check age of asylum seekers from next year"
+      "text": "Top UK chefs call for 10% VAT cut for pubs and restaurants"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Two charged after bystander fatally shot outside bar"
     }
   ],
   "_news": [
@@ -392,29 +363,29 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "SAS troops accused of war crimes not referred to police over morale fears, inquiry hears"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
       "text": "Moment Blue Origin rocket explodes during test in Florida"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Epstein survivors lack faith in UK police investigating Andrew, says lawyer"
+      "text": "SAS troops accused of war crimes not referred to police over morale fears, inquiry hears"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "AI facial recognition to check age of asylum seekers from next year"
+      "text": "Top UK chefs call for 10% VAT cut for pubs and restaurants"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Two charged after bystander fatally shot outside bar"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "URGENT PERSONNEL MATTER",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
-    "deck": "This unaddressed task sits among your morning priorities and likely has downstream implications for team continuity and operations. Delaying this conversation could compound staffing challenges.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "eyebrow": "Priority signal",
+    "headline": "First call at <em>13</em>. [Cheltenham] Cheltonian 2026 Order Deadline.",
+    "deck": "—",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
