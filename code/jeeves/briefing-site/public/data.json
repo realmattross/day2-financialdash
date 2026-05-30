@@ -1,31 +1,21 @@
 {
-  "date_day": "Friday",
-  "date_long": "29 May 2026",
+  "date_day": "Saturday",
+  "date_long": "30 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 291,
+  "compiled_at": "06:33",
+  "briefing_no": 292,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
+      "time": "12:00",
+      "event": "GYm",
+      "where": ""
+    },
+    {
       "time": "13:00",
-      "event": "[Cheltenham] Cheltonian 2026 Order Deadline",
-      "where": ""
-    },
-    {
-      "time": "16:00",
-      "event": "Ed meeting",
-      "where": ""
-    },
-    {
-      "time": "16:00",
-      "event": "Ed Meeting",
-      "where": ""
-    },
-    {
-      "time": "17:45",
-      "event": "Delivery",
-      "where": ""
+      "event": "Saracens v Harlequins - Gallagher Prem (copy)",
+      "where": "StoneX Stadium"
     }
   ],
   "emails": [],
@@ -33,28 +23,28 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "Day2 Fred",
-      "preview": "So meeting at Matt’s?"
+      "from": "The Young Ones",
+      "preview": "https://view.hello.parkinsons.org.uk/?vawpToken=Z52BDGCSUI4U3DHO3W2A65GFSI.500020&utm_source=MarketingCloud&utm_medium=Email&utm_campaign=29"
     },
     {
       "channel": "wa",
       "from": "84623824556136",
-      "preview": "Tom hanks. Not tomorrow hanks. Ffs"
+      "preview": "Would u be able to get the text on a web page that wasn’t live kind of thing. Struggling with the PowerPoint thing now I need to finesse it."
+    },
+    {
+      "channel": "wa",
+      "from": "Day2 Fred",
+      "preview": "En route"
+    },
+    {
+      "channel": "wa",
+      "from": "Bitches be",
+      "preview": "I wasn’t in mission impossible."
     },
     {
       "channel": "wa",
       "from": "150409754763471",
-      "preview": "Lools"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Not a problem just wanted to catch up ."
-    },
-    {
-      "channel": "wa",
-      "from": "Living in Twickenham ; )",
-      "preview": "Love a rowing boat ☺️"
+      "preview": "Do you have any idea how much my go daddy website costs might be? x"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -91,16 +81,6 @@
     }
   ],
   "school_week": [
-    {
-      "date": "2026-05-29",
-      "date_display": "Fri 29 May",
-      "time": "13:00",
-      "all_day": false,
-      "school": "Cheltenham",
-      "title": "Cheltonian 2026 Order Deadline",
-      "is_hoh": false,
-      "location": ""
-    },
     {
       "date": "2026-05-30",
       "date_display": "Sat 30 May",
@@ -174,16 +154,6 @@
     {
       "date": "2026-06-03",
       "date_display": "Wed 3 Jun",
-      "time": "13:15",
-      "all_day": false,
-      "school": "Dean Close",
-      "title": "Fourth Form Physics Summer Exam",
-      "is_hoh": false,
-      "location": ""
-    },
-    {
-      "date": "2026-06-03",
-      "date_display": "Wed 3 Jun",
       "time": "16:15",
       "all_day": false,
       "school": "Dean Close",
@@ -250,17 +220,26 @@
       "title": "Fourth Form Classical Civilisation Latin Summer Exam",
       "is_hoh": false,
       "location": ""
+    },
+    {
+      "date": "2026-06-05",
+      "date_display": "Fri 5 Jun",
+      "time": "13:15",
+      "all_day": false,
+      "school": "Dean Close",
+      "title": "Fourth Form Biology Summer Exam",
+      "is_hoh": false,
+      "location": ""
     }
   ],
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$386.12",
-    "change": "+$112.36 · +41.04%",
+    "price": "$376.43",
+    "change": "+$102.67 · +37.50%",
     "direction": "up",
-    "as_of": "Close 28 May · NASDAQ",
+    "as_of": "Close 29 May · NASDAQ",
     "history": [
-      332.7699890136719,
       339.3999938964844,
       335.3999938964844,
       330.4700012207031,
@@ -289,7 +268,8 @@
       379.3800048828125,
       384.8399963378906,
       384.8299865722656,
-      386.1199951171875
+      386.1199951171875,
+      376.42999267578125
     ]
   },
   "weather": {
@@ -297,28 +277,28 @@
       {
         "time": "07:00",
         "temp": 14,
-        "icon": "⛅"
+        "icon": "☀"
       },
       {
         "time": "12:00",
-        "temp": 17,
-        "icon": "☔"
+        "temp": 20,
+        "icon": "⛅"
       },
       {
         "time": "15:00",
-        "temp": 20,
-        "icon": "⛅"
+        "temp": 22,
+        "icon": "☀"
       },
       {
         "time": "19:00",
         "temp": 20,
-        "icon": "☀"
+        "icon": "⛅"
       }
     ],
-    "summary": "<strong>13–21°C</strong> · light drizzle · sunrise 04:56",
-    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
+    "summary": "<strong>11–22°C</strong> · overcast · sunrise 04:55",
+    "narrative": "Quiet weather. Top of 22°C around lunchtime."
   },
-  "weather_summary": "<strong>13–21°C</strong> · light drizzle · sunrise 04:56",
+  "weather_summary": "<strong>11–22°C</strong> · overcast · sunrise 04:55",
   "body": {
     "value": "1.06",
     "unit": "m/s",
@@ -331,61 +311,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US and Iran 'very close' to deal but 'not there yet', Vance says"
+      "text": "Palace handed Andrew's controversial envoy emails six years ago"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Moment Blue Origin rocket explodes during test in Florida"
+      "text": "No deal announced after Trump meeting to make 'final determination' on Iran"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "SAS troops accused of war crimes not referred to police over morale fears, inquiry hears"
+      "text": "Arrive three hours before flight home, airline boss tells UK holidaymakers"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Top UK chefs call for 10% VAT cut for pubs and restaurants"
+      "text": "Attorney general had 'no doubt' on reviewing teen boys' rape sentences"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Two charged after bystander fatally shot outside bar"
+      "text": "'Poison seller' who sold toxic chemicals online to people across world admits aiding suicides"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US and Iran 'very close' to deal but 'not there yet', Vance says"
+      "text": "Palace handed Andrew's controversial envoy emails six years ago"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Moment Blue Origin rocket explodes during test in Florida"
+      "text": "No deal announced after Trump meeting to make 'final determination' on Iran"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "SAS troops accused of war crimes not referred to police over morale fears, inquiry hears"
+      "text": "Arrive three hours before flight home, airline boss tells UK holidaymakers"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Top UK chefs call for 10% VAT cut for pubs and restaurants"
+      "text": "Attorney general had 'no doubt' on reviewing teen boys' rape sentences"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Two charged after bystander fatally shot outside bar"
+      "text": "'Poison seller' who sold toxic chemicals online to people across world admits aiding suicides"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "Priority signal",
-    "headline": "First call at <em>13</em>. [Cheltenham] Cheltonian 2026 Order Deadline.",
-    "deck": "—",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "eyebrow": "PERSONNEL",
+    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
+    "deck": "With no due date flagged, this departure risk sits unaddressed among your tasks. Clarifying the timeline and transition plan needs to happen today.",
+    "byline": "06:42 · compiled from inbox, calendar & tasks"
   }
 }
