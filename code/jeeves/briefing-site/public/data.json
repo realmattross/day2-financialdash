@@ -2,8 +2,8 @@
   "date_day": "Sunday",
   "date_long": "31 May 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:36",
-  "briefing_no": 294,
+  "compiled_at": "12:30",
+  "briefing_no": 295,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
@@ -16,11 +16,6 @@
       "time": "09:45",
       "event": "Ed card",
       "where": ""
-    },
-    {
-      "time": "15:00",
-      "event": "[Memo] Call Andy re: Q3 numbers",
-      "where": ""
     }
   ],
   "emails": [],
@@ -29,12 +24,17 @@
     {
       "channel": "wa",
       "from": "84623824556136",
-      "preview": "Are you as delighted as tom that they lost."
+      "preview": "Chapter\nreel\nFilms"
+    },
+    {
+      "channel": "wa",
+      "from": "Sneakerheads",
+      "preview": "It’s Sam."
     },
     {
       "channel": "wa",
       "from": "87793460072514",
-      "preview": "How about this for a shorter section…\n\n\n\nEd Shaw\nCo-Founder\n\n\"Together, we saw the opportunity to build the support platform we'd both been "
+      "preview": "Looks good right? Real people creating real solutions!"
     },
     {
       "channel": "wa",
@@ -45,11 +45,6 @@
       "channel": "wa",
       "from": "4698794942473",
       "preview": "With my cock"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Let Tudor get a point off him"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -70,17 +65,17 @@
       "urgency": null
     },
     {
-      "text": "Chase Craig on appliances",
-      "due": null,
-      "urgency": null
-    },
-    {
       "text": "Teresa resignation",
       "due": null,
       "urgency": null
     },
     {
       "text": "Tower House",
+      "due": null,
+      "urgency": null
+    },
+    {
+      "text": "Republic onboard Plus pay",
       "due": null,
       "urgency": null
     }
@@ -127,112 +122,12 @@
       "location": ""
     },
     {
-      "date": "2026-06-03",
-      "date_display": "Wed 3 Jun",
-      "time": "08:50",
-      "all_day": false,
-      "school": "Dean Close",
-      "title": "Fourth Form French Summer Exam",
-      "is_hoh": false,
-      "location": ""
-    },
-    {
-      "date": "2026-06-03",
-      "date_display": "Wed 3 Jun",
-      "time": "11:55",
-      "all_day": false,
-      "school": "Dean Close",
-      "title": "Fourth Form Spanish Summer Exam",
-      "is_hoh": false,
-      "location": ""
-    },
-    {
-      "date": "2026-06-03",
-      "date_display": "Wed 3 Jun",
-      "time": "16:15",
-      "all_day": false,
-      "school": "Dean Close",
-      "title": "U6 Student Finance Talk",
-      "is_hoh": false,
-      "location": ""
-    },
-    {
       "date": "2026-06-04",
       "date_display": "Thu 4 Jun",
       "time": "",
       "all_day": true,
       "school": "Dean Close",
       "title": "Sherratt Cup Instrumental Competition Final",
-      "is_hoh": false,
-      "location": ""
-    },
-    {
-      "date": "2026-06-04",
-      "date_display": "Thu 4 Jun",
-      "time": "08:50",
-      "all_day": false,
-      "school": "Dean Close",
-      "title": "Fourth Form English Summer Exam",
-      "is_hoh": false,
-      "location": ""
-    },
-    {
-      "date": "2026-06-04",
-      "date_display": "Thu 4 Jun",
-      "time": "11:55",
-      "all_day": false,
-      "school": "Dean Close",
-      "title": "Fourth Form History Summer Exam",
-      "is_hoh": false,
-      "location": ""
-    },
-    {
-      "date": "2026-06-04",
-      "date_display": "Thu 4 Jun",
-      "time": "13:15",
-      "all_day": false,
-      "school": "Dean Close",
-      "title": "Fourth Form Physics Summer Exam",
-      "is_hoh": false,
-      "location": ""
-    },
-    {
-      "date": "2026-06-05",
-      "date_display": "Fri 5 Jun",
-      "time": "08:50",
-      "all_day": false,
-      "school": "Dean Close",
-      "title": "Fourth Form Food Preparation Summer Exam",
-      "is_hoh": false,
-      "location": ""
-    },
-    {
-      "date": "2026-06-05",
-      "date_display": "Fri 5 Jun",
-      "time": "11:55",
-      "all_day": false,
-      "school": "Dean Close",
-      "title": "Fourth Form Classical Civilisation Latin Summer Exam",
-      "is_hoh": false,
-      "location": ""
-    },
-    {
-      "date": "2026-06-05",
-      "date_display": "Fri 5 Jun",
-      "time": "13:15",
-      "all_day": false,
-      "school": "Dean Close",
-      "title": "Fourth Form Biology Summer Exam",
-      "is_hoh": false,
-      "location": ""
-    },
-    {
-      "date": "2026-06-06",
-      "date_display": "Sat 6 Jun",
-      "time": "08:50",
-      "all_day": false,
-      "school": "Dean Close",
-      "title": "Fourth Form Saturday Exams",
       "is_hoh": false,
       "location": ""
     }
@@ -282,7 +177,7 @@
       {
         "time": "07:00",
         "temp": 15,
-        "icon": "⛅"
+        "icon": "☀"
       },
       {
         "time": "12:00",
@@ -296,14 +191,14 @@
       },
       {
         "time": "19:00",
-        "temp": 15,
+        "temp": 16,
         "icon": "☔"
       }
     ],
-    "summary": "<strong>13–18°C</strong> · rain · sunrise 04:54",
-    "narrative": "Wet day ahead. Boots and a proper coat."
+    "summary": "<strong>12–18°C</strong> · light drizzle · sunrise 04:54",
+    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>13–18°C</strong> · rain · sunrise 04:54",
+  "weather_summary": "<strong>12–18°C</strong> · light drizzle · sunrise 04:54",
   "body": {
     "value": "1.18",
     "unit": "m/s",
@@ -321,7 +216,12 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Hundreds arrested in France after wild Champions League celebrations"
+      "text": "Key moments from Nicola Sturgeon's interview with Laura Kuenssberg"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Hundreds arrested and dozens of police injured after Champions League riots in France"
     },
     {
       "kind": "news",
@@ -331,12 +231,7 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'Killer fungus' could be good news for habitats decimated by invasive moss"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Oscar-winning Star Wars editor Marcia Lucas dies aged 80"
+      "text": "Israel seizes castle in Lebanon as it expands ground offensive"
     }
   ],
   "_news": [
@@ -348,7 +243,12 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Hundreds arrested in France after wild Champions League celebrations"
+      "text": "Key moments from Nicola Sturgeon's interview with Laura Kuenssberg"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Hundreds arrested and dozens of police injured after Champions League riots in France"
     },
     {
       "kind": "news",
@@ -358,19 +258,14 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'Killer fungus' could be good news for habitats decimated by invasive moss"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Oscar-winning Star Wars editor Marcia Lucas dies aged 80"
+      "text": "Israel seizes castle in Lebanon as it expands ground offensive"
     }
   ],
   "_fixtures": [],
   "lead": {
     "eyebrow": "PERSONNEL",
-    "headline": "<em>Teresa's resignation</em> requires immediate transition planning.",
-    "deck": "With no clear timeline or succession plan documented, this departure creates an operational gap that needs addressing today. Getting ahead of the handover process now prevents downstream disruption across your teams.",
-    "byline": "06:36 · compiled from inbox, calendar & tasks"
+    "headline": "<em>Teresa's resignation</em> requires immediate attention.",
+    "deck": "A key team member is departing and the transition needs to be managed now to minimize disruption. This takes priority over other pending items.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
