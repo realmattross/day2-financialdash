@@ -2,8 +2,8 @@
   "date_day": "Monday",
   "date_long": "1 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 296,
+  "compiled_at": "12:30",
+  "briefing_no": 297,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [],
@@ -12,31 +12,26 @@
   "messages": [
     {
       "channel": "wa",
+      "from": "87793460072514",
+      "preview": "This isn’t live is it? Will need to get photo permission if we use these…"
+    },
+    {
+      "channel": "wa",
+      "from": "84623824556136",
+      "preview": "Hmm. Doesn’t work centre frame does it. Leave it with me"
+    },
+    {
+      "channel": "wa",
       "from": "The Young Ones",
       "preview": "Please see attached an email about the Parkinson’s Nurse service in Gloucestershire. If anyone is struggling and needs any advice or support"
     },
     {
       "channel": "wa",
-      "from": "84623824556136",
-      "preview": "And the final page….how about\n\nEvery story has a beginning. Start yours with Chapter One.\n\nJust added a couple of words\n\nSorry missed “a\""
-    },
-    {
-      "channel": "wa",
       "from": "Hampnett village group",
       "preview": "Don’t take chances with CO alarms - if it is sounding leave the area and make sure ventilated - they can give a false alarm but veer on the "
-    },
-    {
-      "channel": "wa",
-      "from": "Sneakerheads",
-      "preview": "It’s Sam."
-    },
-    {
-      "channel": "wa",
-      "from": "87793460072514",
-      "preview": "Looks good right? Real people creating real solutions!"
     }
   ],
-  "messages_tally": "5 unread · 5 chats",
+  "messages_tally": "4 unread · 4 chats",
   "tasks": [
     {
       "text": "Brian. Book meeting Prep for Caroline",
@@ -109,6 +104,16 @@
       "title": "Sherratt Cup Instrumental Competition Final",
       "is_hoh": false,
       "location": ""
+    },
+    {
+      "date": "2026-06-08",
+      "date_display": "Mon 8 Jun",
+      "time": "08:50",
+      "all_day": false,
+      "school": "Dean Close",
+      "title": "Fourth Form Chemistry Summer Exam",
+      "is_hoh": false,
+      "location": ""
     }
   ],
   "market": {
@@ -160,12 +165,12 @@
       },
       {
         "time": "12:00",
-        "temp": 16,
+        "temp": 17,
         "icon": "⛅"
       },
       {
         "time": "15:00",
-        "temp": 15,
+        "temp": 17,
         "icon": "⛅"
       },
       {
@@ -174,10 +179,10 @@
         "icon": "☔"
       }
     ],
-    "summary": "<strong>12–16°C</strong> · rain · sunrise 04:54",
+    "summary": "<strong>11–17°C</strong> · rain · sunrise 04:54",
     "narrative": "Wet day ahead. Boots and a proper coat."
   },
-  "weather_summary": "<strong>12–16°C</strong> · rain · sunrise 04:54",
+  "weather_summary": "<strong>11–17°C</strong> · rain · sunrise 04:54",
   "body": {
     "value": "1.18",
     "unit": "m/s",
@@ -190,61 +195,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Second batch of Mandelson files to be published on Monday"
+      "text": "US says it struck Iranian radar sites as Kuwait reports missile and drone attacks"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'Don't be too kind': Stories from the maternity unit where mums were failed"
+      "text": "Satellite images suggest Iran's strikes are more precise and extensive than US acknowledged"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Iran and US report new wave of air strikes in Gulf"
+      "text": "Ministers braced for private texts and WhatsApps in Mandelson file release"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "NHS single patient record to be debated for first time"
+      "text": "UK wins court case over collapsed Rwanda asylum deal"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Athlete forced to travel 800 miles for meeting that boss didn't show up for wins £149,000"
+      "text": "'Don't be too kind': Maternity staff used offensive terms to refer to patients"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Second batch of Mandelson files to be published on Monday"
+      "text": "US says it struck Iranian radar sites as Kuwait reports missile and drone attacks"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'Don't be too kind': Stories from the maternity unit where mums were failed"
+      "text": "Satellite images suggest Iran's strikes are more precise and extensive than US acknowledged"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Iran and US report new wave of air strikes in Gulf"
+      "text": "Ministers braced for private texts and WhatsApps in Mandelson file release"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "NHS single patient record to be debated for first time"
+      "text": "UK wins court case over collapsed Rwanda asylum deal"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Athlete forced to travel 800 miles for meeting that boss didn't show up for wins £149,000"
+      "text": "'Don't be too kind': Maternity staff used offensive terms to refer to patients"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "PERSONNEL",
+    "eyebrow": "URGENT STAFFING",
     "headline": "<em>Teresa's resignation</em> requires immediate attention and transition planning.",
-    "deck": "With no details logged on timing or transition, this departure needs clarification on effective date and handover priorities. Getting ahead of it now prevents operational disruption.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "deck": "With no timeline specified on this task, clarity is needed now on her departure date and what handover needs to happen before she leaves. This directly impacts team capacity and any projects she's stewarding.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
