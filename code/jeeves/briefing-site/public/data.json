@@ -2,16 +2,11 @@
   "date_day": "Tuesday",
   "date_long": "2 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 298,
+  "compiled_at": "12:30",
+  "briefing_no": 299,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
-    {
-      "time": "09:00",
-      "event": "Oven Delivery and Craig",
-      "where": ""
-    },
     {
       "time": "13:00",
       "event": "Ed",
@@ -39,25 +34,30 @@
     {
       "channel": "wa",
       "from": "150409754763471",
-      "preview": "Home in 12 x"
+      "preview": "For your tax return, do you remember how you collected info for the section about interest from 'banks, securities' etc? no rush to answer x"
+    },
+    {
+      "channel": "wa",
+      "from": "Day2 Fred",
+      "preview": "Yeah sounds good"
+    },
+    {
+      "channel": "wa",
+      "from": "87793460072514",
+      "preview": "Sure we can chat tomorrow… ping him the contact so he can see it before tomorrow"
+    },
+    {
+      "channel": "wa",
+      "from": "81527186686069",
+      "preview": "Good Morning,  cleaning lady will visit tomorrow morning.  The driver   cleaning lady had some family issues last night and she is not able "
     },
     {
       "channel": "wa",
       "from": "150409754763471",
       "preview": "Noted"
-    },
-    {
-      "channel": "wa",
-      "from": "87793460072514",
-      "preview": "Cool! I may have childcare issues tomorrow but hopefully sorted…"
-    },
-    {
-      "channel": "wa",
-      "from": "84623824556136",
-      "preview": "Let me know your thoughts on email address too."
     }
   ],
-  "messages_tally": "4 unread · 4 chats",
+  "messages_tally": "5 unread · 5 chats",
   "tasks": [
     {
       "text": "Brian. Book meeting Prep for Caroline",
@@ -176,8 +176,8 @@
     "hourly": [
       {
         "time": "07:00",
-        "temp": 14,
-        "icon": "☔"
+        "temp": 13,
+        "icon": "⛅"
       },
       {
         "time": "12:00",
@@ -192,7 +192,7 @@
       {
         "time": "19:00",
         "temp": 16,
-        "icon": "☔"
+        "icon": "⛅"
       }
     ],
     "summary": "<strong>13–18°C</strong> · rain · sunrise 04:53",
@@ -203,78 +203,69 @@
     "value": "1.18",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Sleep ran 8h 18m overnight.",
+    "trend": "Up 2.6% on the prior week. Sleep ran 8h 25m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
-  "spotify": {
-    "name": "Aperol Spritz",
-    "artist": "deBasement",
-    "album": "Aperol Spritz",
-    "is_playing": false,
-    "duration_ms": 179000,
-    "progress_ms": 2238,
-    "cover_url": "https://i.scdn.co/image/ab67616d0000b273350722cf1bc5cc033ff51b6c",
-    "spotify_url": "https://open.spotify.com/track/10V1mRpItQP4ZNCfEiOuF7"
-  },
+  "spotify": null,
   "ticker": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Massive Russian attack on cities across Ukraine kills at least ten people"
+      "text": "Murdered student Henry Nowak told police 'I can't breathe' while handcuffed"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'Beleaguered and bereft' - Mandelson messages reveal criticism of No 10"
+      "text": "How pupils with special educational needs are more likely to see their schools close"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Weapons‑obsessed killer jailed as body cam footage shows victim being handcuffed"
+      "text": "Ukraine rescuers pull dead from rubble after Russian strikes kill 18 people"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Six people killed in Iowa domestic dispute, police say"
+      "text": "Third of people say uni degree not worth it, as student loan inquiry begins"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Lebanon says Hezbollah agrees reciprocal halt to attacks on Israel"
+      "text": "Clashes continue in Lebanon despite Israel and Hezbollah accepting US partial ceasefire plan"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Massive Russian attack on cities across Ukraine kills at least ten people"
+      "text": "Murdered student Henry Nowak told police 'I can't breathe' while handcuffed"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'Beleaguered and bereft' - Mandelson messages reveal criticism of No 10"
+      "text": "How pupils with special educational needs are more likely to see their schools close"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Weapons‑obsessed killer jailed as body cam footage shows victim being handcuffed"
+      "text": "Ukraine rescuers pull dead from rubble after Russian strikes kill 18 people"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Six people killed in Iowa domestic dispute, police say"
+      "text": "Third of people say uni degree not worth it, as student loan inquiry begins"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Lebanon says Hezbollah agrees reciprocal halt to attacks on Israel"
+      "text": "Clashes continue in Lebanon despite Israel and Hezbollah accepting US partial ceasefire plan"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "STAFFING CHANGE",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
-    "deck": "With a key team member departing, you need to move quickly on coverage and knowledge transfer before institutional gaps widen. This shapes your hiring and project continuity over the coming weeks.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "eyebrow": "INTERNAL MATTERS",
+    "headline": "<em>Teresa's resignation</em> requires immediate attention and planning.",
+    "deck": "This is a personnel change that will ripple through operations and needs strategic handling. Addressing it today prevents cascading disruptions and ensures continuity.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
