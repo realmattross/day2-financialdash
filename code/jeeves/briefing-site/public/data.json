@@ -1,31 +1,41 @@
 {
-  "date_day": "Tuesday",
-  "date_long": "2 June 2026",
+  "date_day": "Wednesday",
+  "date_long": "3 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 299,
+  "compiled_at": "06:25",
+  "briefing_no": 300,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "13:00",
-      "event": "Ed",
+      "time": "08:00",
+      "event": "Cleaning",
+      "where": "The Rowans"
+    },
+    {
+      "time": "09:00",
+      "event": "Currys",
       "where": ""
     },
     {
-      "time": "14:30",
-      "event": "Day 2 Health <> BGV Check-in",
+      "time": "09:30",
+      "event": "LIVE: Building high-performing teams with Paul and Yumi, BGV",
+      "where": "Online"
+    },
+    {
+      "time": "11:00",
+      "event": "LIVE: Work smarter with Samson Sahmland-Bowling, founder at Open Energy Labs",
+      "where": "Online"
+    },
+    {
+      "time": "13:15",
+      "event": "D2 catch up",
       "where": ""
     },
     {
-      "time": "14:30",
-      "event": "Weekly Founder Check-in - BGV Programme",
-      "where": ""
-    },
-    {
-      "time": "15:15",
-      "event": "Day2Health round 2",
-      "where": ""
+      "time": "14:00",
+      "event": "Day2Health x Speedflex",
+      "where": "Microsoft Teams Meeting"
     }
   ],
   "emails": [],
@@ -33,28 +43,28 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "150409754763471",
-      "preview": "For your tax return, do you remember how you collected info for the section about interest from 'banks, securities' etc? no rush to answer x"
-    },
-    {
-      "channel": "wa",
-      "from": "Day2 Fred",
-      "preview": "Yeah sounds good"
+      "from": "Say it ain’t so",
+      "preview": "probably busy in meetings"
     },
     {
       "channel": "wa",
       "from": "87793460072514",
-      "preview": "Sure we can chat tomorrow… ping him the contact so he can see it before tomorrow"
+      "preview": "Lemme try and set that up"
     },
     {
       "channel": "wa",
       "from": "81527186686069",
-      "preview": "Good Morning,  cleaning lady will visit tomorrow morning.  The driver   cleaning lady had some family issues last night and she is not able "
+      "preview": "Good Afternoon Matt. I hope you are well.  \n\nCleaning Service in May.\n5.5 - £72\n12.5-  £72\n19.5- £72\n26.5- £72\n\nTotal £288\n\nBest Regards \nKa"
     },
     {
       "channel": "wa",
       "from": "150409754763471",
-      "preview": "Noted"
+      "preview": "Please can you transfer 6 squid to Max as he's getting bus xxx"
+    },
+    {
+      "channel": "wa",
+      "from": "241368723148923",
+      "preview": "They are very sweet.\n\nWhen they have their eyes open in a few weeks you should all come to see them"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -130,17 +140,36 @@
       "title": "U6 Mead House Dinner",
       "is_hoh": false,
       "location": "Dean Close House"
+    },
+    {
+      "date": "2026-06-09",
+      "date_display": "Tue 9 Jun",
+      "time": "13:15",
+      "all_day": false,
+      "school": "Dean Close",
+      "title": "Fourth Form Maths Summer Exam",
+      "is_hoh": false,
+      "location": ""
+    },
+    {
+      "date": "2026-06-09",
+      "date_display": "Tue 9 Jun",
+      "time": "16:15",
+      "all_day": false,
+      "school": "Dean Close",
+      "title": "Whole School Talk",
+      "is_hoh": false,
+      "location": ""
     }
   ],
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$372.58",
-    "change": "+$77.68 · +26.34%",
+    "price": "$358.39",
+    "change": "+$63.93 · +21.71%",
     "direction": "up",
-    "as_of": "Close 1 Jun · NASDAQ",
+    "as_of": "Close 2 Jun · NASDAQ",
     "history": [
-      335.3999938964844,
       330.4700012207031,
       337.7300109863281,
       337.75,
@@ -169,36 +198,37 @@
       384.8299865722656,
       386.1199951171875,
       376.42999267578125,
-      372.5799865722656
+      372.5799865722656,
+      358.3900146484375
     ]
   },
   "weather": {
     "hourly": [
       {
         "time": "07:00",
-        "temp": 13,
+        "temp": 12,
         "icon": "⛅"
       },
       {
         "time": "12:00",
+        "temp": 14,
+        "icon": "☔"
+      },
+      {
+        "time": "15:00",
         "temp": 17,
         "icon": "⛅"
       },
       {
-        "time": "15:00",
-        "temp": 15,
-        "icon": "☔"
-      },
-      {
         "time": "19:00",
-        "temp": 16,
+        "temp": 15,
         "icon": "⛅"
       }
     ],
-    "summary": "<strong>13–18°C</strong> · rain · sunrise 04:53",
-    "narrative": "Wet day ahead. Boots and a proper coat."
+    "summary": "<strong>12–17°C</strong> · light drizzle · sunrise 04:52",
+    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>13–18°C</strong> · rain · sunrise 04:53",
+  "weather_summary": "<strong>12–17°C</strong> · light drizzle · sunrise 04:52",
   "body": {
     "value": "1.18",
     "unit": "m/s",
@@ -211,61 +241,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Murdered student Henry Nowak told police 'I can't breathe' while handcuffed"
+      "text": "Protesters and riot police clash near home of Nowak's killer"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "How pupils with special educational needs are more likely to see their schools close"
+      "text": "Three quarters of workers not on track for 'moderate' pension income, report suggests"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Ukraine rescuers pull dead from rubble after Russian strikes kill 18 people"
+      "text": "US and Iran launch new strikes as ceasefire negotiations stalled"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Third of people say uni degree not worth it, as student loan inquiry begins"
+      "text": "Police sent personal details to the wrong person, says alleged Al Fayed victim"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Clashes continue in Lebanon despite Israel and Hezbollah accepting US partial ceasefire plan"
+      "text": "Trump administration drops $1.8bn 'compensation fund'"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Murdered student Henry Nowak told police 'I can't breathe' while handcuffed"
+      "text": "Protesters and riot police clash near home of Nowak's killer"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "How pupils with special educational needs are more likely to see their schools close"
+      "text": "Three quarters of workers not on track for 'moderate' pension income, report suggests"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Ukraine rescuers pull dead from rubble after Russian strikes kill 18 people"
+      "text": "US and Iran launch new strikes as ceasefire negotiations stalled"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Third of people say uni degree not worth it, as student loan inquiry begins"
+      "text": "Police sent personal details to the wrong person, says alleged Al Fayed victim"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Clashes continue in Lebanon despite Israel and Hezbollah accepting US partial ceasefire plan"
+      "text": "Trump administration drops $1.8bn 'compensation fund'"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "INTERNAL MATTERS",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention and planning.",
-    "deck": "This is a personnel change that will ripple through operations and needs strategic handling. Addressing it today prevents cascading disruptions and ensures continuity.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "eyebrow": "STAFFING",
+    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
+    "deck": "With this departure now in your task list, you need to move quickly on both the knowledge transfer and identifying her replacement. The sooner you address this, the less operational disruption you'll face.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }
