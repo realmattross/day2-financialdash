@@ -2,31 +2,11 @@
   "date_day": "Wednesday",
   "date_long": "3 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 300,
+  "compiled_at": "12:30",
+  "briefing_no": 301,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
-    {
-      "time": "08:00",
-      "event": "Cleaning",
-      "where": "The Rowans"
-    },
-    {
-      "time": "09:00",
-      "event": "Currys",
-      "where": ""
-    },
-    {
-      "time": "09:30",
-      "event": "LIVE: Building high-performing teams with Paul and Yumi, BGV",
-      "where": "Online"
-    },
-    {
-      "time": "11:00",
-      "event": "LIVE: Work smarter with Samson Sahmland-Bowling, founder at Open Energy Labs",
-      "where": "Online"
-    },
     {
       "time": "13:15",
       "event": "D2 catch up",
@@ -36,6 +16,11 @@
       "time": "14:00",
       "event": "Day2Health x Speedflex",
       "where": "Microsoft Teams Meeting"
+    },
+    {
+      "time": "14:45",
+      "event": "Certificates. Dad and bgv",
+      "where": ""
     }
   ],
   "emails": [],
@@ -43,28 +28,28 @@
   "messages": [
     {
       "channel": "wa",
+      "from": "87793460072514",
+      "preview": "Phew…I’m starving!! 🤣"
+    },
+    {
+      "channel": "wa",
+      "from": "The Young Ones",
+      "preview": "Any last minute takers for the sauna and optional cold plunge, tomorrow at 11am? 😊"
+    },
+    {
+      "channel": "wa",
+      "from": "Day2 Fred",
+      "preview": "If you need an example I was thinking Cheltenham leisure looks good as it has good facilities and a GP referral program but it’s also a quit"
+    },
+    {
+      "channel": "wa",
       "from": "Say it ain’t so",
       "preview": "probably busy in meetings"
     },
     {
       "channel": "wa",
-      "from": "87793460072514",
-      "preview": "Lemme try and set that up"
-    },
-    {
-      "channel": "wa",
       "from": "81527186686069",
       "preview": "Good Afternoon Matt. I hope you are well.  \n\nCleaning Service in May.\n5.5 - £72\n12.5-  £72\n19.5- £72\n26.5- £72\n\nTotal £288\n\nBest Regards \nKa"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Please can you transfer 6 squid to Max as he's getting bus xxx"
-    },
-    {
-      "channel": "wa",
-      "from": "241368723148923",
-      "preview": "They are very sweet.\n\nWhen they have their eyes open in a few weeks you should all come to see them"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -222,13 +207,13 @@
       {
         "time": "19:00",
         "temp": 15,
-        "icon": "⛅"
+        "icon": "☀"
       }
     ],
-    "summary": "<strong>12–17°C</strong> · light drizzle · sunrise 04:52",
-    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
+    "summary": "<strong>12–17°C</strong> · rain · sunrise 04:52",
+    "narrative": "Wet day ahead. Boots and a proper coat."
   },
-  "weather_summary": "<strong>12–17°C</strong> · light drizzle · sunrise 04:52",
+  "weather_summary": "<strong>12–17°C</strong> · rain · sunrise 04:52",
   "body": {
     "value": "1.18",
     "unit": "m/s",
@@ -241,61 +226,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Protesters and riot police clash near home of Nowak's killer"
+      "text": "Royal Navy helicopter crash worrying, PM says"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Three quarters of workers not on track for 'moderate' pension income, report suggests"
+      "text": "US and Iran launch new strikes, as Kuwait says airport hit by Iranian drones"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US and Iran launch new strikes as ceasefire negotiations stalled"
+      "text": "Ukrainian drones hit St Petersburg as Putin's flagship economic forum opens"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Police sent personal details to the wrong person, says alleged Al Fayed victim"
+      "text": "How a content creator tried to use a YouTube alibi to get away with murder"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Trump administration drops $1.8bn 'compensation fund'"
+      "text": "Giorgio Locatelli replaces John Torode as co-host of Celebrity MasterChef"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Protesters and riot police clash near home of Nowak's killer"
+      "text": "Royal Navy helicopter crash worrying, PM says"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Three quarters of workers not on track for 'moderate' pension income, report suggests"
+      "text": "US and Iran launch new strikes, as Kuwait says airport hit by Iranian drones"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US and Iran launch new strikes as ceasefire negotiations stalled"
+      "text": "Ukrainian drones hit St Petersburg as Putin's flagship economic forum opens"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Police sent personal details to the wrong person, says alleged Al Fayed victim"
+      "text": "How a content creator tried to use a YouTube alibi to get away with murder"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Trump administration drops $1.8bn 'compensation fund'"
+      "text": "Giorgio Locatelli replaces John Torode as co-host of Celebrity MasterChef"
     }
   ],
   "_fixtures": [],
   "lead": {
     "eyebrow": "STAFFING",
     "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
-    "deck": "With this departure now in your task list, you need to move quickly on both the knowledge transfer and identifying her replacement. The sooner you address this, the less operational disruption you'll face.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "deck": "This personnel change sits unresolved in your task list without timeline clarity. With multiple business initiatives underway, addressing the transition now prevents operational disruption across your teams.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
