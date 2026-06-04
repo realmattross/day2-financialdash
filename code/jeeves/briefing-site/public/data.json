@@ -2,24 +2,19 @@
   "date_day": "Thursday",
   "date_long": "4 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:28",
-  "briefing_no": 302,
+  "compiled_at": "12:30",
+  "briefing_no": 303,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "09:15",
-      "event": "Chat with Sam",
-      "where": ""
-    },
-    {
-      "time": "09:45",
-      "event": "Chicken",
+      "time": "14:00",
+      "event": "Taxi",
       "where": ""
     },
     {
       "time": "14:00",
-      "event": "Taxi",
+      "event": "Key",
       "where": ""
     },
     {
@@ -38,28 +33,28 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "87793460072514",
-      "preview": "So, Jo and Tom just messaged to say that Tom and Jo’s sister broke up today 😔 thought he looked sad!"
+      "from": "Hampnett village group",
+      "preview": "Please invite anyone who you think might like  to come . It doesn’t matter if some people receive it from several of us xx"
+    },
+    {
+      "channel": "wa",
+      "from": "84623824556136",
+      "preview": "soz"
     },
     {
       "channel": "wa",
       "from": "Day2 Tech",
-      "preview": "Keen to see if we walk up to a response from them too! If not, more ammo"
+      "preview": "Thanks mate, I’m with people all day today so will check later…"
     },
     {
       "channel": "wa",
-      "from": "Sneakerheads",
-      "preview": "The diagonal lines are heritage from hoddle era"
+      "from": "4698794942473",
+      "preview": "They are literally cupped in my hand"
     },
     {
       "channel": "wa",
-      "from": "Lords Day2",
-      "preview": "I’m packed up tomorrow but free after 3pm if that’s any use to anyone"
-    },
-    {
-      "channel": "wa",
-      "from": "Day2 Fred",
-      "preview": "Thanks mate"
+      "from": "275994699104256",
+      "preview": "Awesome, thank you"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -236,61 +231,61 @@
     {
       "kind": "news",
       "label": "BBC",
+      "text": "Starmer accuses Musk of trying to whip up division over Henry Nowak murder"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Inquest to examine if police response contributed to Henry Nowak death"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "New NHS drug offers ovarian cancer patients more time and better quality of life"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
       "text": "Israel and Lebanon agree to implement ceasefire if Hezbollah stops attacks"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US House votes to rein in Trump's war powers in rebuke over Iran"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "New ovarian cancer drug offers patients more time and better quality of life"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
       "text": "NHS staff should be banned from wearing pro-Palestinian badges, report recommends"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "MI5 warns Chinese spies are using job websites to target government staff"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
+      "text": "Starmer accuses Musk of trying to whip up division over Henry Nowak murder"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Inquest to examine if police response contributed to Henry Nowak death"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "New NHS drug offers ovarian cancer patients more time and better quality of life"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
       "text": "Israel and Lebanon agree to implement ceasefire if Hezbollah stops attacks"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US House votes to rein in Trump's war powers in rebuke over Iran"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "New ovarian cancer drug offers patients more time and better quality of life"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
       "text": "NHS staff should be banned from wearing pro-Palestinian badges, report recommends"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "MI5 warns Chinese spies are using job websites to target government staff"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "STAFFING",
-    "headline": "<em>Teresa's resignation</em> demands immediate attention",
-    "deck": "With no due date set and multiple competing priorities already stacking up, clarifying the timeline and transition plan for this departure needs to move to the front of your queue today. The longer this sits unaddressed, the harder the handoff becomes.",
-    "byline": "06:52 · compiled from inbox, calendar & tasks"
+    "eyebrow": "TODAY'S PRIORITY",
+    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
+    "deck": "With no due date flagged, this personnel matter sits unaddressed among your open tasks and needs urgent clarity on timing and transition. The longer it remains unscheduled, the greater the risk to team continuity.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
