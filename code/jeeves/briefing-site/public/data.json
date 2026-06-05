@@ -1,31 +1,31 @@
 {
-  "date_day": "Thursday",
-  "date_long": "4 June 2026",
+  "date_day": "Friday",
+  "date_long": "5 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 303,
+  "compiled_at": "06:25",
+  "briefing_no": 304,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "14:00",
-      "event": "Taxi",
+      "time": "08:00",
+      "event": "Day2 Health ✖️Techne Video Tags Enhancement Meeting",
       "where": ""
     },
     {
-      "time": "14:00",
-      "event": "Key",
-      "where": ""
+      "time": "12:00",
+      "event": "Cohort lunch",
+      "where": "Breakout space by The Gallery, Techspace Goswell Road"
     },
     {
-      "time": "15:02",
-      "event": "Train to London Paddington",
-      "where": "Kingham"
+      "time": "13:45",
+      "event": "Founder confidential with Nicholas Betts, Founder & CEO at Zerotec",
+      "where": "The Gallery, Techspace Goswell Road"
     },
     {
-      "time": "18:00",
-      "event": "St Paul's School Reunion",
-      "where": "St Paul's School and The Bridge, Castelnau, Lonsdale Road, Barnes, London SW13 9JT"
+      "time": "15:00",
+      "event": "Pitch practice: defining your team edge 💎",
+      "where": "The Gallery, Techspace Goswell Road"
     }
   ],
   "emails": [],
@@ -33,28 +33,28 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "Hampnett village group",
-      "preview": "Please invite anyone who you think might like  to come . It doesn’t matter if some people receive it from several of us xx"
+      "from": "150409754763471",
+      "preview": "Not to worry concierge knows you are coming and will let you in .\nThen buzz I’ll be up ."
     },
     {
       "channel": "wa",
-      "from": "84623824556136",
-      "preview": "soz"
+      "from": "Sneakerheads",
+      "preview": "https://vm.tiktok.com/ZNRv111g1/"
     },
     {
       "channel": "wa",
-      "from": "Day2 Tech",
-      "preview": "Thanks mate, I’m with people all day today so will check later…"
+      "from": "150409754763471",
+      "preview": "Just means Max has lost one xx"
     },
     {
       "channel": "wa",
-      "from": "4698794942473",
-      "preview": "They are literally cupped in my hand"
+      "from": "Lords Day2",
+      "preview": "Wish I was having a drink!! What a week"
     },
     {
       "channel": "wa",
-      "from": "275994699104256",
-      "preview": "Awesome, thank you"
+      "from": "Day2  Core Team",
+      "preview": "It was fine, food for thought ultimately for them. My hope is they can see that we may be a good partner to help raise awareness… which may "
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -92,26 +92,6 @@
   ],
   "school_week": [
     {
-      "date": "2026-06-04",
-      "date_display": "Thu 4 Jun",
-      "time": "",
-      "all_day": true,
-      "school": "Dean Close",
-      "title": "Sherratt Cup Instrumental Competition Final",
-      "is_hoh": false,
-      "location": ""
-    },
-    {
-      "date": "2026-06-08",
-      "date_display": "Mon 8 Jun",
-      "time": "08:50",
-      "all_day": false,
-      "school": "Dean Close",
-      "title": "Fourth Form Chemistry Summer Exam",
-      "is_hoh": false,
-      "location": ""
-    },
-    {
       "date": "2026-06-09",
       "date_display": "Tue 9 Jun",
       "time": "",
@@ -120,16 +100,6 @@
       "title": "U6 Mead House Dinner",
       "is_hoh": false,
       "location": "Dean Close House"
-    },
-    {
-      "date": "2026-06-09",
-      "date_display": "Tue 9 Jun",
-      "time": "13:15",
-      "all_day": false,
-      "school": "Dean Close",
-      "title": "Fourth Form Maths Summer Exam",
-      "is_hoh": false,
-      "location": ""
     },
     {
       "date": "2026-06-09",
@@ -155,10 +125,10 @@
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$355.68",
-    "change": "+$61.22 · +20.79%",
+    "price": "$369.27",
+    "change": "+$74.81 · +25.41%",
     "direction": "up",
-    "as_of": "Close 3 Jun · NASDAQ",
+    "as_of": "Close 4 Jun · NASDAQ",
     "history": [
       337.7300109863281,
       337.75,
@@ -196,34 +166,34 @@
     "hourly": [
       {
         "time": "07:00",
-        "temp": 12,
+        "temp": 11,
         "icon": "⛅"
       },
       {
         "time": "12:00",
-        "temp": 14,
-        "icon": "☔"
+        "temp": 15,
+        "icon": "⛅"
       },
       {
         "time": "15:00",
-        "temp": 17,
+        "temp": 14,
         "icon": "⛅"
       },
       {
         "time": "19:00",
-        "temp": 15,
-        "icon": "☀"
+        "temp": 13,
+        "icon": "☔"
       }
     ],
-    "summary": "<strong>12–17°C</strong> · rain · sunrise 04:52",
-    "narrative": "Wet day ahead. Boots and a proper coat."
+    "summary": "<strong>10–15°C</strong> · light drizzle · sunrise 04:51",
+    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>12–17°C</strong> · rain · sunrise 04:52",
+  "weather_summary": "<strong>10–15°C</strong> · light drizzle · sunrise 04:51",
   "body": {
-    "value": "1.19",
+    "value": "1.18",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Down 10.8% on the prior week. Sleep ran 9h 34m overnight.",
+    "trend": "Sleep ran 9h 8m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -231,61 +201,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Starmer accuses Musk of trying to whip up division over Henry Nowak murder"
+      "text": "Andrew was sub-letting Royal Lodge cottages, watchdog reveals"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Inquest to examine if police response contributed to Henry Nowak death"
+      "text": "Burnham says he would seek to enter any Labour leadership contest"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "New NHS drug offers ovarian cancer patients more time and better quality of life"
+      "text": "'World-first' vaccine designed by artificial intelligence"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Israel and Lebanon agree to implement ceasefire if Hezbollah stops attacks"
+      "text": "UK in most dangerous period I've known, military chief says"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "NHS staff should be banned from wearing pro-Palestinian badges, report recommends"
+      "text": "One in four births in England is now emergency caesarean, BBC analysis shows"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Starmer accuses Musk of trying to whip up division over Henry Nowak murder"
+      "text": "Andrew was sub-letting Royal Lodge cottages, watchdog reveals"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Inquest to examine if police response contributed to Henry Nowak death"
+      "text": "Burnham says he would seek to enter any Labour leadership contest"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "New NHS drug offers ovarian cancer patients more time and better quality of life"
+      "text": "'World-first' vaccine designed by artificial intelligence"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Israel and Lebanon agree to implement ceasefire if Hezbollah stops attacks"
+      "text": "UK in most dangerous period I've known, military chief says"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "NHS staff should be banned from wearing pro-Palestinian badges, report recommends"
+      "text": "One in four births in England is now emergency caesarean, BBC analysis shows"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "TODAY'S PRIORITY",
+    "eyebrow": "INTERNAL TRANSITION",
     "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
-    "deck": "With no due date flagged, this personnel matter sits unaddressed among your open tasks and needs urgent clarity on timing and transition. The longer it remains unscheduled, the greater the risk to team continuity.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "deck": "With a key team member departing, you need to address the gap in your Day2 Health operations before momentum stalls. This task sits undated and unurgent in your list—but it shouldn't be.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }
