@@ -2,8 +2,8 @@
   "date_day": "Saturday",
   "date_long": "6 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 306,
+  "compiled_at": "12:33",
+  "briefing_no": 307,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
@@ -33,28 +33,28 @@
   "messages": [
     {
       "channel": "wa",
+      "from": "84623824556136",
+      "preview": "Hi BGV.\r\nI’m keen to share something that has been incredibly valuable to Day2. Given what we discussed on Friday about “Origin stories” I w"
+    },
+    {
+      "channel": "wa",
+      "from": "Ross boys",
+      "preview": "It makes me a lot older than you !"
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "Morning! Remind me of logistics - are you coming home with Max in taxi from Cheltenham? Xx"
+    },
+    {
+      "channel": "wa",
       "from": "150409754763471",
       "preview": "It’s all marketing"
     },
     {
       "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Hi! Sorry missed you was cooking. Hope pitch went well? X"
-    },
-    {
-      "channel": "wa",
-      "from": "84623824556136",
-      "preview": "On ten tonight if your dad watches that"
-    },
-    {
-      "channel": "wa",
       "from": "87793460072514",
       "preview": "Urgh… I feel a bit sick at the thought of it!!"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "I await your call !"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -90,38 +90,7 @@
       "urgency": null
     }
   ],
-  "school_week": [
-    {
-      "date": "2026-06-09",
-      "date_display": "Tue 9 Jun",
-      "time": "",
-      "all_day": true,
-      "school": "Dean Close",
-      "title": "U6 Mead House Dinner",
-      "is_hoh": false,
-      "location": "Dean Close House"
-    },
-    {
-      "date": "2026-06-09",
-      "date_display": "Tue 9 Jun",
-      "time": "16:15",
-      "all_day": false,
-      "school": "Dean Close",
-      "title": "Whole School Talk",
-      "is_hoh": false,
-      "location": ""
-    },
-    {
-      "date": "2026-06-11",
-      "date_display": "Thu 11 Jun",
-      "time": "",
-      "all_day": true,
-      "school": "Dean Close",
-      "title": "Annual Sports Day",
-      "is_hoh": false,
-      "location": "Prince of Wales Stadium"
-    }
-  ],
+  "school_week": [],
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
@@ -190,10 +159,10 @@
   },
   "weather_summary": "<strong>10–15°C</strong> · rain · sunrise 04:50",
   "body": {
-    "value": "1.17",
+    "value": "1.11",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Up 12.0% on the prior week. Sleep ran 6h 33m overnight.",
+    "trend": "Down 16.6% on the prior week. Sleep ran 6h 33m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -253,9 +222,9 @@
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "URGENT TASK",
-    "headline": "<em>Teresa's resignation</em> needs immediate attention",
-    "deck": "This unresolved personnel matter sits among your open tasks with no due date assigned, creating potential exposure. Clarifying next steps and succession planning should happen before the day's events take you out of the office.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "eyebrow": "Priority signal",
+    "headline": "First call at <em>13</em>. Train to Cheltenham Spa.",
+    "deck": "—",
+    "byline": "13:06 · compiled from inbox, calendar & tasks"
   }
 }
