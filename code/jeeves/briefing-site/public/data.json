@@ -1,15 +1,40 @@
 {
-  "date_day": "Monday",
-  "date_long": "8 June 2026",
+  "date_day": "Tuesday",
+  "date_long": "9 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 311,
+  "compiled_at": "06:25",
+  "briefing_no": 312,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "14:30",
-      "event": "Call",
+      "time": "08:00",
+      "event": "Cleaning",
+      "where": "The Rowans"
+    },
+    {
+      "time": "08:00",
+      "event": "Max — Thom drop off & pick up",
+      "where": ""
+    },
+    {
+      "time": "08:00",
+      "event": "Esme — Sanjeev drop off, walk/bus to Southwood",
+      "where": ""
+    },
+    {
+      "time": "08:00",
+      "event": "Cleaning",
+      "where": "The Rowans"
+    },
+    {
+      "time": "09:15",
+      "event": "Chapter 1",
+      "where": ""
+    },
+    {
+      "time": "13:30",
+      "event": "Tom, Matt and Ed",
       "where": ""
     }
   ],
@@ -18,28 +43,28 @@
   "messages": [
     {
       "channel": "wa",
+      "from": "150409754763471",
+      "preview": "When you have a moment please send details of SEIS not password protected so I can send to our new accountants ."
+    },
+    {
+      "channel": "wa",
+      "from": "3753868542163",
+      "preview": "Hi mate - alll set WC!? Most likely the same old story of over promise.. under deliver. Oh well it’s an excuse to watch football for a month"
+    },
+    {
+      "channel": "wa",
       "from": "84623824556136",
-      "preview": "I have the actual king quote. Will send asap"
+      "preview": "Send me some"
     },
     {
       "channel": "wa",
-      "from": "Atrium Day2",
-      "preview": "Thanks for sharing mate. Do you have an email contact for Terry Peters which you could share? Or intro me via email. Was having a lovely cha"
+      "from": "Thom & Max",
+      "preview": "You're welcome really glad they enjoyed! festival has been great this year. Honestly it was less than a tenner so don't worry at all X"
     },
     {
       "channel": "wa",
-      "from": "Day2 Tech",
-      "preview": "“Bombing it” may not have been the best choice of phrase 😂"
-    },
-    {
-      "channel": "wa",
-      "from": "87793460072514",
-      "preview": "Thinking about Thursday photos… what are we wearing? Might be too tight to get a tee done for me now?"
-    },
-    {
-      "channel": "wa",
-      "from": "4698794942473",
-      "preview": "Thanks matey. Bare with me as car gone capput so having to train cross country to look at new on today. Will try to have a read en route x"
+      "from": "150409754763471",
+      "preview": "it does! Gemini didn't say to try that. Roscoe is better than Gemini clearly x"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -100,12 +125,11 @@
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$365.76",
-    "change": "+$71.30 · +24.21%",
+    "price": "$361.17",
+    "change": "+$46.43 · +14.75%",
     "direction": "up",
-    "as_of": "Close 5 Jun · NASDAQ",
+    "as_of": "Close 8 Jun · NASDAQ",
     "history": [
-      342.32000732421875,
       348.5199890136719,
       347.5,
       347.30999755859375,
@@ -134,41 +158,42 @@
       358.3900146484375,
       355.67999267578125,
       369.2699890136719,
-      365.760009765625
+      365.760009765625,
+      361.1700134277344
     ]
   },
   "weather": {
     "hourly": [
       {
         "time": "07:00",
-        "temp": 12,
+        "temp": 10,
         "icon": "☔"
       },
       {
         "time": "12:00",
+        "temp": 14,
+        "icon": "⛅"
+      },
+      {
+        "time": "15:00",
         "temp": 12,
         "icon": "☔"
       },
       {
-        "time": "15:00",
-        "temp": 15,
-        "icon": "⛅"
-      },
-      {
         "time": "19:00",
-        "temp": 14,
-        "icon": "☀"
+        "temp": 12,
+        "icon": "☔"
       }
     ],
-    "summary": "<strong>9–15°C</strong> · rain · sunrise 04:49",
-    "narrative": "Wet day ahead. Boots and a proper coat."
+    "summary": "<strong>8–14°C</strong> · light drizzle · sunrise 04:49",
+    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>9–15°C</strong> · rain · sunrise 04:49",
+  "weather_summary": "<strong>8–14°C</strong> · light drizzle · sunrise 04:49",
   "body": {
-    "value": "1.09",
+    "value": "1.06",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Sleep ran 8h 34m overnight.",
+    "trend": "Down 15.7% on the prior week. Sleep ran 8h 34m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -176,61 +201,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Iran releases footage of missiles launched at Israel"
+      "text": "'I was a prisoner in my home': Drug gangs 'cuckooing' hundreds of homes a week, police warn"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Starmer tells Apple and Google to ban nude images on children's phones"
+      "text": "Billionaire West Ham co-owner accused of abusing his power and preying on women for sex"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Attacks inquiry revealed miscarriage of justice, victim's mother says"
+      "text": "Football regulator 'in contact' with West Ham over Sullivan"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Rare footage captured of Great White shark in Mediterranean Sea"
+      "text": "Iran and Israel say they will pause strikes but warn of retaliation if ceasefire breached again"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Christian Eriksen 'in good spirits' after collapsing in Denmark game, team's doctor says"
+      "text": "Somali referee Artan barred from entering US ahead of World Cup"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Iran releases footage of missiles launched at Israel"
+      "text": "'I was a prisoner in my home': Drug gangs 'cuckooing' hundreds of homes a week, police warn"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Starmer tells Apple and Google to ban nude images on children's phones"
+      "text": "Billionaire West Ham co-owner accused of abusing his power and preying on women for sex"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Attacks inquiry revealed miscarriage of justice, victim's mother says"
+      "text": "Football regulator 'in contact' with West Ham over Sullivan"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Rare footage captured of Great White shark in Mediterranean Sea"
+      "text": "Iran and Israel say they will pause strikes but warn of retaliation if ceasefire breached again"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Christian Eriksen 'in good spirits' after collapsing in Denmark game, team's doctor says"
+      "text": "Somali referee Artan barred from entering US ahead of World Cup"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "IMMEDIATE ATTENTION",
-    "headline": "<em>Teresa's resignation</em> requires urgent handling before the day escalates.",
-    "deck": "This personnel matter sits unaddressed among your tasks with no due date assigned, yet it's the kind of issue that compounds quickly without immediate action. You need to establish next steps and communication strategy before end of business today.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "eyebrow": "URGENT REQUEST",
+    "headline": "Your accountants need <em>SEIS documents</em> unprotected today.",
+    "deck": "A WhatsApp message flags that your new accountants are waiting for SEIS details in an unencrypted format to move forward with your accounts. This is blocking their work and needs immediate attention.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }
