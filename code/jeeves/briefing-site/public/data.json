@@ -2,39 +2,24 @@
   "date_day": "Tuesday",
   "date_long": "9 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 312,
+  "compiled_at": "12:30",
+  "briefing_no": 313,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "08:00",
-      "event": "Cleaning",
-      "where": "The Rowans"
-    },
-    {
-      "time": "08:00",
-      "event": "Max — Thom drop off & pick up",
-      "where": ""
-    },
-    {
-      "time": "08:00",
-      "event": "Esme — Sanjeev drop off, walk/bus to Southwood",
-      "where": ""
-    },
-    {
-      "time": "08:00",
-      "event": "Cleaning",
-      "where": "The Rowans"
-    },
-    {
-      "time": "09:15",
-      "event": "Chapter 1",
-      "where": ""
-    },
-    {
-      "time": "13:30",
+      "time": "14:30",
       "event": "Tom, Matt and Ed",
+      "where": ""
+    },
+    {
+      "time": "15:15",
+      "event": "Day2Health round 2",
+      "where": ""
+    },
+    {
+      "time": "16:00",
+      "event": "Day 2 Health <> BGV Check-in",
       "where": ""
     }
   ],
@@ -43,28 +28,28 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "150409754763471",
-      "preview": "When you have a moment please send details of SEIS not password protected so I can send to our new accountants ."
+      "from": "84623824556136",
+      "preview": "Do it."
+    },
+    {
+      "channel": "wa",
+      "from": "Day2 Tech",
+      "preview": "Even more insane, I’m monitoring and interacting with Claude code via my phone to my laptop while doing a shop in Sainsburys 😂"
+    },
+    {
+      "channel": "wa",
+      "from": "87793460072514",
+      "preview": "I have some thoughts!!"
     },
     {
       "channel": "wa",
       "from": "3753868542163",
-      "preview": "Hi mate - alll set WC!? Most likely the same old story of over promise.. under deliver. Oh well it’s an excuse to watch football for a month"
-    },
-    {
-      "channel": "wa",
-      "from": "84623824556136",
-      "preview": "Send me some"
-    },
-    {
-      "channel": "wa",
-      "from": "Thom & Max",
-      "preview": "You're welcome really glad they enjoyed! festival has been great this year. Honestly it was less than a tenner so don't worry at all X"
+      "preview": "Thanks. And yes to watching a game or two with the boys. Would be fun"
     },
     {
       "channel": "wa",
       "from": "150409754763471",
-      "preview": "it does! Gemini didn't say to try that. Roscoe is better than Gemini clearly x"
+      "preview": "Sorry to be a pain but I just remembered I left my green stone ring out by the bathroom sink would you mind putting it in the drawer beneath"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -166,7 +151,7 @@
     "hourly": [
       {
         "time": "07:00",
-        "temp": 10,
+        "temp": 9,
         "icon": "☔"
       },
       {
@@ -176,24 +161,24 @@
       },
       {
         "time": "15:00",
-        "temp": 12,
-        "icon": "☔"
+        "temp": 15,
+        "icon": "⛅"
       },
       {
         "time": "19:00",
-        "temp": 12,
-        "icon": "☔"
+        "temp": 14,
+        "icon": "⛅"
       }
     ],
-    "summary": "<strong>8–14°C</strong> · light drizzle · sunrise 04:49",
+    "summary": "<strong>8–15°C</strong> · light drizzle · sunrise 04:49",
     "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>8–14°C</strong> · light drizzle · sunrise 04:49",
+  "weather_summary": "<strong>8–15°C</strong> · light drizzle · sunrise 04:49",
   "body": {
-    "value": "1.06",
+    "value": "1.05",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Down 15.7% on the prior week. Sleep ran 8h 34m overnight.",
+    "trend": "Down 23.7% on the prior week. Sleep ran 8h 34m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -201,61 +186,61 @@
     {
       "kind": "news",
       "label": "BBC",
+      "text": "Man arrested on suspicion of attempted murder after 'brutal' knife attack in Belfast"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
       "text": "'I was a prisoner in my home': Drug gangs 'cuckooing' hundreds of homes a week, police warn"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Billionaire West Ham co-owner accused of abusing his power and preying on women for sex"
+      "text": "Football regulator contacts West Ham over 'serious allegations' against Sullivan"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Football regulator 'in contact' with West Ham over Sullivan"
+      "text": "300 migrants bound for UK kidnapped and threatened with kidney removal"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Iran and Israel say they will pause strikes but warn of retaliation if ceasefire breached again"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Somali referee Artan barred from entering US ahead of World Cup"
+      "text": "Legal equality duty for public services should be scrapped, says Badenoch"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
+      "text": "Man arrested on suspicion of attempted murder after 'brutal' knife attack in Belfast"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
       "text": "'I was a prisoner in my home': Drug gangs 'cuckooing' hundreds of homes a week, police warn"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Billionaire West Ham co-owner accused of abusing his power and preying on women for sex"
+      "text": "Football regulator contacts West Ham over 'serious allegations' against Sullivan"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Football regulator 'in contact' with West Ham over Sullivan"
+      "text": "300 migrants bound for UK kidnapped and threatened with kidney removal"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Iran and Israel say they will pause strikes but warn of retaliation if ceasefire breached again"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "Somali referee Artan barred from entering US ahead of World Cup"
+      "text": "Legal equality duty for public services should be scrapped, says Badenoch"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "URGENT REQUEST",
-    "headline": "Your accountants need <em>SEIS documents</em> unprotected today.",
-    "deck": "A WhatsApp message flags that your new accountants are waiting for SEIS details in an unencrypted format to move forward with your accounts. This is blocking their work and needs immediate attention.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "eyebrow": "INTERNAL MATTERS",
+    "headline": "<em>Teresa's resignation</em> requires immediate attention and transition planning.",
+    "deck": "With multiple Day2Health meetings scheduled today and strategic initiatives in motion, losing a team member creates an urgent gap that needs to be addressed before momentum stalls. This needs to be prioritized before other commitments consume your bandwidth.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
