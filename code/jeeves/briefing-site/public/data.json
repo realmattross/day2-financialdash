@@ -2,35 +2,15 @@
   "date_day": "Wednesday",
   "date_long": "10 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 314,
+  "compiled_at": "12:30",
+  "briefing_no": 315,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "07:30",
-      "event": "Day2 Health ✖️Techne Update Sync",
-      "where": ""
-    },
-    {
-      "time": "08:00",
-      "event": "Max — Mum drop off & pick up",
-      "where": ""
-    },
-    {
-      "time": "08:00",
-      "event": "Esme — Mum drop off & pick up",
-      "where": ""
-    },
-    {
-      "time": "09:30",
-      "event": "LIVE: Fundraising walkthrough and Q&A with Nelly and Rob, BGV",
-      "where": "Online"
-    },
-    {
-      "time": "11:00",
-      "event": "LIVE: Understanding risk and rewards for investors with Melanie, BGV",
-      "where": "Online"
+      "time": "13:00",
+      "event": "LIVE: Angel fundraising mechanics with Guy Kaufman, Startups Lead at Vestd",
+      "where": "https://meet.google.com/byj-adsj-rrd"
     },
     {
       "time": "21:00",
@@ -43,8 +23,18 @@
   "messages": [
     {
       "channel": "wa",
+      "from": "84623824556136",
+      "preview": "Impressive"
+    },
+    {
+      "channel": "wa",
       "from": "87793460072514",
-      "preview": "Let’s fucking positive the shit out of the next month!!"
+      "preview": "Ok cool! Last week this week, youve smashed it!"
+    },
+    {
+      "channel": "wa",
+      "from": "Day2 Tech",
+      "preview": "So so, Matt and I think parallel tracks are the way forward, we’ll see where I get to while continuing with Techne and take a call when a bi"
     },
     {
       "channel": "wa",
@@ -53,18 +43,8 @@
     },
     {
       "channel": "wa",
-      "from": "84623824556136",
-      "preview": "No you put the orders and commands in, and you did the graft"
-    },
-    {
-      "channel": "wa",
       "from": "Thom & Max",
       "preview": "Owe you a pint soon Sara! xx"
-    },
-    {
-      "channel": "wa",
-      "from": "Hampnett village group",
-      "preview": "I’m in London till Thursday am but if any still over I would love one.x"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -100,18 +80,7 @@
       "urgency": null
     }
   ],
-  "school_week": [
-    {
-      "date": "2026-06-11",
-      "date_display": "Thu 11 Jun",
-      "time": "",
-      "all_day": true,
-      "school": "Dean Close",
-      "title": "Annual Sports Day",
-      "is_hoh": false,
-      "location": "Prince of Wales Stadium"
-    }
-  ],
+  "school_week": [],
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
@@ -157,7 +126,7 @@
       {
         "time": "07:00",
         "temp": 10,
-        "icon": "⛅"
+        "icon": "☔"
       },
       {
         "time": "12:00",
@@ -166,7 +135,7 @@
       },
       {
         "time": "15:00",
-        "temp": 13,
+        "temp": 14,
         "icon": "☔"
       },
       {
@@ -175,15 +144,15 @@
         "icon": "⛅"
       }
     ],
-    "summary": "<strong>8–14°C</strong> · rain · sunrise 04:48",
-    "narrative": "Wet day ahead. Boots and a proper coat."
+    "summary": "<strong>9–14°C</strong> · light drizzle · sunrise 04:48",
+    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>8–14°C</strong> · rain · sunrise 04:48",
+  "weather_summary": "<strong>9–14°C</strong> · light drizzle · sunrise 04:48",
   "body": {
     "value": "1.16",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Up 1.3% on the prior week. Sleep ran 5h 58m overnight.",
+    "trend": "Up 1.3% on the prior week. Sleep ran 8h 43m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -201,17 +170,17 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US and Iran exchange fire after American patrol helicopter downed in Hormuz"
+      "text": "US strikes Iran in response to downing of military helicopter"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Bowen: Trump and Netanyahu wanted to reshape the Middle East - now they risk a permacrisis"
+      "text": "BBC cancels planned Doctor Who Christmas special"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Advanced radiotherapy for prostate cancer to cut sessions from 20 to five"
+      "text": "Who will win the World Cup? BBC pundits make their predictions"
     }
   ],
   "_news": [
@@ -228,24 +197,24 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US and Iran exchange fire after American patrol helicopter downed in Hormuz"
+      "text": "US strikes Iran in response to downing of military helicopter"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Bowen: Trump and Netanyahu wanted to reshape the Middle East - now they risk a permacrisis"
+      "text": "BBC cancels planned Doctor Who Christmas special"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Advanced radiotherapy for prostate cancer to cut sessions from 20 to five"
+      "text": "Who will win the World Cup? BBC pundits make their predictions"
     }
   ],
   "_fixtures": [],
   "lead": {
     "eyebrow": "STAFFING",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
-    "deck": "You have an unresolved personnel matter flagged in your task list with no timeline attached. Clarifying next steps, coverage plans, and transition timelines needs to happen before other priorities pile up.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "headline": "<em>Teresa's resignation</em> requires immediate transition planning.",
+    "deck": "With no due date set on this task, clarity on timing and coverage is critical to prevent operational disruption. Addressing this now prevents it from becoming a crisis.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
