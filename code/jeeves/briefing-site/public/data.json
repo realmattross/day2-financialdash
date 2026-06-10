@@ -1,26 +1,41 @@
 {
-  "date_day": "Tuesday",
-  "date_long": "9 June 2026",
+  "date_day": "Wednesday",
+  "date_long": "10 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 313,
+  "compiled_at": "06:25",
+  "briefing_no": 314,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "14:30",
-      "event": "Tom, Matt and Ed",
+      "time": "07:30",
+      "event": "Day2 Health ✖️Techne Update Sync",
       "where": ""
     },
     {
-      "time": "15:15",
-      "event": "Day2Health round 2",
+      "time": "08:00",
+      "event": "Max — Mum drop off & pick up",
       "where": ""
     },
     {
-      "time": "16:00",
-      "event": "Day 2 Health <> BGV Check-in",
+      "time": "08:00",
+      "event": "Esme — Mum drop off & pick up",
       "where": ""
+    },
+    {
+      "time": "09:30",
+      "event": "LIVE: Fundraising walkthrough and Q&A with Nelly and Rob, BGV",
+      "where": "Online"
+    },
+    {
+      "time": "11:00",
+      "event": "LIVE: Understanding risk and rewards for investors with Melanie, BGV",
+      "where": "Online"
+    },
+    {
+      "time": "21:00",
+      "event": "England vs Costa Rica (Warm-up Game)",
+      "where": "Inter&Co Stadium, Orlando, Florida"
     }
   ],
   "emails": [],
@@ -28,28 +43,28 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "84623824556136",
-      "preview": "Do it."
-    },
-    {
-      "channel": "wa",
-      "from": "Day2 Tech",
-      "preview": "Even more insane, I’m monitoring and interacting with Claude code via my phone to my laptop while doing a shop in Sainsburys 😂"
-    },
-    {
-      "channel": "wa",
       "from": "87793460072514",
-      "preview": "I have some thoughts!!"
-    },
-    {
-      "channel": "wa",
-      "from": "3753868542163",
-      "preview": "Thanks. And yes to watching a game or two with the boys. Would be fun"
+      "preview": "Let’s fucking positive the shit out of the next month!!"
     },
     {
       "channel": "wa",
       "from": "150409754763471",
-      "preview": "Sorry to be a pain but I just remembered I left my green stone ring out by the bathroom sink would you mind putting it in the drawer beneath"
+      "preview": "Just ran for earlier train phew! Back more like 9.30 🙂😜 Xx"
+    },
+    {
+      "channel": "wa",
+      "from": "84623824556136",
+      "preview": "No you put the orders and commands in, and you did the graft"
+    },
+    {
+      "channel": "wa",
+      "from": "Thom & Max",
+      "preview": "Owe you a pint soon Sara! xx"
+    },
+    {
+      "channel": "wa",
+      "from": "Hampnett village group",
+      "preview": "I’m in London till Thursday am but if any still over I would love one.x"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -87,16 +102,6 @@
   ],
   "school_week": [
     {
-      "date": "2026-06-09",
-      "date_display": "Tue 9 Jun",
-      "time": "",
-      "all_day": true,
-      "school": "Dean Close",
-      "title": "U6 Mead House Dinner",
-      "is_hoh": false,
-      "location": "Dean Close House"
-    },
-    {
       "date": "2026-06-11",
       "date_display": "Thu 11 Jun",
       "time": "",
@@ -110,10 +115,10 @@
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$361.17",
-    "change": "+$46.43 · +14.75%",
+    "price": "$362.29",
+    "change": "+$45.92 · +14.51%",
     "direction": "up",
-    "as_of": "Close 8 Jun · NASDAQ",
+    "as_of": "Close 9 Jun · NASDAQ",
     "history": [
       348.5199890136719,
       347.5,
@@ -151,18 +156,18 @@
     "hourly": [
       {
         "time": "07:00",
-        "temp": 9,
-        "icon": "☔"
+        "temp": 10,
+        "icon": "⛅"
       },
       {
         "time": "12:00",
-        "temp": 14,
+        "temp": 13,
         "icon": "⛅"
       },
       {
         "time": "15:00",
-        "temp": 15,
-        "icon": "⛅"
+        "temp": 13,
+        "icon": "☔"
       },
       {
         "time": "19:00",
@@ -170,15 +175,15 @@
         "icon": "⛅"
       }
     ],
-    "summary": "<strong>8–15°C</strong> · light drizzle · sunrise 04:49",
-    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
+    "summary": "<strong>8–14°C</strong> · rain · sunrise 04:48",
+    "narrative": "Wet day ahead. Boots and a proper coat."
   },
-  "weather_summary": "<strong>8–15°C</strong> · light drizzle · sunrise 04:49",
+  "weather_summary": "<strong>8–14°C</strong> · rain · sunrise 04:48",
   "body": {
-    "value": "1.05",
+    "value": "1.16",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Down 23.7% on the prior week. Sleep ran 8h 34m overnight.",
+    "trend": "Up 1.3% on the prior week. Sleep ran 5h 58m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -186,61 +191,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Man arrested on suspicion of attempted murder after 'brutal' knife attack in Belfast"
+      "text": "Residents flee as cars and houses burn in Belfast"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'I was a prisoner in my home': Drug gangs 'cuckooing' hundreds of homes a week, police warn"
+      "text": "Illegal mini-marts to shut for up to 12 months under law change prompted by BBC"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Football regulator contacts West Ham over 'serious allegations' against Sullivan"
+      "text": "US and Iran exchange fire after American patrol helicopter downed in Hormuz"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "300 migrants bound for UK kidnapped and threatened with kidney removal"
+      "text": "Bowen: Trump and Netanyahu wanted to reshape the Middle East - now they risk a permacrisis"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Legal equality duty for public services should be scrapped, says Badenoch"
+      "text": "Advanced radiotherapy for prostate cancer to cut sessions from 20 to five"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Man arrested on suspicion of attempted murder after 'brutal' knife attack in Belfast"
+      "text": "Residents flee as cars and houses burn in Belfast"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "'I was a prisoner in my home': Drug gangs 'cuckooing' hundreds of homes a week, police warn"
+      "text": "Illegal mini-marts to shut for up to 12 months under law change prompted by BBC"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Football regulator contacts West Ham over 'serious allegations' against Sullivan"
+      "text": "US and Iran exchange fire after American patrol helicopter downed in Hormuz"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "300 migrants bound for UK kidnapped and threatened with kidney removal"
+      "text": "Bowen: Trump and Netanyahu wanted to reshape the Middle East - now they risk a permacrisis"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Legal equality duty for public services should be scrapped, says Badenoch"
+      "text": "Advanced radiotherapy for prostate cancer to cut sessions from 20 to five"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "INTERNAL MATTERS",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention and transition planning.",
-    "deck": "With multiple Day2Health meetings scheduled today and strategic initiatives in motion, losing a team member creates an urgent gap that needs to be addressed before momentum stalls. This needs to be prioritized before other commitments consume your bandwidth.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "eyebrow": "STAFFING",
+    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
+    "deck": "You have an unresolved personnel matter flagged in your task list with no timeline attached. Clarifying next steps, coverage plans, and transition timelines needs to happen before other priorities pile up.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }
