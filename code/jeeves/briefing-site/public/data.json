@@ -1,21 +1,31 @@
 {
-  "date_day": "Wednesday",
-  "date_long": "10 June 2026",
+  "date_day": "Thursday",
+  "date_long": "11 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 315,
+  "compiled_at": "06:25",
+  "briefing_no": 316,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "13:00",
-      "event": "LIVE: Angel fundraising mechanics with Guy Kaufman, Startups Lead at Vestd",
-      "where": "https://meet.google.com/byj-adsj-rrd"
+      "time": "08:00",
+      "event": "Max — Mummy drop off, Thom pick up",
+      "where": ""
     },
     {
-      "time": "21:00",
-      "event": "England vs Costa Rica (Warm-up Game)",
-      "where": "Inter&Co Stadium, Orlando, Florida"
+      "time": "08:00",
+      "event": "Esme — Bethany sleepover",
+      "where": ""
+    },
+    {
+      "time": "11:00",
+      "event": "Day2Health round 2",
+      "where": ""
+    },
+    {
+      "time": "14:30",
+      "event": "Day2Health - R&D discussion",
+      "where": "Room - Rodborough (Chargrove House, GL51 4GA)"
     }
   ],
   "emails": [],
@@ -23,28 +33,28 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "84623824556136",
-      "preview": "Impressive"
+      "from": "120363241432534568",
+      "preview": "Following a pitch inspection at the stadium, today’s match against Costa Rica will now kick off at 10pm (UK time) – subject to there being n"
+    },
+    {
+      "channel": "wa",
+      "from": "275994699104256",
+      "preview": "Worth a bit more time for solid foundations"
     },
     {
       "channel": "wa",
       "from": "87793460072514",
-      "preview": "Ok cool! Last week this week, youve smashed it!"
+      "preview": "Absolutely, I’ll move things if necessary! Remember I’m away last week of June, Tuesday to Tuesday…"
+    },
+    {
+      "channel": "wa",
+      "from": "84623824556136",
+      "preview": "Nice chap Rob"
     },
     {
       "channel": "wa",
       "from": "Day2 Tech",
       "preview": "So so, Matt and I think parallel tracks are the way forward, we’ll see where I get to while continuing with Techne and take a call when a bi"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Just ran for earlier train phew! Back more like 9.30 🙂😜 Xx"
-    },
-    {
-      "channel": "wa",
-      "from": "Thom & Max",
-      "preview": "Owe you a pint soon Sara! xx"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -84,12 +94,11 @@
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$362.29",
-    "change": "+$45.92 · +14.51%",
+    "price": "$353.32",
+    "change": "+$37.60 · +11.91%",
     "direction": "up",
-    "as_of": "Close 9 Jun · NASDAQ",
+    "as_of": "Close 10 Jun · NASDAQ",
     "history": [
-      348.5199890136719,
       347.5,
       347.30999755859375,
       381.94000244140625,
@@ -118,20 +127,21 @@
       355.67999267578125,
       369.2699890136719,
       365.760009765625,
-      361.1700134277344
+      361.1700134277344,
+      362.2900085449219
     ]
   },
   "weather": {
     "hourly": [
       {
         "time": "07:00",
-        "temp": 10,
-        "icon": "☔"
+        "temp": 11,
+        "icon": "⛅"
       },
       {
         "time": "12:00",
-        "temp": 13,
-        "icon": "⛅"
+        "temp": 11,
+        "icon": "☔"
       },
       {
         "time": "15:00",
@@ -140,19 +150,19 @@
       },
       {
         "time": "19:00",
-        "temp": 14,
+        "temp": 15,
         "icon": "⛅"
       }
     ],
-    "summary": "<strong>9–14°C</strong> · light drizzle · sunrise 04:48",
-    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
+    "summary": "<strong>9–15°C</strong> · rain · sunrise 04:48",
+    "narrative": "Wet day ahead. Boots and a proper coat."
   },
-  "weather_summary": "<strong>9–14°C</strong> · light drizzle · sunrise 04:48",
+  "weather_summary": "<strong>9–15°C</strong> · rain · sunrise 04:48",
   "body": {
-    "value": "1.16",
+    "value": "1.13",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Up 1.3% on the prior week. Sleep ran 8h 43m overnight.",
+    "trend": "Down 14.8% on the prior week. Sleep ran 8h 43m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -160,61 +170,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Residents flee as cars and houses burn in Belfast"
+      "text": "Water cannon fired in latest disorder after Belfast knife attack"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Illegal mini-marts to shut for up to 12 months under law change prompted by BBC"
+      "text": "US and Iran exchange strikes across Middle East for second day in a row"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US strikes Iran in response to downing of military helicopter"
+      "text": "Essex Police given new information on West Ham co-owner David Sullivan"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "BBC cancels planned Doctor Who Christmas special"
+      "text": "The furious dispute over what caused Air India flight 171 to crash"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Who will win the World Cup? BBC pundits make their predictions"
+      "text": "Smacking children could lead to lower GCSE grades, study suggests"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Residents flee as cars and houses burn in Belfast"
+      "text": "Water cannon fired in latest disorder after Belfast knife attack"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Illegal mini-marts to shut for up to 12 months under law change prompted by BBC"
+      "text": "US and Iran exchange strikes across Middle East for second day in a row"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US strikes Iran in response to downing of military helicopter"
+      "text": "Essex Police given new information on West Ham co-owner David Sullivan"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "BBC cancels planned Doctor Who Christmas special"
+      "text": "The furious dispute over what caused Air India flight 171 to crash"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Who will win the World Cup? BBC pundits make their predictions"
+      "text": "Smacking children could lead to lower GCSE grades, study suggests"
     }
   ],
   "_fixtures": [],
   "lead": {
     "eyebrow": "STAFFING",
-    "headline": "<em>Teresa's resignation</em> requires immediate transition planning.",
-    "deck": "With no due date set on this task, clarity on timing and coverage is critical to prevent operational disruption. Addressing this now prevents it from becoming a crisis.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
+    "deck": "With this task still unresolved and multiple other priorities competing for your time today, addressing the departure and its operational impact should take precedence. The longer this sits, the greater the risk to team continuity and morale.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }
