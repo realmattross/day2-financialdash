@@ -2,26 +2,11 @@
   "date_day": "Thursday",
   "date_long": "11 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 316,
+  "compiled_at": "12:30",
+  "briefing_no": 317,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
-    {
-      "time": "08:00",
-      "event": "Max — Mummy drop off, Thom pick up",
-      "where": ""
-    },
-    {
-      "time": "08:00",
-      "event": "Esme — Bethany sleepover",
-      "where": ""
-    },
-    {
-      "time": "11:00",
-      "event": "Day2Health round 2",
-      "where": ""
-    },
     {
       "time": "14:30",
       "event": "Day2Health - R&D discussion",
@@ -33,28 +18,28 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "120363241432534568",
-      "preview": "Following a pitch inspection at the stadium, today’s match against Costa Rica will now kick off at 10pm (UK time) – subject to there being n"
+      "from": "Hampnett village group",
+      "preview": "BBC1 now has a program about the danger  of ticks in the English countryside! X"
+    },
+    {
+      "channel": "wa",
+      "from": "Say it ain’t so",
+      "preview": "Not happy after wet walk!"
     },
     {
       "channel": "wa",
       "from": "275994699104256",
-      "preview": "Worth a bit more time for solid foundations"
+      "preview": "steaming ahead again now though, and i’ve removed that restriction"
     },
     {
       "channel": "wa",
       "from": "87793460072514",
-      "preview": "Absolutely, I’ll move things if necessary! Remember I’m away last week of June, Tuesday to Tuesday…"
+      "preview": "Haha, sorry! This is his last one?"
     },
     {
       "channel": "wa",
-      "from": "84623824556136",
-      "preview": "Nice chap Rob"
-    },
-    {
-      "channel": "wa",
-      "from": "Day2 Tech",
-      "preview": "So so, Matt and I think parallel tracks are the way forward, we’ll see where I get to while continuing with Techne and take a call when a bi"
+      "from": "120363241432534568",
+      "preview": "Following a pitch inspection at the stadium, today’s match against Costa Rica will now kick off at 10pm (UK time) – subject to there being n"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -99,7 +84,6 @@
     "direction": "up",
     "as_of": "Close 10 Jun · NASDAQ",
     "history": [
-      347.5,
       347.30999755859375,
       381.94000244140625,
       383.2200012207031,
@@ -128,7 +112,8 @@
       369.2699890136719,
       365.760009765625,
       361.1700134277344,
-      362.2900085449219
+      362.2900085449219,
+      353.32000732421875
     ]
   },
   "weather": {
@@ -136,7 +121,7 @@
       {
         "time": "07:00",
         "temp": 11,
-        "icon": "⛅"
+        "icon": "☔"
       },
       {
         "time": "12:00",
@@ -150,19 +135,19 @@
       },
       {
         "time": "19:00",
-        "temp": 15,
+        "temp": 14,
         "icon": "⛅"
       }
     ],
-    "summary": "<strong>9–15°C</strong> · rain · sunrise 04:48",
+    "summary": "<strong>7–14°C</strong> · rain · sunrise 04:48",
     "narrative": "Wet day ahead. Boots and a proper coat."
   },
-  "weather_summary": "<strong>9–15°C</strong> · rain · sunrise 04:48",
+  "weather_summary": "<strong>7–14°C</strong> · rain · sunrise 04:48",
   "body": {
     "value": "1.13",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Down 14.8% on the prior week. Sleep ran 8h 43m overnight.",
+    "trend": "Down 10.9% on the prior week. Sleep ran 8h 43m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -170,61 +155,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Water cannon fired in latest disorder after Belfast knife attack"
+      "text": "Police officer, 19, dies from crash injuries"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US and Iran exchange strikes across Middle East for second day in a row"
+      "text": "Olivia Rodrigo on heartbreak and choosing her wedding song"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Essex Police given new information on West Ham co-owner David Sullivan"
+      "text": "Facing a seismic by-election, the people of Makerfield tell us what matters to them"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "The furious dispute over what caused Air India flight 171 to crash"
+      "text": "Serena Williams' run at Queen's over as partner Victoria Mboko withdraws"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Smacking children could lead to lower GCSE grades, study suggests"
+      "text": "Nearly 3,000 patients a day in England face corridor care in NHS"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Water cannon fired in latest disorder after Belfast knife attack"
+      "text": "Police officer, 19, dies from crash injuries"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US and Iran exchange strikes across Middle East for second day in a row"
+      "text": "Olivia Rodrigo on heartbreak and choosing her wedding song"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Essex Police given new information on West Ham co-owner David Sullivan"
+      "text": "Facing a seismic by-election, the people of Makerfield tell us what matters to them"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "The furious dispute over what caused Air India flight 171 to crash"
+      "text": "Serena Williams' run at Queen's over as partner Victoria Mboko withdraws"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Smacking children could lead to lower GCSE grades, study suggests"
+      "text": "Nearly 3,000 patients a day in England face corridor care in NHS"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "STAFFING",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
-    "deck": "With this task still unresolved and multiple other priorities competing for your time today, addressing the departure and its operational impact should take precedence. The longer this sits, the greater the risk to team continuity and morale.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "eyebrow": "PERSONNEL",
+    "headline": "<em>Teresa's resignation</em> requires immediate succession planning",
+    "deck": "With no due date flagged, this departure needs clarity on timing and transition strategy. The longer it sits unaddressed, the greater the risk to team continuity and Day2Health's operations.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
