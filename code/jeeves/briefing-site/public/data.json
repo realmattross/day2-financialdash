@@ -1,16 +1,41 @@
 {
-  "date_day": "Thursday",
-  "date_long": "11 June 2026",
+  "date_day": "Friday",
+  "date_long": "12 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 317,
+  "compiled_at": "06:37",
+  "briefing_no": 318,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "14:30",
-      "event": "Day2Health - R&D discussion",
-      "where": "Room - Rodborough (Chargrove House, GL51 4GA)"
+      "time": "07:02",
+      "event": "Train to London Paddington",
+      "where": "Kingham"
+    },
+    {
+      "time": "08:38",
+      "event": "Take transit from Paddington Station to Parkinson's UK",
+      "where": ""
+    },
+    {
+      "time": "09:30",
+      "event": "Caroline / Matt: in-person meeting",
+      "where": "Parkinson's UK, 50 Broadway, London SW1H 0DB, UK, 50 Broadway-4-Jenkins Room (4J) (10) [Google Meet, WebEx Compatibility, Zoom Compatibility]"
+    },
+    {
+      "time": "09:30",
+      "event": "Caroline / Matt: in-person meeting",
+      "where": "Parkinson's UK, 50 Broadway, London SW1H 0DB, UK"
+    },
+    {
+      "time": "10:36",
+      "event": "Take transit from Parkinson's UK to Farringdon Station",
+      "where": ""
+    },
+    {
+      "time": "12:00",
+      "event": "Cohort lunch",
+      "where": "Breakout space by The Gallery, Techspace Goswell Road"
     }
   ],
   "emails": [],
@@ -18,28 +43,28 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "Hampnett village group",
-      "preview": "BBC1 now has a program about the danger  of ticks in the English countryside! X"
+      "from": "150409754763471",
+      "preview": "all good xx"
+    },
+    {
+      "channel": "wa",
+      "from": "Thom & Max",
+      "preview": "And I can bring Thom home tomorrow if that's useful? X"
+    },
+    {
+      "channel": "wa",
+      "from": "Day2 Tech",
+      "preview": "All good! 👍"
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "👍"
     },
     {
       "channel": "wa",
       "from": "Say it ain’t so",
-      "preview": "Not happy after wet walk!"
-    },
-    {
-      "channel": "wa",
-      "from": "275994699104256",
-      "preview": "steaming ahead again now though, and i’ve removed that restriction"
-    },
-    {
-      "channel": "wa",
-      "from": "87793460072514",
-      "preview": "Haha, sorry! This is his last one?"
-    },
-    {
-      "channel": "wa",
-      "from": "120363241432534568",
-      "preview": "Following a pitch inspection at the stadium, today’s match against Costa Rica will now kick off at 10pm (UK time) – subject to there being n"
+      "preview": "Helping with the workshop 🤗"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -144,10 +169,10 @@
   },
   "weather_summary": "<strong>7–14°C</strong> · rain · sunrise 04:48",
   "body": {
-    "value": "1.13",
+    "value": "1.14",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Down 10.9% on the prior week. Sleep ran 8h 43m overnight.",
+    "trend": "Up 6.9% on the prior week. Sleep ran 7h 37m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -207,9 +232,9 @@
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "PERSONNEL",
-    "headline": "<em>Teresa's resignation</em> requires immediate succession planning",
-    "deck": "With no due date flagged, this departure needs clarity on timing and transition strategy. The longer it sits unaddressed, the greater the risk to team continuity and Day2Health's operations.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "eyebrow": "Priority signal",
+    "headline": "First call at <em>07</em>. Train to London Paddington.",
+    "deck": "—",
+    "byline": "06:53 · compiled from inbox, calendar & tasks"
   }
 }
