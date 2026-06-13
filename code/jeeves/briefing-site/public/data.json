@@ -2,11 +2,16 @@
   "date_day": "Saturday",
   "date_long": "13 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 320,
+  "compiled_at": "12:35",
+  "briefing_no": 321,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
+    {
+      "time": "00:00",
+      "event": "Wedding",
+      "where": ""
+    },
     {
       "time": "11:32",
       "event": "Train to Cheltenham Spa",
@@ -16,6 +21,16 @@
   "emails": [],
   "email_tally": "0 new · 0 want a reply",
   "messages": [
+    {
+      "channel": "wa",
+      "from": "Day2 Tech",
+      "preview": "i’m moving back to opus.  it’ll be fine, but it’s frustrating.  could have ‘vibe coded’ the whole day2 much faster, but i wanted to make sur"
+    },
+    {
+      "channel": "wa",
+      "from": "Thom & Max",
+      "preview": "Yes of course. James will collect them after cricket x"
+    },
     {
       "channel": "wa",
       "from": "150409754763471",
@@ -28,18 +43,8 @@
     },
     {
       "channel": "wa",
-      "from": "Day2 Tech",
-      "preview": "Awesome!  I don’t feel obliged, don’t worry 🙂"
-    },
-    {
-      "channel": "wa",
       "from": "4698794942473",
       "preview": "😂 very droll"
-    },
-    {
-      "channel": "wa",
-      "from": "Thom & Max",
-      "preview": "Hi Fran\nBringing Thom for me today would be great.\nS xx"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -144,10 +149,10 @@
   },
   "weather_summary": "<strong>10–18°C</strong> · overcast · sunrise 04:48",
   "body": {
-    "value": "1.15",
+    "value": "1.12",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Down 49.5% on the prior week. Sleep ran 7h 9m overnight.",
+    "trend": "Down 7.1% on the prior week. Sleep ran 7h 9m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -207,9 +212,9 @@
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "IMMEDIATE",
-    "headline": "<em>Teresa's resignation</em> requires urgent attention before your Cheltenham trip",
-    "deck": "With a departure scheduled for 11:32 this morning, you need to address this staffing change now rather than from the road. The lack of due dates across your task list suggests this may have been flagged but not yet acted upon.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "eyebrow": "Priority signal",
+    "headline": "First call at <em>00</em>. Wedding.",
+    "deck": "—",
+    "byline": "12:35 · compiled from inbox, calendar & tasks"
   }
 }
