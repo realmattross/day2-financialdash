@@ -1,42 +1,48 @@
 {
-  "date_day": "Sunday",
-  "date_long": "14 June 2026",
+  "date_day": "Monday",
+  "date_long": "15 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 323,
+  "compiled_at": "06:40",
+  "briefing_no": 324,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
-  "agenda": [],
+  "agenda": [
+    {
+      "time": "12:00",
+      "event": "Yoga! In Cheltenham to work",
+      "where": ""
+    },
+    {
+      "time": "14:00",
+      "event": "Colin",
+      "where": ""
+    }
+  ],
   "emails": [],
   "email_tally": "0 new · 0 want a reply",
   "messages": [
     {
       "channel": "wa",
-      "from": "Hampnett village group",
-      "preview": "0630. Someone just rang our doorbell! No one there and nothing in the delivery bin. If anyone has a problem  and needs help please call me o"
-    },
-    {
-      "channel": "wa",
       "from": "150409754763471",
-      "preview": "Waiting for cab Xx"
-    },
-    {
-      "channel": "wa",
-      "from": "Day2 Tech",
-      "preview": "Hi mate, yes I am, wasn’t using that workspace"
-    },
-    {
-      "channel": "wa",
-      "from": "The Young Ones",
-      "preview": "Thanks Lynda, that sounds positive."
+      "preview": "Charlie much better"
     },
     {
       "channel": "wa",
       "from": "84623824556136",
-      "preview": "That waistcoat."
+      "preview": "What is it"
+    },
+    {
+      "channel": "wa",
+      "from": "241368723148923",
+      "preview": "Evening Matt\n\nThree things in no particular order….\n\n1. I met a chap called Barry from Stroll last week at a conference. He said to say “hel"
+    },
+    {
+      "channel": "wa",
+      "from": "Hampnett village group",
+      "preview": "0630. Someone just rang our doorbell! No one there and nothing in the delivery bin. If anyone has a problem  and needs help please call me o"
     }
   ],
-  "messages_tally": "5 unread · 5 chats",
+  "messages_tally": "4 unread · 4 chats",
   "tasks": [
     {
       "text": "Brian. Book meeting Prep for Caroline",
@@ -125,8 +131,8 @@
     "hourly": [
       {
         "time": "07:00",
-        "temp": 12,
-        "icon": "⛅"
+        "temp": 11,
+        "icon": "☔"
       },
       {
         "time": "12:00",
@@ -135,24 +141,24 @@
       },
       {
         "time": "15:00",
-        "temp": 18,
+        "temp": 22,
         "icon": "⛅"
       },
       {
         "time": "19:00",
-        "temp": 18,
+        "temp": 21,
         "icon": "⛅"
       }
     ],
-    "summary": "<strong>9–18°C</strong> · overcast · sunrise 04:47",
-    "narrative": "Quiet weather. Top of 18°C around lunchtime."
+    "summary": "<strong>11–22°C</strong> · light drizzle · sunrise 04:47",
+    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>9–18°C</strong> · overcast · sunrise 04:47",
+  "weather_summary": "<strong>11–22°C</strong> · light drizzle · sunrise 04:47",
   "body": {
-    "value": "1.10",
+    "value": "1.09",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Up 2.7% on the prior week. Sleep ran 7h 8m overnight.",
+    "trend": "Down 3.1% on the prior week. Sleep ran 7h 1m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -160,61 +166,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Royal Marines board Russian shadow fleet oil tanker in English Channel"
+      "text": "Trump heralds Iran deal but questions - and risks - remain"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "MOD video shows Russian shadow fleet tanker interception"
+      "text": "OnlyFans 'agents' control and threaten creators while taking half their earnings, BBC finds"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Why Haiti v Scotland was antidote to the ills of world football"
+      "text": "Assisted dying returns to Parliament as MP urges peers to 'finish the job'"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Tech firms had 'enough time' says Nandy, ahead of social media announcement"
+      "text": "Russian strikes kill nine in Ukraine and damage historic cathedral, officials say"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing"
+      "text": "Brighton's Yasin Ayari scores at World Cup but refuses to celebrate"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Royal Marines board Russian shadow fleet oil tanker in English Channel"
+      "text": "Trump heralds Iran deal but questions - and risks - remain"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "MOD video shows Russian shadow fleet tanker interception"
+      "text": "OnlyFans 'agents' control and threaten creators while taking half their earnings, BBC finds"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Why Haiti v Scotland was antidote to the ills of world football"
+      "text": "Assisted dying returns to Parliament as MP urges peers to 'finish the job'"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Tech firms had 'enough time' says Nandy, ahead of social media announcement"
+      "text": "Russian strikes kill nine in Ukraine and damage historic cathedral, officials say"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing"
+      "text": "Brighton's Yasin Ayari scores at World Cup but refuses to celebrate"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "STAFFING",
-    "headline": "<em>Teresa's resignation</em> requires immediate transition planning.",
-    "deck": "With no clear timeline documented and multiple active projects in motion, addressing the departure now prevents operational disruption across your team's current commitments.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "eyebrow": "Internal Operations",
+    "headline": "<em>Teresa's resignation</em> requires immediate transition planning",
+    "deck": "With no due date flagged, this personnel matter needs to move from task list to action plan. Clarity on timing and coverage is essential before other priorities can settle.",
+    "byline": "06:58 · compiled from inbox, calendar & tasks"
   }
 }
