@@ -1,21 +1,41 @@
 {
-  "date_day": "Tuesday",
-  "date_long": "16 June 2026",
+  "date_day": "Wednesday",
+  "date_long": "17 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:30",
-  "briefing_no": 327,
+  "compiled_at": "06:25",
+  "briefing_no": 328,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "17:00",
-      "event": "Brian",
+      "time": "13:30",
+      "event": "First interview for Lived Experience Lead with Mr Matt Ross",
       "where": ""
+    },
+    {
+      "time": "13:30",
+      "event": "First interview for Lived Experience Lead with Mr Matt Ross",
+      "where": ""
+    },
+    {
+      "time": "21:00",
+      "event": "England vs Croatia (FIFA World Cup Group Stage)",
+      "where": "Dallas Stadium, Arlington, Texas"
     }
   ],
   "emails": [],
   "email_tally": "0 new · 0 want a reply",
   "messages": [
+    {
+      "channel": "wa",
+      "from": "Hampnett village group",
+      "preview": "It would be good to know the exact dates that the lorries will be going through the village Alexander, when you have them. Thank you."
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "Momma has requested you to take chicken out of fridge so far is gon"
+    },
     {
       "channel": "wa",
       "from": "87793460072514",
@@ -25,24 +45,9 @@
       "channel": "wa",
       "from": "75 Hampnett Cleaning Service",
       "preview": "No worries! you too"
-    },
-    {
-      "channel": "wa",
-      "from": "4698794942473",
-      "preview": "Forgot to ask re crowdfunding mate. Got July 7 in diary. Is that still on?"
-    },
-    {
-      "channel": "wa",
-      "from": "150409754763471",
-      "preview": "Hi! just coming up for air. I have calls so planning to be at home so that would work fine Xx"
-    },
-    {
-      "channel": "im",
-      "from": "Unknown",
-      "preview": "￼This guy. Who’s this guy?"
     }
   ],
-  "messages_tally": "5 unread · 5 chats",
+  "messages_tally": "4 unread · 4 chats",
   "tasks": [
     {
       "text": "Brian. Book meeting Prep for Caroline",
@@ -90,12 +95,11 @@
   "market": {
     "symbol": "GOOG",
     "name": "Alphabet, Class C",
-    "price": "$367.11",
-    "change": "+$32.64 · +9.76%",
+    "price": "$371.10",
+    "change": "+$38.33 · +11.52%",
     "direction": "up",
-    "as_of": "Close 15 Jun · NASDAQ",
+    "as_of": "Close 16 Jun · NASDAQ",
     "history": [
-      379.6400146484375,
       384.2699890136719,
       395.1400146484375,
       395.29998779296875,
@@ -124,19 +128,20 @@
       353.32000732421875,
       356.55999755859375,
       358.1600036621094,
-      367.1099853515625
+      367.1099853515625,
+      371.1000061035156
     ]
   },
   "weather": {
     "hourly": [
       {
         "time": "07:00",
-        "temp": 15,
+        "temp": 16,
         "icon": "⛅"
       },
       {
         "time": "12:00",
-        "temp": 19,
+        "temp": 18,
         "icon": "⛅"
       },
       {
@@ -146,90 +151,90 @@
       },
       {
         "time": "19:00",
-        "temp": 16,
-        "icon": "☔"
+        "temp": 19,
+        "icon": "⛅"
       }
     ],
-    "summary": "<strong>14–20°C</strong> · rain · sunrise 04:47",
-    "narrative": "Wet day ahead. Boots and a proper coat."
+    "summary": "<strong>15–19°C</strong> · light drizzle · sunrise 04:47",
+    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>14–20°C</strong> · rain · sunrise 04:47",
+  "weather_summary": "<strong>15–19°C</strong> · light drizzle · sunrise 04:47",
   "body": {
-    "value": "1.14",
+    "value": "1.16",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Up 1.6% on the prior week. Sleep ran 9h 22m overnight.",
+    "trend": "Up 15.5% on the prior week. Sleep ran 7h 32m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": {
-    "name": "Just In Time (Michael Gray Remix)",
-    "artist": "Raw Silk, Michael Gray",
-    "album": "Michael Gray Reworks",
-    "is_playing": true,
-    "duration_ms": 381737,
-    "progress_ms": 26300,
-    "cover_url": "https://i.scdn.co/image/ab67616d0000b27369c61d25665ee0ead8251859",
-    "spotify_url": "https://open.spotify.com/track/1m0EfoNUQ8ZFJkkin00ZI5"
+    "name": "Too Much",
+    "artist": "Dove Cameron",
+    "album": "Too Much",
+    "is_playing": false,
+    "duration_ms": 171335,
+    "progress_ms": 3725,
+    "cover_url": "https://i.scdn.co/image/ab67616d0000b273cad38423dbe84082c31e3d84",
+    "spotify_url": "https://open.spotify.com/track/6lKSOnC9iLGDonypMgvGrm"
   },
   "ticker": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Thames Water closer to nationalisation after government objects to rescue deal"
+      "text": "'It was surreal': British couple describe having warning shots fired near them by Russian warship"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Married at First Sight Australia allegations 'disturbing', says country's watchdog"
+      "text": "Streeting would 'be prepared' to trigger leadership contest as early as next week"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Starmer pleased 'justice has been done' after arson attacks"
+      "text": "Social media has risks but has given us opportunities too, teen influencers say"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Woman left traumatised by swinging says website 'facilitated abuse'"
+      "text": "Why is Trump furious with Netanyahu over strikes on Lebanon?"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Prince George to attend Eton College from September"
+      "text": "England will not adapt style despite USA heat, Tuchel says"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Thames Water closer to nationalisation after government objects to rescue deal"
+      "text": "'It was surreal': British couple describe having warning shots fired near them by Russian warship"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Married at First Sight Australia allegations 'disturbing', says country's watchdog"
+      "text": "Streeting would 'be prepared' to trigger leadership contest as early as next week"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Starmer pleased 'justice has been done' after arson attacks"
+      "text": "Social media has risks but has given us opportunities too, teen influencers say"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Woman left traumatised by swinging says website 'facilitated abuse'"
+      "text": "Why is Trump furious with Netanyahu over strikes on Lebanon?"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Prince George to attend Eton College from September"
+      "text": "England will not adapt style despite USA heat, Tuchel says"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "IMMEDIATE ATTENTION",
-    "headline": "<em>Teresa's resignation</em> requires urgent handling and succession planning.",
-    "deck": "You have a departing team member flagged as a task with no due date or urgency marker, suggesting it may not yet be formally processed. Clarity on timing and next steps is critical before the situation creates operational gaps.",
-    "byline": "12:30 · compiled from inbox, calendar & tasks"
+    "eyebrow": "TODAY AT 1:30 PM",
+    "headline": "First <em>Lived Experience Lead</em> interview shapes organizational direction",
+    "deck": "Your initial conversation with Matt Ross sets the tone for a critical hire that will bring authentic perspective to the role. Getting this right today matters for how the organization listens and responds to the communities it serves.",
+    "byline": "06:25 · compiled from inbox, calendar & tasks"
   }
 }
