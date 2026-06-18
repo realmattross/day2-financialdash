@@ -2,19 +2,14 @@
   "date_day": "Thursday",
   "date_long": "18 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "06:25",
-  "briefing_no": 330,
+  "compiled_at": "12:30",
+  "briefing_no": 331,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "08:00",
-      "event": "Day2 Walk-through Meeting",
-      "where": ""
-    },
-    {
-      "time": "08:00",
-      "event": "Day2 Walk-through Meeting",
+      "time": "16:00",
+      "event": "Day2 Catch up-Matt will call",
       "where": ""
     }
   ],
@@ -23,28 +18,28 @@
   "messages": [
     {
       "channel": "wa",
+      "from": "175647016153161",
+      "preview": "Hey Matt, the college I go to holds talks from business and people every term. I thought you would eb great for it given your experience wit"
+    },
+    {
+      "channel": "wa",
       "from": "Day2 Tech",
-      "preview": "America!! 🙄"
+      "preview": "That works for me"
+    },
+    {
+      "channel": "wa",
+      "from": "The Young Ones",
+      "preview": "https://prksn.uk/4uEiR4Q"
+    },
+    {
+      "channel": "wa",
+      "from": "275994699104256",
+      "preview": "They love a workshop 😉"
     },
     {
       "channel": "wa",
       "from": "150409754763471",
       "preview": "Let’s have it!!"
-    },
-    {
-      "channel": "wa",
-      "from": "Thom & Max",
-      "preview": "Yes of course x"
-    },
-    {
-      "channel": "wa",
-      "from": "87793460072514",
-      "preview": "Ah, sounds like a classic case of underselling what’s needed!"
-    },
-    {
-      "channel": "wa",
-      "from": "84623824556136",
-      "preview": "Ooooh….!!! exciting"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -100,6 +95,16 @@
       "title": "Lower Sixth Mock Interview Session",
       "is_hoh": false,
       "location": "Cheltenham College"
+    },
+    {
+      "date": "2026-06-25",
+      "date_display": "Thu 25 Jun",
+      "time": "11:00",
+      "all_day": false,
+      "school": "Cheltenham",
+      "title": "Lower Sixth Mock Interview Session",
+      "is_hoh": false,
+      "location": "Cheltenham College"
     }
   ],
   "market": {
@@ -146,13 +151,13 @@
     "hourly": [
       {
         "time": "07:00",
-        "temp": 15,
+        "temp": 16,
         "icon": "⛅"
       },
       {
         "time": "12:00",
-        "temp": 18,
-        "icon": "☔"
+        "temp": 20,
+        "icon": "⛅"
       },
       {
         "time": "15:00",
@@ -161,14 +166,14 @@
       },
       {
         "time": "19:00",
-        "temp": 20,
-        "icon": "⛅"
+        "temp": 22,
+        "icon": "☀"
       }
     ],
-    "summary": "<strong>15–22°C</strong> · light drizzle · sunrise 04:47",
+    "summary": "<strong>16–23°C</strong> · light drizzle · sunrise 04:47",
     "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>15–22°C</strong> · light drizzle · sunrise 04:47",
+  "weather_summary": "<strong>16–23°C</strong> · light drizzle · sunrise 04:47",
   "body": {
     "value": "1.14",
     "unit": "m/s",
@@ -176,22 +181,8 @@
     "trend": "Down 22.7% on the prior week. Sleep ran 7h 32m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
-  "spotify": {
-    "name": "House Tour",
-    "artist": "Sabrina Carpenter",
-    "album": "Man’s Best Friend",
-    "is_playing": false,
-    "duration_ms": 169214,
-    "progress_ms": 5520,
-    "cover_url": "https://i.scdn.co/image/ab67616d0000b273b1863bf95557ea7f357c4947",
-    "spotify_url": "https://open.spotify.com/track/25jgQBxuUkGDdCG1WGKKN9"
-  },
+  "spotify": null,
   "ticker": [
-    {
-      "kind": "news",
-      "label": "BBC",
-      "text": "US and Iranian presidents sign deal aiming to end war"
-    },
     {
       "kind": "news",
       "label": "BBC",
@@ -200,51 +191,56 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "England fans cheer each goal in exhilarating opener"
+      "text": "Moscow hit by largest Ukrainian attack since start of Russia's full-scale war"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Cervical cancer deaths in England fall to zero in young women given vaccine"
+      "text": "Young women now have 'close to zero' risk of cervical cancer death after HPV jab"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Simpler, older version of Stonehenge found three miles from famous site"
+      "text": "Church of England apologises for role in forced adoptions"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Lisa Nandy 'not satisfied' with Channel 4 response on Married at First Sight UK"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "US and Iranian presidents sign deal aiming to end war"
-    },
-    {
-      "kind": "news",
-      "label": "BBC",
       "text": "What's in the US-Iran agreement?"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "England fans cheer each goal in exhilarating opener"
+      "text": "Moscow hit by largest Ukrainian attack since start of Russia's full-scale war"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Cervical cancer deaths in England fall to zero in young women given vaccine"
+      "text": "Young women now have 'close to zero' risk of cervical cancer death after HPV jab"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Simpler, older version of Stonehenge found three miles from famous site"
+      "text": "Church of England apologises for role in forced adoptions"
+    },
+    {
+      "kind": "news",
+      "label": "BBC",
+      "text": "Lisa Nandy 'not satisfied' with Channel 4 response on Married at First Sight UK"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "PERSONNEL",
-    "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
-    "deck": "With no due date assigned and multiple competing priorities, this departure risks operational continuity. Matt needs to move quickly on transition strategy and backfill before momentum stalls.",
-    "byline": "06:25 · compiled from inbox, calendar & tasks"
+    "eyebrow": "URGENT PERSONNEL MATTER",
+    "headline": "<em>Teresa's resignation</em> requires immediate attention and transition planning.",
+    "deck": "With no due date flagged but clearly sitting unaddressed in your task list, this personnel change needs to be handled now to ensure business continuity and team stability. The longer this remains pending, the greater the risk to operations and morale.",
+    "byline": "12:30 · compiled from inbox, calendar & tasks"
   }
 }
