@@ -1,16 +1,16 @@
 {
-  "date_day": "Friday",
-  "date_long": "19 June 2026",
+  "date_day": "Saturday",
+  "date_long": "20 June 2026",
   "place": "Northleach · Cotswolds",
-  "compiled_at": "12:33",
-  "briefing_no": 333,
+  "compiled_at": "06:30",
+  "briefing_no": 334,
   "tasks_source_label": "from Apple Notes · \"To do\"",
   "epigraph": "“The early morning has gold in its mouth.” — Franklin",
   "agenda": [
     {
-      "time": "10:00",
-      "event": "Mrs Ross - Esme",
-      "where": "Microsoft Teams Meeting"
+      "time": "18:30",
+      "event": "England Women vs Qualifier (T20 World Cup)",
+      "where": "Headingley, Leeds"
     }
   ],
   "emails": [],
@@ -18,28 +18,28 @@
   "messages": [
     {
       "channel": "wa",
-      "from": "Day2 Tech",
-      "preview": "Sounds good to me!"
-    },
-    {
-      "channel": "wa",
-      "from": "87793460072514",
-      "preview": "Might get to you closer to 1:30?"
+      "from": "84623824556136",
+      "preview": "(And for the first time ever, I am sending a potential new client my website!) - Very proud moment."
     },
     {
       "channel": "wa",
       "from": "Thom & Max",
-      "preview": "Ok will get Thom to message him when we leave x"
+      "preview": "The lights are all fixed so everything is back to normal x"
     },
     {
       "channel": "wa",
-      "from": "Ross boys",
-      "preview": "Wonderful sight and a wonderful couple ."
+      "from": "Day2  Core Team",
+      "preview": "Agreed!! I think we can get some decent funding this way if we play it right"
     },
     {
       "channel": "wa",
-      "from": "175647016153161",
-      "preview": "Hey Matt, the college I go to holds talks from business and people every term. I thought you would eb great for it given your experience wit"
+      "from": "87793460072514",
+      "preview": "Leaving now…"
+    },
+    {
+      "channel": "wa",
+      "from": "150409754763471",
+      "preview": "Like the spurs away shirt"
     }
   ],
   "messages_tally": "5 unread · 5 chats",
@@ -125,7 +125,6 @@
     "direction": "up",
     "as_of": "Close 18 Jun · NASDAQ",
     "history": [
-      395.1400146484375,
       395.29998779296875,
       397.04998779296875,
       386.7699890136719,
@@ -154,41 +153,42 @@
       358.1600036621094,
       367.1099853515625,
       371.1000061035156,
-      362.1000061035156
+      362.1000061035156,
+      367.4599914550781
     ]
   },
   "weather": {
     "hourly": [
       {
         "time": "07:00",
-        "temp": 14,
+        "temp": 16,
         "icon": "⛅"
       },
       {
         "time": "12:00",
-        "temp": 21,
-        "icon": "⛅"
+        "temp": 18,
+        "icon": "☔"
       },
       {
         "time": "15:00",
-        "temp": 23,
+        "temp": 20,
         "icon": "⛅"
       },
       {
         "time": "19:00",
         "temp": 20,
-        "icon": "⛅"
+        "icon": "☀"
       }
     ],
-    "summary": "<strong>13–23°C</strong> · overcast · sunrise 04:47",
-    "narrative": "Quiet weather. Top of 23°C around lunchtime."
+    "summary": "<strong>15–21°C</strong> · light drizzle · sunrise 04:48",
+    "narrative": "Drizzle through the morning, easing by afternoon. Take a coat for the school run."
   },
-  "weather_summary": "<strong>13–23°C</strong> · overcast · sunrise 04:47",
+  "weather_summary": "<strong>15–21°C</strong> · light drizzle · sunrise 04:48",
   "body": {
-    "value": "1.02",
+    "value": "1.06",
     "unit": "m/s",
     "label": "walking speed",
-    "trend": "Down 4.3% on the prior week. Sleep ran 8h 35m overnight.",
+    "trend": "Up 35.7% on the prior week. Sleep ran 2h 17m overnight.",
     "link": "https://matt-health-dummy.netlify.app/"
   },
   "spotify": null,
@@ -196,61 +196,61 @@
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Chris Mason: Emphatic win leaves Starmer with big decision on leadership"
+      "text": "Driver dies and 33 people seriously injured in Bedford train crash"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Farage blames Makerfield defeat on anti-Starmer votes"
+      "text": "'People flew from their seats': Passengers describe how collision unfolded"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "What is Burnham's path to becoming Labour leader and PM?"
+      "text": "PM under pressure from Labour MPs and ministers to set timetable for exit"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Scottish Conservatives win first Westminster by-election in more than 50 years"
+      "text": "Israel and Hezbollah agree ceasefire, US says, as more Lebanon strikes reported"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Sir John Curtice: Burnham's win against Reform represents remarkable personal success"
+      "text": "Cooler Saturday gives brief relief before heat returns"
     }
   ],
   "_news": [
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Chris Mason: Emphatic win leaves Starmer with big decision on leadership"
+      "text": "Driver dies and 33 people seriously injured in Bedford train crash"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Farage blames Makerfield defeat on anti-Starmer votes"
+      "text": "'People flew from their seats': Passengers describe how collision unfolded"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "What is Burnham's path to becoming Labour leader and PM?"
+      "text": "PM under pressure from Labour MPs and ministers to set timetable for exit"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Scottish Conservatives win first Westminster by-election in more than 50 years"
+      "text": "Israel and Hezbollah agree ceasefire, US says, as more Lebanon strikes reported"
     },
     {
       "kind": "news",
       "label": "BBC",
-      "text": "Sir John Curtice: Burnham's win against Reform represents remarkable personal success"
+      "text": "Cooler Saturday gives brief relief before heat returns"
     }
   ],
   "_fixtures": [],
   "lead": {
-    "eyebrow": "STAFFING",
+    "eyebrow": "INTERNAL",
     "headline": "<em>Teresa's resignation</em> requires immediate attention and succession planning.",
-    "deck": "With this departure now on your task list, you need to move quickly on coverage, knowledge transfer, and identifying her replacement. The longer this sits, the more operational risk compounds across your team.",
-    "byline": "12:34 · compiled from inbox, calendar & tasks"
+    "deck": "With no timeline specified in your task list, this departure could impact operations and team stability. Clarifying next steps and coverage needs should take priority this morning.",
+    "byline": "06:39 · compiled from inbox, calendar & tasks"
   }
 }
